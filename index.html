@@ -184,7 +184,7 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; font-size: 16px; }
+        html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 
         body {
             font-family: 'Barlow', -apple-system, sans-serif;
@@ -684,20 +684,64 @@
                 top: 72px; left: 0; right: 0; background: var(--white);
                 padding: 24px; gap: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.1);
             }
-            .nav-links.open a { color: var(--black) !important; }
+            .nav-links.open a { color: var(--black) !important; font-size: 1.1rem; padding: 10px 0; min-height: 44px; display: flex; align-items: center; }
+            .nav-links.open .nav-cta { justify-content: center; margin-top: 8px; }
             .nav-mobile-toggle { display: block; }
             .hero { min-height: 100svh; }
             .hero-buttons { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 320px; justify-content: center; }
             .angebot-grid { grid-template-columns: 1fr; }
+            .angebot-card { padding: 36px 24px; }
+            .angebot-icon { width: 60px; height: 60px; border-radius: 14px; margin-bottom: 20px; }
+            .angebot-icon svg { width: 30px; height: 30px; }
             .team-grid, .team-grid.team-grid-4 { grid-template-columns: 1fr; }
-            .toptracer-features { grid-template-columns: 1fr 1fr; }
+            .team-card { display: flex; align-items: center; gap: 20px; text-align: left; }
+            .team-card img { width: 100px; height: 125px; margin-bottom: 0; flex-shrink: 0; }
+            .toptracer-features { grid-template-columns: 1fr 1fr; gap: 10px; }
+            .toptracer-feat { padding: 14px 10px; }
+            .toptracer-feat strong { font-size: 1.3rem; }
             .price-grid { grid-template-columns: 1fr; }
-            .events-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+            .events-gallery { grid-template-columns: 1fr; }
+            .event-photo-slot { aspect-ratio: 16/9; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
             .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
             .contact-strip .btn-group { flex-direction: column; align-items: center; }
             .bar71-content { padding: 60px 24px; }
+        }
+
+        @media (max-width: 480px) {
+            section { padding: 60px 16px; }
+            .hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
+            .hero-badge { font-size: 0.72rem; padding: 6px 16px; }
+            .hero-buttons .btn { font-size: 0.9rem; padding: 14px 24px; }
+            .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+            .section-subtitle { font-size: 1rem; }
+            .toptracer-features { grid-template-columns: 1fr 1fr; gap: 8px; }
+            .toptracer-feat { padding: 12px 8px; }
+            .toptracer-feat strong { font-size: 1.2rem; }
+            .toptracer-feat span { font-size: 0.75rem; }
+            .price-grid { grid-template-columns: 1fr; }
+            .events-gallery { grid-template-columns: 1fr; }
+            .event-photo-slot { aspect-ratio: 16/9; }
+            .toptracer-slider { aspect-ratio: 16/9; }
+            .shop-slider { aspect-ratio: 16/9; }
+            .golfschule-visual img { aspect-ratio: 16/9; object-fit: cover; }
+            .bar71-image { aspect-ratio: 3/2; }
+            .bar71-content { padding: 48px 20px; }
+            .bar71-content h2 { font-size: 1.8rem; }
+            .metzenhof-features { grid-template-columns: 1fr 1fr; }
+            .faq-question { font-size: 0.95rem; padding: 16px 0; }
+            .oeffnungszeiten-card { padding: 24px 20px; }
+            .oeffnungszeiten-card h3 { font-size: 1.1rem; }
+            .wa-float { width: 52px; height: 52px; bottom: 20px; right: 16px; }
+            .wa-float svg { width: 28px; height: 28px; }
+            .wa-float-label { display: none; }
+            .sponsors-label { font-size: 0.7rem; }
+            .marquee-track { gap: 40px; }
+            .marquee-track img { height: 28px; max-width: 90px; }
+            .nav-links.open { padding: 20px 16px; }
+            .nav-links.open a { font-size: 1.05rem; padding: 8px 0; min-height: 44px; display: flex; align-items: center; }
+            .callaway-caddy { flex-direction: column; text-align: center; padding: 16px; }
         }
 
         /* ========== WHATSAPP FLOATING ========== */
