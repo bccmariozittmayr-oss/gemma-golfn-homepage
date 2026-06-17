@@ -1,65 +1,51 @@
 [
   {
-    "bild": "Platzerlaubniskurs Aktion Gültig bis 31102026.png",
-    "titel": "Golf-Platzreife 2026",
-    "text": "ab € 99,- · Inkl. Jahresmitgliedschaft (Wert € 1.846,-)",
-    "link": "https://platzreife.metzenhof.at/",
-    "expires": "2026-10-31"
-  },
-  {
-    "bild": "Workshop Juli 2026 1080_1080PNG Gültig bis Ende Juli.png",
-    "titel": "Workshops Juli 2026",
-    "text": "ab € 50,- · Kleine Gruppen, 2h intensives Training",
-    "link": "https://workshop.metzenhof.at/",
-    "expires": "2026-07-31"
-  },
-  {
-    "bild": "Gratis Kinder Golf Camp 2026 1080_1080 Gültig bis 18082026 .png",
-    "titel": "Gratis Kinder Golf Camp",
-    "text": "Für Kids 8–13 Jahre · Gratis Platzerlaubniskurs & Mitgliedschaft",
-    "link": "tel:+4372257389510",
-    "expires": "2026-08-18"
-  },
-  {
-    "bild": "5 Dutzden 60 Stück kaufen und nur 4 bezahlen Gültig bis 31072026.png",
-    "titel": "Callaway Ballaktion",
-    "text": "5 Dutzend kaufen, nur 4 bezahlen · Du sparst € 35,-",
-    "link": "mailto:office@gemma-golfn.at?subject=Ballaktion",
-    "expires": "2026-07-31"
-  },
-  {
-    "bild": "Big Max Aktion 1080_1080 Gültig bis 31072026.png",
-    "titel": "Big Max Trolley Aktion",
-    "text": "TI TWO ab € 229,- · Blade Trio ab € 299,-",
-    "link": "mailto:office@gemma-golfn.at?subject=Big Max Aktion",
-    "expires": "2026-07-31"
-  },
-  {
-    "bild": "Workshops Juni 2026 1080_1080 PNG Gültig bis Ende Juni.png",
+    "bild": "Workshops Juni 2026 1080_1080 PNG Gültig bis Ende Juni.jpg",
     "titel": "Workshops Juni 2026",
     "text": "ab € 50,- · Pitchen, Driver, Langes Spiel & mehr",
     "link": "https://workshop.metzenhof.at/",
     "expires": "2026-06-30"
   },
   {
-    "bild": "BAD GIRESBACH Gültig bis 23091080_1080.png",
+    "bild": "Platzerlaubniskurs Aktion Gültig bis 31102026.jpg",
+    "titel": "Golf-Platzreife 2026",
+    "text": "ab € 99,- · Inkl. Jahresmitgliedschaft (Wert € 1.846,-)",
+    "link": "https://platzreife.metzenhof.at/",
+    "expires": "2026-10-31"
+  },
+  {
+    "bild": "5 Dutzden 60 Stück kaufen und nur 4 bezahlen Gültig bis 31072026.jpg",
+    "titel": "Callaway Ballaktion",
+    "text": "5 Dutzend kaufen, nur 4 bezahlen · Du sparst € 35,-",
+    "link": "mailto:office@gemma-golfn.at?subject=Ballaktion",
+    "expires": "2026-07-31"
+  },
+  {
+    "bild": "Big Max Aktion 1080_1080 Gültig bis 31072026.jpg",
+    "titel": "Big Max Trolley Aktion",
+    "text": "TI TWO ab € 229,- · Blade Trio ab € 299,-",
+    "link": "mailto:office@gemma-golfn.at?subject=Big Max Aktion",
+    "expires": "2026-07-31"
+  },
+  {
+    "bild": "Gratis Kinder Golf Camp 2026 1080_1080 Gültig bis 18082026 .jpg",
+    "titel": "Gratis Kinder Golf Camp",
+    "text": "Für Kids 8–13 Jahre · Gratis Platzerlaubniskurs & Mitgliedschaft",
+    "link": "tel:+437225738950",
+    "expires": "2026-08-18"
+  },
+  {
+    "bild": "BAD GIRESBACH Gültig bis 23091080_1080.jpg",
     "titel": "Golfreise Bad Griesbach",
     "text": "ab € 749,- p.P. · 24.–27.09.2026 · Hotel Das Ludwig****s",
     "link": "https://www.die-golfreise.at",
     "expires": "2026-09-23"
   },
   {
-    "bild": "Workshop August 2026 1080_1080PNG Gültig bis Ende August.png",
-    "titel": "Workshops August 2026",
+    "bild": "Workshop Juli 2026 1080_1080PNG Gültig bis Ende Juli.jpg",
+    "titel": "Workshops Juli 2026",
     "text": "ab € 50,- · Kleine Gruppen, 2h intensives Training",
     "link": "https://workshop.metzenhof.at/",
-    "expires": "2026-08-31"
-  },
-  {
-    "bild": "Workshop August 2026 1080_1080PNG Gueltig bis Ende August.png",
-    "titel": "Workshops August 2026",
-    "text": "ab EUR 50,- - Kleine Gruppen, 2h intensives Training",
-    "link": "https://workshop.metzenhof.at/",
-    "expires": "2026-08-31"
+    "expires": "2026-07-31"
   }
 ]

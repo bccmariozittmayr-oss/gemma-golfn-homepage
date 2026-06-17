@@ -574,14 +574,35 @@
         .contact-strip p { opacity: 0.8; margin-bottom: 28px; font-size: 1.1rem; }
         .contact-strip .btn-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
+        /* ========== SPONSORS MARQUEE ========== */
+        .sponsors { background: var(--black); padding: 60px 0 50px; overflow: hidden; }
+        .sponsors-label {
+            text-align: center; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em;
+            text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 32px;
+        }
+        .marquee { position: relative; width: 100%; }
+        .marquee-track {
+            display: flex; gap: 60px; align-items: center; width: max-content;
+            animation: marquee 35s linear infinite;
+        }
+        .marquee:hover .marquee-track { animation-play-state: paused; }
+        .marquee-track a { flex-shrink: 0; display: flex; align-items: center; }
+        .marquee-track img {
+            height: 36px; max-width: 120px; object-fit: contain;
+            filter: grayscale(100%) brightness(0.7) invert(1); opacity: 0.45;
+            transition: all 0.4s ease; background: none; padding: 0; border-radius: 0;
+        }
+        .marquee-track a:hover img { filter: none; opacity: 1; }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
         /* ========== FOOTER ========== */
-        footer { background: var(--black); color: var(--white); padding: 80px 40px 40px; }
+        footer { background: var(--black); color: var(--white); padding: 80px 40px 40px; border-top: 1px solid rgba(255,255,255,0.08); }
         .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
         .footer-logo { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.5rem; margin-bottom: 16px; }
         .footer-brand p { color: rgba(255,255,255,0.45); font-size: 0.9rem; line-height: 1.6; max-width: 300px; }
-        .footer-partners { display: flex; gap: 20px; align-items: center; margin-top: 24px; flex-wrap: wrap; }
-        .footer-partners img { height: 32px; opacity: 0.7; border-radius: 4px; background: rgba(255,255,255,0.9); padding: 4px 8px; transition: opacity 0.2s; }
-        .footer-partners img:hover { opacity: 1; }
         .footer-col h4 {
             font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
             font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em;
@@ -679,6 +700,26 @@
             .bar71-content { padding: 60px 24px; }
         }
 
+        /* ========== WHATSAPP FLOATING ========== */
+        .wa-float {
+            position: fixed; bottom: 28px; right: 28px; z-index: 90;
+            width: 60px; height: 60px; border-radius: 50%;
+            background: #25D366; display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+        .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+        .wa-float svg { width: 32px; height: 32px; fill: white; }
+        .wa-float-label {
+            position: absolute; right: 72px; top: 50%; transform: translateY(-50%);
+            background: white; color: var(--black); padding: 8px 16px; border-radius: 10px;
+            font-size: 0.82rem; font-weight: 600; white-space: nowrap;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+            opacity: 0; pointer-events: none; transition: opacity 0.3s;
+        }
+        .wa-float:hover .wa-float-label { opacity: 1; }
+
         /* ========== ANIMATIONS ========== */
         .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
         .fade-up.visible { opacity: 1; transform: translateY(0); }
@@ -758,7 +799,7 @@
             <div>
                 <p class="section-label fade-up">Toptracer Range</p>
                 <h2 class="section-title fade-up">Train smarter.<br>Play better.</h2>
-                <p class="section-subtitle fade-up">10 Boxen mit Toptracer-Technologie. Deine Flugbahn in Echtzeit auf dem Screen. Trainiere dein Spiel oder spiel virtuelle Kurse wie Pebble Beach und St. Andrews – direkt aus deiner Box.</p>
+                <p class="section-subtitle fade-up">8 Boxen mit Toptracer-Technologie. Deine Flugbahn in Echtzeit auf dem Screen. Trainiere dein Spiel oder spiel virtuelle Kurse wie Pebble Beach und St. Andrews – direkt aus deiner Box.</p>
                 <div class="toptracer-features fade-up">
                     <div class="toptracer-feat"><strong>8</strong><span>Abschlagboxen</span></div>
                     <div class="toptracer-feat"><strong>365</strong><span>Tage im Jahr</span></div>
@@ -957,8 +998,8 @@
         <div class="bar71-slider" id="bar71Slider">
             <img src="BAR1.jpg" alt="BAR71 – Bar mit Cocktails und Panoramablick" class="active">
             <img src="Bar3.jpg" alt="BAR71 – Bartender mixt Drink bei Sonnenuntergang" loading="lazy">
-            <img src="BAR2.png" alt="BAR71 – Zapfhähne mit Golfplatz-Panorama" loading="lazy">
-            <img src="BAR4.png" alt="BAR71 – Terrassenblick bei Sonnenuntergang" loading="lazy">
+            <img src="BAR2.jpg" alt="BAR71 – Zapfhähne mit Golfplatz-Panorama" loading="lazy">
+            <img src="BAR4.jpg" alt="BAR71 – Terrassenblick bei Sonnenuntergang" loading="lazy">
             <img src="20211217_125053126_iOS 1.jpg" alt="BAR71 – Drinks und Gemma Golfn Cap in der Toptracer Box" loading="lazy">
         </div>
     </div>
@@ -1170,28 +1211,36 @@
     </div>
 </section>
 
+<!-- ==================== SPONSORS MARQUEE ==================== -->
+<section class="sponsors" id="sponsoren">
+    <p class="sponsors-label fade-up">Unsere Partner &amp; Sponsoren</p>
+    <div class="marquee">
+        <div class="marquee-track" id="marqueeTrack">
+            <a href="https://eu.callawaygolf.com/de/at/golf-clubs/" target="_blank"><img src="Sponsoren/callaway.png" alt="Callaway"></a>
+            <a href="https://odysseyeu.callawaygolf.com/on/demandware.store/Sites-CG4_EU-Site/de_AT/Home-Show" target="_blank"><img src="Sponsoren/odyssey.png" alt="Odyssey"></a>
+            <a href="https://www.adidas.at/golf" target="_blank"><img src="Sponsoren/adidas.png" alt="Adidas Golf"></a>
+            <a href="https://toptracer.com/" target="_blank"><img src="Sponsoren/toptracer.png" alt="Toptracer"></a>
+            <a href="https://www.apro.at/" target="_blank"><img src="Sponsoren/apro.png" alt="APRO Kassensysteme"></a>
+            <a href="https://www.drei.at/" target="_blank"><img src="Sponsoren/drei.png" alt="Drei Austria"></a>
+            <a href="https://handycheck.at" target="_blank"><img src="Sponsoren/handycheck.png" alt="handycheck.at"></a>
+            <a href="https://bigmaxgolf.com/" target="_blank"><img src="Sponsoren/BigMaxLogo_RZ.avif" alt="Big Max Golf"></a>
+            <a href="https://www.luftsysteme.at/de/" target="_blank"><img src="Sponsoren/lsa.jpg" alt="LSA Luft-Systeme Althuber"></a>
+            <a href="https://gebol.eu/" target="_blank"><img src="Sponsoren/gebol.png" alt="GEBOL"></a>
+            <a href="https://versicherung-linz.at/" target="_blank"><img src="Sponsoren/raab.png" alt="Raab Versicherung"></a>
+            <a href="https://www.soundsystems.at/" target="_blank"><img src="Sponsoren/soundsystems.png" alt="Soundsystems"></a>
+            <a href="https://www.porscheinterauto.at/kontakt/porsche-linz-leonding" target="_blank"><img src="Sponsoren/porsche.png" alt="Porsche Inter Auto"></a>
+            <a href="https://tatsch.at/" target="_blank"><img src="Sponsoren/tatsch.png" alt="Tatsch Displays"></a>
+            <a href="https://merkl-buerotechnik.com/" target="_blank"><img src="Sponsoren/BOX-3-300-x-174-px-1.avif" alt="Merkl Bürotechnik"></a>
+        </div>
+    </div>
+</section>
+
 <!-- ==================== FOOTER ==================== -->
 <footer>
     <div class="footer-grid">
         <div class="footer-brand">
             <div class="footer-logo">GEMMA GOLFN</div>
             <p>Österreichs coolste Golf- & Event-Driving-Range am Golfpark Metzenhof in Kronstorf, Oberösterreich.</p>
-            <div class="footer-partners" id="footer-partners">
-                <a href="https://eu.callawaygolf.com/de/at/golf-clubs/" target="_blank"><img src="Sponsoren/callaway.png" alt="Callaway" loading="lazy"></a>
-                <a href="https://odysseyeu.callawaygolf.com/on/demandware.store/Sites-CG4_EU-Site/de_AT/Home-Show" target="_blank"><img src="Sponsoren/odyssey.png" alt="Odyssey" loading="lazy"></a>
-                <a href="https://www.adidas.at/golf" target="_blank"><img src="Sponsoren/adidas.png" alt="Adidas Golf" loading="lazy"></a>
-                <a href="https://toptracer.com/" target="_blank"><img src="Sponsoren/toptracer.png" alt="Toptracer" loading="lazy"></a>
-                <a href="https://www.apro.at/" target="_blank"><img src="Sponsoren/apro.png" alt="APRO Kassensysteme" loading="lazy"></a>
-                <a href="https://www.drei.at/" target="_blank"><img src="Sponsoren/drei.png" alt="Drei Austria" loading="lazy"></a>
-                <a href="https://handycheck.at" target="_blank"><img src="Sponsoren/handycheck.png" alt="handycheck.at" loading="lazy"></a>
-                <a href="https://www.luftsysteme.at/de/" target="_blank"><img src="Sponsoren/lsa.jpg" alt="LSA Luft-Systeme Althuber" loading="lazy"></a>
-                <a href="https://gebol.eu/" target="_blank"><img src="Sponsoren/gebol.png" alt="GEBOL" loading="lazy"></a>
-                <a href="https://versicherung-linz.at/" target="_blank"><img src="Sponsoren/raab.png" alt="Raab Versicherung" loading="lazy"></a>
-                <a href="https://www.soundsystems.at/" target="_blank"><img src="Sponsoren/soundsystems.png" alt="Soundsystems" loading="lazy"></a>
-                <a href="https://www.porscheinterauto.at/kontakt/porsche-linz-leonding" target="_blank"><img src="Sponsoren/porsche.png" alt="Porsche Inter Auto" loading="lazy"></a>
-                <a href="https://tatsch.at/" target="_blank"><img src="Sponsoren/tatsch.png" alt="Tatsch Displays" loading="lazy"></a>
-                <a href="https://merkl-buerotechnik.com/" target="_blank"><img src="Sponsoren/BOX-3-300-x-174-px-1.avif" alt="Merkl Bürotechnik" loading="lazy"></a>
-            </div>
             <div class="footer-social">
                 <a href="https://www.facebook.com/gemmagolfn" target="_blank" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
                 <a href="https://www.instagram.com/gemmagolfn" target="_blank" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
@@ -1211,7 +1260,7 @@
             <a href="#team">Über uns</a>
             <a href="#bar71">BAR71</a>
             <a href="#metzenhof">Golfpark Metzenhof</a>
-            <a href="#footer-partners">Sponsoren & Partner</a>
+            <a href="#sponsoren">Sponsoren & Partner</a>
         </div>
         <div class="footer-col">
             <h4>Kontakt</h4>
@@ -1219,6 +1268,7 @@
             <a href="mailto:office@gemma-golfn.at">office@gemma-golfn.at</a>
             <a href="https://maps.google.com/?q=Dörfling+2+4484+Kronstorf" target="_blank">Dörfling 2, 4484 Kronstorf</a>
             <a href="#" style="margin-top:8px;font-weight:600;color:rgba(255,255,255,0.8);">Täglich 08:00 – 21:00</a>
+            <a href="https://wa.me/437225738950" target="_blank" style="margin-top:4px;color:#25D366;">WhatsApp News abonnieren</a>
         </div>
     </div>
     <div class="footer-bottom">
@@ -1232,6 +1282,12 @@
         </span>
     </div>
 </footer>
+
+<!-- ==================== WHATSAPP FLOAT ==================== -->
+<a href="https://wa.me/437225738950" target="_blank" class="wa-float" aria-label="WhatsApp News abonnieren">
+    <span class="wa-float-label">News &amp; Aktionen per WhatsApp</span>
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
 <script>
     // Transparent nav -> solid on scroll
@@ -1268,7 +1324,7 @@
                 }
                 slider.innerHTML = aktive.map(a => `
                     <a href="${a.link}" ${a.link.startsWith('http') ? 'target="_blank"' : ''} class="aktion-card fade-up">
-                        <img src="Aktuelle Aktionen/${a.bild}" alt="${a.titel}">
+                        <img src="Aktuelle Aktionen/${a.bild}" alt="${a.titel}" loading="lazy" decoding="async">
                         <div class="aktion-card-body">
                             <h3>${a.titel}</h3>
                             <p>${a.text}</p>
@@ -1336,6 +1392,12 @@
                 slot2[c2].classList.add('active');
             }, 4500);
         }, 2000);
+    })();
+
+    // Sponsors marquee – duplicate logos for seamless loop
+    (function() {
+        const track = document.getElementById('marqueeTrack');
+        if (track) track.innerHTML += track.innerHTML;
     })();
 
     // Hero image slider
