@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /Werkzeuge/
+
+Sitemap: https://gemma-golfn.at/sitemap.xml
