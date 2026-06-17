@@ -1,0 +1,12 @@
+{
+  "monat": "August",
+  "jahr": "2026",
+  "termine": [
+    {"datum": "05.08.2026", "thema": "Langes Spiel", "zeit": "16:00 - 18:00 Uhr"},
+    {"datum": "11.08.2026", "thema": "Driver", "zeit": "16:30 - 18:30 Uhr"},
+    {"datum": "18.08.2026", "thema": "Pitchen / Bunker", "zeit": "16:30 - 18:30 Uhr"},
+    {"datum": "20.08.2026", "thema": "Putten", "zeit": "16:30 - 18:30 Uhr"},
+    {"datum": "25.08.2026", "thema": "Kurzes Spiel", "zeit": "13:00 - 15:00 Uhr"},
+    {"datum": "28.08.2026", "thema": "Langes Spiel", "zeit": "14:00 - 16:00 Uhr"}
+  ]
+}

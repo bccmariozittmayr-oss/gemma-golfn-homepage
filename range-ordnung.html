@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Driving Range Ordnung – Gemma Golfn GmbH">
+    <title>Range-Ordnung – GEMMA GOLFN</title>
+    <link rel="icon" href="https://gemma-golfn.at/wp-content/uploads/2021/03/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --green-dark: #1a3c2b;
+            --green-primary: #1a693b;
+            --off-white: #f7f7f5;
+            --red-warn: #c0392b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Barlow', sans-serif; color: #1a1a1a; background: var(--off-white); line-height: 1.7; }
+        .legal-nav {
+            background: var(--green-dark); padding: 18px 40px; display: flex;
+            justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100;
+        }
+        .legal-nav a { color: white; text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+        .legal-nav .nav-logo img { height: 40px; filter: brightness(0) invert(1); transition: 0.3s; }
+        .legal-nav .nav-logo img:hover { opacity: 0.8; }
+        .legal-nav .back { opacity: 0.7; font-size: 0.9rem; }
+        .legal-nav .back:hover { opacity: 1; }
+        .legal-header {
+            background: var(--green-dark); color: white; padding: 60px 40px 50px; text-align: center;
+        }
+        .legal-header h1 {
+            font-family: 'Barlow Condensed', sans-serif; font-size: 2.8rem; font-weight: 800;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .legal-header p { opacity: 0.6; margin-top: 8px; font-size: 0.95rem; }
+        .rules {
+            max-width: 800px; margin: 0 auto; padding: 50px 24px 80px;
+            display: grid; gap: 0;
+        }
+        .rule {
+            display: flex; gap: 20px; align-items: flex-start;
+            padding: 24px 0; border-bottom: 1px solid #e0e0e0;
+        }
+        .rule:last-child { border-bottom: none; }
+        .rule-icon {
+            flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px;
+            display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+            background: var(--off-white); border: 1px solid #e0e0e0;
+        }
+        .rule-icon.warn { background: #fdecea; border-color: #f5c6cb; }
+        .rule p { color: #333; font-size: 0.95rem; }
+        .rule strong { color: var(--green-dark); font-size: 1rem; display: block; margin-bottom: 2px; }
+        .rule .warn-text { color: var(--red-warn); font-weight: 700; }
+        .legal-footer {
+            background: var(--green-dark); color: rgba(255,255,255,0.6); text-align: center;
+            padding: 24px; font-size: 0.85rem;
+        }
+        .legal-footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+        @media (max-width: 640px) {
+            .legal-header { padding: 40px 20px 30px; }
+            .legal-header h1 { font-size: 2rem; }
+            .rule { gap: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="legal-nav">
+    <a href="index.html" class="nav-logo"><img src="https://gemma-golfn.at/wp-content/uploads/2021/03/favicon.png" alt="GEMMA GOLFN"></a>
+    <a href="index.html" class="back">&larr; Zurück zur Startseite</a>
+</nav>
+
+<header class="legal-header">
+    <h1>Driving Range Ordnung</h1>
+    <p>Für ein sicheres und faires Miteinander auf der Anlage</p>
+</header>
+
+<main class="rules">
+
+    <div class="rule">
+        <div class="rule-icon warn">⛔</div>
+        <div>
+            <strong class="warn-text">Range-Bälle auf Spielbahnen verboten</strong>
+            <p>Das Spielen mit Range-Bällen auf den Spielbahnen ist strengstens verboten!</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon warn">🚫</div>
+        <div>
+            <strong class="warn-text">Keine Range-Bälle einsammeln oder aufbewahren</strong>
+            <p>Das Einsammeln von Range-Bällen ist zu keinem Zeitpunkt erlaubt. Es dürfen keine Rangebälle (weder im Korb noch in der Golftasche) aufbewahrt werden, um diese zu einem späteren Zeitpunkt zu spielen.</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon">🏌️</div>
+        <div>
+            <strong>Nur aus Boxen oder Rasenabschlägen abschlagen</strong>
+            <p>Es ist ausschließlich aus den Boxen oder den gesetzten Rasenabschlagplätzen abzuschlagen. Sind keine Rasenabschläge gesetzt, benutze bitte die Matten-Abschlagplätze, da dann die Rasenabschläge zur Schonung gesperrt sind.</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon">💳</div>
+        <div>
+            <strong>Toptracer vorab bezahlen</strong>
+            <p>Wenn du Toptracer benutzt, ist dieser im Vorhinein im Sekretariat oder online zu bezahlen.</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon warn">⚠️</div>
+        <div>
+            <strong class="warn-text">Box niemals nach vorne verlassen – LEBENSGEFAHR!</strong>
+            <p>Bitte verlasse die Box niemals nach vorne! Im 1. Stock nur bis zur roten Linie gehen – ABSTURZGEFAHR!</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon">🎯</div>
+        <div>
+            <strong>Nur Range-Ziele anspielen</strong>
+            <p>Bitte spiele nur die Ziele auf der Range an. Es ist untersagt, von den Boxen und den Abschlagplätzen das Pitching-Grün oder Grün 5 anzuspielen.</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon">🧹</div>
+        <div>
+            <strong>Box sauber hinterlassen</strong>
+            <p>Bitte verlasse die Boxen und die Abschlagplätze so wie du sie vorgefunden hast. Entsorge deinen Müll in den dafür vorgesehenen Mistkübeln und trage die leeren Ballkörbe zum Ballautomaten zurück.</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon">🔧</div>
+        <div>
+            <strong>Schäden sofort melden</strong>
+            <p>Für Beschädigungen an den Boxen (Glas, Panele, …) haftet der Teilnehmer selbst. Diese sind umgehend im Sekretariat zu melden. Bitte benutze das Inventar (Kühlschränke, Tische, …) sorgfältig.</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon">🛡️</div>
+        <div>
+            <strong>Sicherheit geht vor</strong>
+            <p>Bitte achte stets auf deine Sicherheit und die aller Benutzer unserer Anlage. Die Gemma Golfn GmbH haftet nicht für Unfälle.</p>
+        </div>
+    </div>
+
+    <div class="rule">
+        <div class="rule-icon">👋</div>
+        <div>
+            <strong>Anweisungen des Personals befolgen</strong>
+            <p>Bitte befolge die Anweisungen des gesamten Personals der Gemma Golfn GmbH und des Golfpark Metzenhof.</p>
+        </div>
+    </div>
+
+</main>
+
+<footer class="legal-footer">
+    <span>© 2026 Gemma Golfn GmbH</span> ·
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a> ·
+    <a href="agb.html">AGB</a> ·
+    <a href="barrierefreiheit.html">Barrierefreiheit</a> ·
+    <a href="range-ordnung.html">Range-Ordnung</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Secrets
+.env
+Werkzeuge/.env
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Videos (too large for git)
+*.mp4
+*.mov
+
+# Temporary/generated
+hero-building-golden.jpg
+hero-building-golden-gemini.jpg
+hero-building.png
+
+# Python
+__pycache__/
+*.pyc

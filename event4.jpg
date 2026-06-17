@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="de" class="html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_custom html_header_sticky html_header_shrinking_disabled html_mobile_menu_tablet html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_minimal_header html_av-overlay-side html_av-overlay-side-classic html_av-submenu-noclone html_entry_id_1630 av-cookies-no-cookie-consent av-no-preview html_text_menu_active ">
+<head>
+<meta charset="UTF-8" />
+
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<meta name='robots' content='noindex, follow' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Page not found - Gemma Golfn</title>
+	<meta property="og:locale" content="de_DE" />
+	<meta property="og:title" content="Page not found - Gemma Golfn" />
+	<meta property="og:site_name" content="Gemma Golfn" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://gemma-golfn.at/#website","url":"https://gemma-golfn.at/","name":"Gemma Golfn","description":"powered by Toptracer Range","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://gemma-golfn.at/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"de"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<script type='application/javascript'  id='pys-version-script'>console.log('PixelYourSite Free version 11.1.5.2');</script>
+<link rel="alternate" type="application/rss+xml" title="Gemma Golfn &raquo; Feed" href="https://gemma-golfn.at/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Gemma Golfn &raquo; Kommentar-Feed" href="https://gemma-golfn.at/comments/feed/" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='avia-grid-css' href='https://gemma-golfn.at/wp-content/themes/enfold/css/grid.css?ver=4.7.6.4' media='all' />
+<link rel='stylesheet' id='avia-base-css' href='https://gemma-golfn.at/wp-content/themes/enfold/css/base.css?ver=4.7.6.4' media='all' />
+<link rel='stylesheet' id='avia-layout-css' href='https://gemma-golfn.at/wp-content/themes/enfold/css/layout.css?ver=4.7.6.4' media='all' />
+<link rel='stylesheet' id='avia-module-blog-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/blog/blog.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-postslider-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/postslider/postslider.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-button-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/buttons/buttons.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-buttonrow-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/buttonrow/buttonrow.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-comments-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/comments/comments.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-contact-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contact.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-countdown-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdown.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-gallery-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-gridrow-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/grid_row/grid_row.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-heading-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/heading/heading.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-hr-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/hr/hr.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-image-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/image/image.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-contentpartner-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contentslider/contentslider.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-masonry-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entries.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-siteloader-css' href='https://gemma-golfn.at/wp-content/themes/enfold/css/avia-snippet-site-preloader.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-accordion-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordion.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-fullsize-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullsize/slideshow_fullsize.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-fullscreen-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreen.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-slideshow-ls-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_layerslider/slideshow_layerslider.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-social-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/social_share/social_share.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-table-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/table/table.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-tabs-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='avia-module-video-css' href='https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.css?ver=7.0' media='all' />
+<link rel='stylesheet' id='local-fonts-css' href='https://gemma-golfn.at/wp-content/plugins/Fonts-lokal/css/local-fonts-style.css?ver=7.0' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='avia-scs-css' href='https://gemma-golfn.at/wp-content/themes/enfold/css/shortcodes.css?ver=4.7.6.4' media='all' />
+<link rel='stylesheet' id='avia-popup-css-css' href='https://gemma-golfn.at/wp-content/themes/enfold/js/aviapopup/magnific-popup.css?ver=4.7.6.4' media='screen' />
+<link rel='stylesheet' id='avia-lightbox-css' href='https://gemma-golfn.at/wp-content/themes/enfold/css/avia-snippet-lightbox.css?ver=4.7.6.4' media='screen' />
+<link rel='stylesheet' id='avia-widget-css-css' href='https://gemma-golfn.at/wp-content/themes/enfold/css/avia-snippet-widget.css?ver=4.7.6.4' media='screen' />
+<link rel='stylesheet' id='avia-dynamic-css' href='https://gemma-golfn.at/wp-content/uploads/dynamic_avia/gemma_golfn.css?ver=64070c923bd57' media='all' />
+<link rel='stylesheet' id='avia-custom-css' href='https://gemma-golfn.at/wp-content/themes/enfold/css/custom.css?ver=4.7.6.4' media='all' />
+<link rel='stylesheet' id='avia-style-css' href='https://gemma-golfn.at/wp-content/themes/enfold-gemma/style.css?ver=4.7.6.4' media='all' />
+<link rel='stylesheet' id='borlabs-cookie-custom-css' href='https://gemma-golfn.at/wp-content/cache/borlabs-cookie/1/borlabs-cookie-1-de.css?ver=3.4.2-89' media='all' />
+<script id="jquery-core-js-extra">
+var pysFacebookRest = {"restApiUrl":"https://gemma-golfn.at/wp-json/pys-facebook/v1/event","debug":""};
+//# sourceURL=jquery-core-js-extra
+</script>
+<script id="jquery-core-js" src="https://gemma-golfn.at/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://gemma-golfn.at/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="custom-script-js" src="https://gemma-golfn.at/wp-content/themes/enfold-gemma/custom.js?ver=7.0"></script>
+<script id="avia-compat-js" src="https://gemma-golfn.at/wp-content/themes/enfold/js/avia-compat.js?ver=4.7.6.4"></script>
+<script data-no-optimize="1" data-no-minify="1" data-cfasync="false" id="borlabs-cookie-config-js" src="https://gemma-golfn.at/wp-content/cache/borlabs-cookie/1/borlabs-cookie-config-de.json.js?ver=3.4.2-127"></script>
+<script data-no-optimize="1" data-no-minify="1" data-cfasync="false" id="borlabs-cookie-prioritize-js" src="https://gemma-golfn.at/wp-content/plugins/borlabs-cookie/assets/javascript/borlabs-cookie-prioritize.min.js?ver=3.4.2"></script>
+<script id="jquery-bind-first-js" src="https://gemma-golfn.at/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=0.2.3"></script>
+<script id="js-cookie-pys-js" src="https://gemma-golfn.at/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3"></script>
+<script id="js-tld-js" src="https://gemma-golfn.at/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1"></script>
+<script id="pys-js-extra">
+var pysOptions = {"staticEvents":{"facebook":{"custom_event":[{"delay":30,"type":"static","custom_event_post_id":2127,"name":"timeonpage_30","pixelIds":["144073177874151"],"eventID":"a0a33351-0fa2-4127-96c3-60ca201486f6","params":{"page_title":"The Gemma Golfn Headcover - Limited Edition \u2013 Driver","post_type":"post","post_id":1630,"plugin":"PixelYourSite","user_role":"guest","event_url":"gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-%96-4.jpg"},"e_id":"custom_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}],"init_event":[{"delay":0,"type":"static","ajaxFire":false,"name":"PageView","pixelIds":["144073177874151"],"eventID":"5d3043cf-8004-4465-981f-772ddfded794","params":{"post_category":"Allgemein","page_title":"The Gemma Golfn Headcover - Limited Edition \u2013 Driver","post_type":"post","post_id":1630,"plugin":"PixelYourSite","user_role":"guest","event_url":"gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-%96-4.jpg"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":{"automatic_event_form":{"facebook":{"delay":0,"type":"dyn","name":"Form","pixelIds":["144073177874151"],"eventID":"10857d84-9b08-44d5-8a96-ac5a5e308a10","params":{"page_title":"The Gemma Golfn Headcover - Limited Edition \u2013 Driver","post_type":"post","post_id":1630,"plugin":"PixelYourSite","user_role":"guest","event_url":"gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-%96-4.jpg"},"e_id":"automatic_event_form","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}},"automatic_event_download":{"facebook":{"delay":0,"type":"dyn","name":"Download","extensions":["","doc","exe","js","pdf","ppt","tgz","zip","xls"],"pixelIds":["144073177874151"],"eventID":"a4d9f030-5625-4ee4-a3aa-756d5121f95e","params":{"page_title":"The Gemma Golfn Headcover - Limited Edition \u2013 Driver","post_type":"post","post_id":1630,"plugin":"PixelYourSite","user_role":"guest","event_url":"gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-%96-4.jpg"},"e_id":"automatic_event_download","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}},"automatic_event_comment":{"facebook":{"delay":0,"type":"dyn","name":"Comment","pixelIds":["144073177874151"],"eventID":"291edc2e-4aaa-40da-9351-9de4a21af12d","params":{"page_title":"The Gemma Golfn Headcover - Limited Edition \u2013 Driver","post_type":"post","post_id":1630,"plugin":"PixelYourSite","user_role":"guest","event_url":"gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-%96-4.jpg"},"e_id":"automatic_event_comment","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}},"automatic_event_scroll":{"facebook":{"delay":0,"type":"dyn","name":"PageScroll","scroll_percent":30,"pixelIds":["144073177874151"],"eventID":"93e49c5b-af2d-4531-abb0-628b29114357","params":{"page_title":"The Gemma Golfn Headcover - Limited Edition \u2013 Driver","post_type":"post","post_id":1630,"plugin":"PixelYourSite","user_role":"guest","event_url":"gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-%96-4.jpg"},"e_id":"automatic_event_scroll","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}},"automatic_event_time_on_page":{"facebook":{"delay":0,"type":"dyn","name":"TimeOnPage","time_on_page":30,"pixelIds":["144073177874151"],"eventID":"274ccc03-fcbf-420a-ba1e-be48ec701412","params":{"page_title":"The Gemma Golfn Headcover - Limited Edition \u2013 Driver","post_type":"post","post_id":1630,"plugin":"PixelYourSite","user_role":"guest","event_url":"gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-%96-4.jpg"},"e_id":"automatic_event_time_on_page","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}}},"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["144073177874151"],"advancedMatching":[],"advancedMatchingEnabled":true,"removeMetadata":false,"wooVariableAsSimple":false,"serverApiEnabled":true,"wooCRSendFromServer":false,"send_external_id":true,"enabled_medical":false,"do_not_track_medical_param":["event_url","post_title","page_title","landing_page","content_name","categories","category_name","tags"],"meta_ldu":false},"debug":"","siteUrl":"https://gemma-golfn.at","ajaxUrl":"https://gemma-golfn.at/wp-admin/admin-ajax.php","ajax_event":"ece9a53b3f","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","useSendBeacon":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":true,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"reddit_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":true,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficSource":"direct","TrafficLanding":"undefined","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":false},"edd":{"enabled":false},"cache_bypass":"1781680540"};
+//# sourceURL=pys-js-extra
+</script>
+<script id="pys-js-before">
+(function(){
+if (typeof pysOptions === 'undefined' || typeof pysOptions.automatic === 'undefined') {
+    return;
+}
+
+//check if consent for vimeo/youtube
+const cookies = document.cookie.split('; ');
+let consentVimeo = false;
+let consentYoutube = false;
+for (let c of cookies) {
+    if (c.startsWith('borlabs-cookie=')) {
+        consentVimeo = c.includes('%22vimeo%22');
+        consentYoutube = c.includes('%22youtube%22');
+        break;
+    }
+}
+
+if (pysOptions.automatic.hasOwnProperty('enable_vimeo')) {
+    pysOptions.automatic.enable_vimeo = pysOptions.automatic.enable_vimeo && consentVimeo
+}
+if (pysOptions.automatic.hasOwnProperty('enable_youtube')) {
+    pysOptions.automatic.enable_youtube = pysOptions.automatic.enable_youtube && consentYoutube
+}
+})();
+//# sourceURL=pys-js-before
+</script>
+<script id="pys-js" src="https://gemma-golfn.at/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=11.1.5.2"></script>
+<link rel="https://api.w.org/" href="https://gemma-golfn.at/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://gemma-golfn.at/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="Gemma Golfn RSS2 Feed" href="https://gemma-golfn.at/feed/" />
+<link rel="pingback" href="https://gemma-golfn.at/xmlrpc.php" />
+
+<style type='text/css' media='screen'>
+ #top #header_main > .container, #top #header_main > .container .main_menu  .av-main-nav > li > a, #top #header_main #menu-item-shop .cart_dropdown_link{ height:150px; line-height: 150px; }
+ .html_top_nav_header .av-logo-container{ height:150px;  }
+ .html_header_top.html_header_sticky #top #wrap_all #main{ padding-top:148px; } 
+</style>
+<!--[if lt IE 9]><script src="https://gemma-golfn.at/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+<link rel="icon" href="https://gemma-golfn.at/wp-content/uploads/2021/03/favicon.png" type="image/png">
+<script data-borlabs-cookie-script-blocker-ignore>
+if ('0' === '1' && ('1' === '1' || '1' === '1')) {
+	window['gtag_enable_tcf_support'] = true;
+}
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('set', 'developer_id.dYjRjMm', true);
+if('1' === '1' || '1' === '1') {
+	if (window.BorlabsCookieGoogleConsentModeDefaultSet !== true) {
+        let getCookieValue = function (name) {
+            return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
+        };
+        let cookieValue = getCookieValue('borlabs-cookie-gcs');
+        let consentsFromCookie = {};
+        if (cookieValue !== '') {
+            consentsFromCookie = JSON.parse(decodeURIComponent(cookieValue));
+        }
+        let defaultValues = {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'functionality_storage': 'denied',
+            'personalization_storage': 'denied',
+            'security_storage': 'denied',
+            'wait_for_update': 500,
+        };
+        gtag('consent', 'default', { ...defaultValues, ...consentsFromCookie });
+    }
+    window.BorlabsCookieGoogleConsentModeDefaultSet = true;
+    let borlabsCookieConsentChangeHandler = function () {
+        window.dataLayer = window.dataLayer || [];
+        if (typeof gtag !== 'function') { function gtag(){dataLayer.push(arguments);} }
+
+        let getCookieValue = function (name) {
+            return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
+        };
+        let cookieValue = getCookieValue('borlabs-cookie-gcs');
+        let consentsFromCookie = {};
+        if (cookieValue !== '') {
+            consentsFromCookie = JSON.parse(decodeURIComponent(cookieValue));
+        }
+
+        consentsFromCookie.ad_storage = BorlabsCookie.Consents.hasConsent('google-ads') ? 'granted' : 'denied';
+		consentsFromCookie.ad_user_data = BorlabsCookie.Consents.hasConsent('google-ads') ? 'granted' : 'denied';
+		consentsFromCookie.ad_personalization = BorlabsCookie.Consents.hasConsent('google-ads') ? 'granted' : 'denied';
+
+        BorlabsCookie.CookieLibrary.setCookie(
+            'borlabs-cookie-gcs',
+            JSON.stringify(consentsFromCookie),
+            BorlabsCookie.Settings.automaticCookieDomainAndPath.value ? '' : BorlabsCookie.Settings.cookieDomain.value,
+            BorlabsCookie.Settings.cookiePath.value,
+            BorlabsCookie.Cookie.getPluginCookie().expires,
+            BorlabsCookie.Settings.cookieSecure.value,
+            BorlabsCookie.Settings.cookieSameSite.value
+        );
+    }
+    document.addEventListener('borlabs-cookie-consent-saved', borlabsCookieConsentChangeHandler);
+    document.addEventListener('borlabs-cookie-handle-unblock', borlabsCookieConsentChangeHandler);
+}
+if('1' === '1') {
+    gtag("js", new Date());
+
+    gtag("config", "AW-00000000");
+
+    (function (w, d, s, i) {
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s);
+    j.async = true;
+    j.src =
+        "https://www.googletagmanager.com/gtag/js?id=" + i;
+    f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "AW-00000000");
+}
+</script><script data-borlabs-cookie-script-blocker-ignore>
+if ('0' === '1' && ('1' === '1' || '1' === '1')) {
+    window['gtag_enable_tcf_support'] = true;
+}
+window.dataLayer = window.dataLayer || [];
+if (typeof gtag !== 'function') {
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+}
+gtag('set', 'developer_id.dYjRjMm', true);
+if ('1' === '1' || '1' === '1') {
+    if (window.BorlabsCookieGoogleConsentModeDefaultSet !== true) {
+        let getCookieValue = function (name) {
+            return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
+        };
+        let cookieValue = getCookieValue('borlabs-cookie-gcs');
+        let consentsFromCookie = {};
+        if (cookieValue !== '') {
+            consentsFromCookie = JSON.parse(decodeURIComponent(cookieValue));
+        }
+        let defaultValues = {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'functionality_storage': 'denied',
+            'personalization_storage': 'denied',
+            'security_storage': 'denied',
+            'wait_for_update': 500,
+        };
+        gtag('consent', 'default', { ...defaultValues, ...consentsFromCookie });
+    }
+    window.BorlabsCookieGoogleConsentModeDefaultSet = true;
+    let borlabsCookieConsentChangeHandler = function () {
+        window.dataLayer = window.dataLayer || [];
+        if (typeof gtag !== 'function') { function gtag(){dataLayer.push(arguments);} }
+
+        let getCookieValue = function (name) {
+            return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
+        };
+        let cookieValue = getCookieValue('borlabs-cookie-gcs');
+        let consentsFromCookie = {};
+        if (cookieValue !== '') {
+            consentsFromCookie = JSON.parse(decodeURIComponent(cookieValue));
+        }
+
+        consentsFromCookie.analytics_storage = BorlabsCookie.Consents.hasConsent('google-analytics') ? 'granted' : 'denied';
+
+        BorlabsCookie.CookieLibrary.setCookie(
+            'borlabs-cookie-gcs',
+            JSON.stringify(consentsFromCookie),
+            BorlabsCookie.Settings.automaticCookieDomainAndPath.value ? '' : BorlabsCookie.Settings.cookieDomain.value,
+            BorlabsCookie.Settings.cookiePath.value,
+            BorlabsCookie.Cookie.getPluginCookie().expires,
+            BorlabsCookie.Settings.cookieSecure.value,
+            BorlabsCookie.Settings.cookieSameSite.value
+        );
+    }
+    document.addEventListener('borlabs-cookie-consent-saved', borlabsCookieConsentChangeHandler);
+    document.addEventListener('borlabs-cookie-handle-unblock', borlabsCookieConsentChangeHandler);
+}
+if ('1' === '1') {
+    gtag("js", new Date());
+    gtag("config", "G-00000000", {"anonymize_ip": true});
+
+    (function (w, d, s, i) {
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s);
+        j.async = true;
+        j.src =
+            "https://www.googletagmanager.com/gtag/js?id=" + i;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "G-00000000");
+}
+</script><script data-no-optimize="1" data-no-minify="1" data-cfasync="false" data-borlabs-cookie-script-blocker-ignore>
+	if ('0' === '1' && '1' === '1') {
+		window['gtag_enable_tcf_support'] = true;
+	}
+	window.dataLayer = window.dataLayer || [];
+	if (typeof gtag !== 'function') { function gtag(){dataLayer.push(arguments);} }
+	gtag('set', 'developer_id.dYjRjMm', true);
+	if ('1' === '1') {
+		let getCookieValue = function (name) {
+			return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || '';
+		};
+		let cookieValue = getCookieValue('borlabs-cookie-gcs');
+		let consentsFromCookie = {};
+		if (cookieValue !== '') {
+			 consentsFromCookie = JSON.parse(decodeURIComponent(cookieValue));
+		}
+		let defaultValues = {
+			'ad_storage': 'denied',
+			'ad_user_data': 'denied',
+			'ad_personalization': 'denied',
+			'analytics_storage': 'denied',
+			'functionality_storage': 'denied',
+			'personalization_storage': 'denied',
+			'security_storage': 'denied',
+			'wait_for_update': 500,
+		};
+		gtag('consent', 'default', { ...defaultValues, ...consentsFromCookie });
+		gtag('set', 'ads_data_redaction', true);
+	}
+
+	if('0' === '1') {
+		var url = new URL(window.location.href);
+
+		if ((url.searchParams.has('gtm_debug') && url.searchParams.get('gtm_debug') !== '') || document.cookie.indexOf('__TAG_ASSISTANT=') !== -1 || document.documentElement.hasAttribute('data-tag-assistant-present')) {
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-KFQL2NQR");
+		} else {
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+"https://gemma-golfn.at/wp-content/uploads/borlabs-cookie/"+i+'.js?ver=sxxejv4z';f.parentNode.insertBefore(j,f);
+})(window,document,"script","dataLayer","GTM-KFQL2NQR");
+		}
+  	}
+
+	(function () {
+		var borlabsCookieConsentChangeHandler = function () {
+			window.dataLayer = window.dataLayer || [];
+			if (typeof gtag !== 'function') { function gtag(){dataLayer.push(arguments);} }
+
+			let gtmConsents = {};
+			if ('1' === '1') {
+				if ('0' === '1') {
+					gtmConsents = {
+						'analytics_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('statistics') === true ? 'granted' : 'denied',
+						'functionality_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('statistics') === true ? 'granted' : 'denied',
+						'personalization_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('marketing') === true ? 'granted' : 'denied',
+						'security_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('statistics') === true ? 'granted' : 'denied',
+					};
+				} else {
+					gtmConsents = {
+						'ad_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('marketing') === true ? 'granted' : 'denied',
+						'ad_user_data': BorlabsCookie.Consents.hasConsentForServiceGroup('marketing') === true ? 'granted' : 'denied',
+						'ad_personalization': BorlabsCookie.Consents.hasConsentForServiceGroup('marketing') === true ? 'granted' : 'denied',
+						'analytics_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('statistics') === true ? 'granted' : 'denied',
+						'functionality_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('statistics') === true ? 'granted' : 'denied',
+						'personalization_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('marketing') === true ? 'granted' : 'denied',
+						'security_storage': BorlabsCookie.Consents.hasConsentForServiceGroup('statistics') === true ? 'granted' : 'denied',
+					};
+				}
+				BorlabsCookie.CookieLibrary.setCookie(
+					'borlabs-cookie-gcs',
+				  	JSON.stringify(gtmConsents),
+					BorlabsCookie.Settings.automaticCookieDomainAndPath.value ? '' : BorlabsCookie.Settings.cookieDomain.value,
+					BorlabsCookie.Settings.cookiePath.value,
+					BorlabsCookie.Cookie.getPluginCookie().expires,
+					BorlabsCookie.Settings.cookieSecure.value,
+					BorlabsCookie.Settings.cookieSameSite.value
+				);
+				gtag('consent', 'update', gtmConsents);
+			}
+
+			var consents = BorlabsCookie.Cookie.getPluginCookie().consents;
+			for (var serviceGroup in consents) {
+				for (var service of consents[serviceGroup]) {
+					if (!window.BorlabsCookieGtmPackageSentEvents.includes(service) && service !== 'borlabs-cookie') {
+						window.dataLayer.push({
+							event: 'borlabs-cookie-opt-in-'+service,
+						});
+						window.BorlabsCookieGtmPackageSentEvents.push(service);
+					}
+				}
+			}
+		  	var afterConsentsEvent = document.createEvent('Event');
+		    afterConsentsEvent.initEvent('borlabs-cookie-google-tag-manager-after-consents', true, true);
+		  	document.dispatchEvent(afterConsentsEvent);
+		};
+		window.BorlabsCookieGtmPackageSentEvents = [];
+		document.addEventListener('borlabs-cookie-consent-saved', borlabsCookieConsentChangeHandler);
+		document.addEventListener('borlabs-cookie-handle-unblock', borlabsCookieConsentChangeHandler);
+	})();
+</script><script>
+	var brlbsPysInitialized = false;
+	function brlbsPysLoadPixel(load) {
+		if (brlbsPysInitialized === true) {
+			load();
+		} else {
+			if (BorlabsCookie.Consents.hasConsent('pixel-your-site')) {
+				document.addEventListener('brlbsPysInitialized', () => { load(); });
+			} else {
+				load();
+			}
+		}
+	}
+</script><meta name="facebook-domain-verification" content="xl8bff4mopp5h5xyxjc9fai7iahcgw" /><style id="wp-custom-css">
+/** einjahres fest 2022 **/
+@media screen and (min-width: 900px){
+	.flex-events-cols{
+		display: flex;
+		margin-top: 30px;
+	}
+	.flex-events-cols>div{
+		width: 48%;
+		margin: 0 auto;
+	}
+}
+
+.margin-top{
+	margin-top: 20px;
+}
+@media screen and (max-width: 900px){
+	.margin-top-mobile{
+		margin-top: 20px;
+	}
+	.margin-top-mobile-small{
+		margin-top: 10px;
+	}
+}
+
+.small-text{
+	font-size: 14px;
+}
+
+.btn-green-border{
+	background: transparent;
+	border: 2px solid #1a6938!important;
+	color: #1a6938;
+	padding: 5px 15px;
+	line-height: 32px;
+	font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+	text-transform: uppercase;
+}
+.btn-green-border:hover{
+	background: transparent;
+	border: 2px solid #1a693880!important;
+	color: #1a693880;
+	padding: 5px 15px;
+	line-height: 32px;
+	text-decoration: none;
+}
+
+
+.firmenevents-section .abstand-top-button{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.firmenevents-section .padding-top{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.firmenevents-section #tracersec1text1 p:nth-child(1){
+	padding-bottom: 10px;
+}
+
+
+
+#top #header .main_menu li.button-book-box.av-menu-button-colored a .avia-menu-text{
+	background: transparent;
+	border: 2px solid #1a6938;
+	color: #1a6938;
+	padding: 0 15px;
+	line-height: 32px;
+}
+
+
+#top #header .main_menu li.av-menu-button-colored.button-book-box{
+	margin-right:20px;
+}
+
+@media only screen and (max-width: 1600px){
+	#top #header .main_menu li {
+			margin-right: 25px;
+	}
+	#top #header .main_menu li a .avia-menu-text{
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1510px){
+	li#menu-item-1339{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 900px){
+	.company-events-col{
+		max-width: 60%!important;
+		margin: 0 auto!important;
+	}
+		#company-events-container{
+		width: 100%;
+	}
+}
+
+
+
+.responsive #top .slideshow_caption h2.header-home-text{
+	font-size: 30px!important;
+    text-transform: uppercase!important;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+@media screen and (min-width: 800px){
+	.responsive #top .slideshow_caption h2.header-home-text{
+		font-size: 40px!important;
+    max-width: 90%;
+    padding-bottom: 1rem;
+	}
+}
+@media screen and (min-width: 1000px){
+	.responsive #top .slideshow_caption h2.header-home-text{
+		font-size: 48px!important;
+	}
+}
+@media screen and (min-width: 1200px){
+	.responsive #top .slideshow_caption h2.header-home-text{
+		font-size: 55px!important;
+    padding-bottom: 3rem;
+	}
+}
+
+
+.slider-home img{
+	filter: brightness(0.9);
+}
+
+#top .grid-wrapper .flex_column_table_cell{
+	background-size: cover!important;
+}
+
+#top .grid-wrapper h2{
+	color: #fff;
+	font-size: 36px;
+    text-transform: uppercase!important;
+    font-weight: 900;
+    max-width: 95%;
+    padding-bottom: 35px;
+	margin: 0 auto;
+}
+
+#top .grid-wrapper .av-flex-placeholder{
+	width: 1%;
+}
+
+@media screen and (min-width: 900px){
+	#top .grid-wrapper h2{
+		font-size: 38px;
+    max-width: 90%;
+    padding-bottom: 3rem;
+	}
+	#top .grid-wrapper .flex_column_table_cell{
+		padding: 30px 15px!important;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	#top .grid-wrapper h2{
+		font-size: 45px;
+    max-width: 90%;
+    padding-bottom: 3rem;
+	}
+}
+@media screen and (min-width: 1200px){
+	#top .grid-wrapper h2{
+		font-size: 51px;
+    max-width: 90%;
+    padding-bottom: 2.4rem;
+	}
+		#top .grid-wrapper .flex_column_table_cell{
+		padding: 50px 15px!important;
+	}
+}
+
+.input_checkbox_label {
+	font-weight: 400 !important;
+}
+
+</style>
+<style type='text/css'>
+@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal; font-display: auto;
+src: url('https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff2') format('woff2'),
+url('https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.woff') format('woff'),
+url('https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.ttf') format('truetype'), 
+url('https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.svg#entypo-fontello') format('svg'),
+url('https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot'),
+url('https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-template-builder/assets/fonts/entypo-fontello.eot?#iefix') format('embedded-opentype');
+} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }
+</style>
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Enfold
+Version: 4.7.6.4
+Installed: enfold
+AviaFramework Version: 5.0
+AviaBuilder Version: 4.7.6.4
+aviaElementManager Version: 1.0.1
+- - - - - - - - - - -
+ChildTheme: Gemma Golfn
+ChildTheme Version: 1.0
+ChildTheme Installed: enfold
+
+ML:256-PU:15-PLA:13
+WP:7.0
+Compress: CSS:disabled - JS:disabled
+Updates: disabled
+PLAu:13
+--><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+
+
+
+<body id="top" class="error404 wp-theme-enfold wp-child-theme-enfold-gemma  rtl_columns stretched helvetica-neue-websave helvetica_neue" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
+
+	
+	<div id='wrap_all'>
+
+	
+<header id='header' class='all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_custom av_header_sticky av_header_shrinking_disabled av_header_stretch_disabled av_mobile_menu_tablet av_header_searchicon_disabled av_header_unstick_top_disabled av_minimal_header av_bottom_nav_disabled  av_header_border_disabled'  role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader" >
+
+		<div  id='header_main' class='container_wrap container_wrap_logo'>
+	
+        <div class='container av-logo-container'><div class='inner-container'><span class='logo'><a href='https://gemma-golfn.at/'><img height="100" width="300" src='https://gemma-golfn.at/wp-content/uploads/2021/03/logo.svg' alt='Gemma Golfn' title='' /></a></span><nav class='main_menu' data-selectname='Seite auswählen'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia-menu av-main-nav-wrap"><ul id="avia-menu" class="menu av-main-nav"><li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-1"><a href="https://gemma-golfn.at/golfschule/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">GOLFSCHULE</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-477" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://gemma-golfn.at/golfschule/#professionals" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Unsere Professionals</span></a></li>
+	<li id="menu-item-535" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/was-bietet-gemma-golfn/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Was bietet Gemma Golfn?</span></a></li>
+	<li id="menu-item-478" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/der-erste-schritt-zur-oegv-platzreife-ab-e-99/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Der erste Schritt zur ÖGV Platzreife – ab € 99,-</span></a></li>
+	<li id="menu-item-481" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/workshops/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Workshops</span></a></li>
+	<li id="menu-item-480" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/golfreisen/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Golfreisen</span></a></li>
+	<li id="menu-item-1220" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/driving-range-ordnung/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Driving Range Ordnung</span></a></li>
+</ul>
+</li>
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-2"><a href="https://gemma-golfn.at/toptracer/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">TOPTRACER</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-482" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://gemma-golfn.at/toptracer/#tracersec5" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Preisliste</span></a></li>
+</ul>
+</li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-3"><a href="https://gemma-golfn.at/proshop-und-fitting/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Pro Shop &#038; Fitting</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-483" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://gemma-golfn.at/proshop-und-fitting/#schlaegerfitting" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Schlägerfitting</span></a></li>
+</ul>
+</li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-4"><a href="https://gemma-golfn.at/?page_id=48" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">ÜBER UNS</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-604" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/sponsoren/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">SPONSOREN</span></a></li>
+	<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/sekretariat/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">SEKRETARIAT</span></a></li>
+</ul>
+</li>
+<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-5"><a href="https://gemma-golfn.at/events/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">EVENTS</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+
+
+<ul class="sub-menu">
+	<li id="menu-item-1694" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/firmenevents/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Firmenevents</span></a></li>
+	<li id="menu-item-2105" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://gemma-golfn.at/eventlocation/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Eventlocation</span></a></li>
+</ul>
+</li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-6"><a href="https://gemma-golfn.at/hotelpackages/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">HOTELPACKAGES</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-1339" class="button-book-box menu-item menu-item-type-custom menu-item-object-custom av-menu-button av-menu-button-colored menu-item-top-level menu-item-top-level-7"><a href="https://book.sweetspot.io/clubs/gemma-golfn/2090/tee-sheet" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Golfbox buchen</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li class="av-burger-menu-main menu-item-avia-special ">
+	        			<a href="#" aria-label="Menü" aria-hidden="false">
+							<span class="av-hamburger av-hamburger--spin av-js-hamburger">
+								<span class="av-hamburger-box">
+						          <span class="av-hamburger-inner"></span>
+						          <strong>Menü</strong>
+								</span>
+							</span>
+							<span class="avia_hidden_link_text">Menü</span>
+						</a>
+	        		   </li></ul></div></nav></div> </div> 
+		<!-- end container_wrap-->
+		</div>
+		<div class='header_bg'></div>
+
+<!-- end header -->
+</header>
+		
+	<div id='main' class='all_colors' data-scroll-offset='148'>
+
+	
+
+		<div class='container_wrap container_wrap_first main_color fullsize'>
+			
+						
+			<div class='container'>
+
+				<main class='template-page content av-content-full alpha units'  role="main" itemprop="mainContentOfPage" >
+
+
+                    <div class="entry entry-content-wrapper clearfix" id='search-fail'>
+                    
+<p class='entry-content'><strong>Es konnte leider nichts gefunden werden</strong><br/>
+
+Entschuldigung, aber der gesuchte Eintrag ist nicht verfügbar. Wollen Sie eine neue Suche starten?</p>
+
+
+<form action="https://gemma-golfn.at/" id="searchform" method="get" class="">
+	<div>
+		<input type="submit" value="" id="searchsubmit" class="button avia-font-entypo-fontello" />
+		<input type="text" id="s" name="s" value="" placeholder='Suche' />
+			</div>
+</form>
+
+
+<div class='hr_invisible'></div>
+
+<section class="404_recommendation">
+    <p><strong>Um die besten Suchergebnisse zu erhalten, beachten Sie bitte folgende Hinweise:</strong></p>
+    <ul class='borderlist-not'>
+        <li>Überprüfen Sie die Rechtschreibung immer sorgfältig.</li>
+        <li>Versuchen Sie es mit einem ähnlichen Suchbegriff: z.B. Tablet anstelle von Laptop.</li>
+        <li>Versuchen Sie mehr als einen Suchbegriff zu verwenden.</li>
+    </ul>
+
+    <div class='hr_invisible'></div>
+
+    </section>
+                    </div>
+
+				<!--end content-->
+				</main>
+
+				
+			</div><!--end container-->
+
+		</div><!-- close default .container_wrap element -->
+
+
+
+
+						<div class='container_wrap footer_color' id='footer'>
+
+					<div class='container'>
+
+						<div class='flex_column av_one_fifth  first el_before_av_one_fifth'><section id="text-2" class="widget clearfix widget_text"><h3 class="widgettitle">Gemma Golfn GmbH</h3>			<div class="textwidget"><p class="m_2639499708516123088MsoListParagraph">Dörfling, 2<br />
+<u></u><u></u>4484 Kronstorf<br />
+<u></u><u></u>Tel: <a href="tel:+437225738910">+43 7225 7389 10</a><br />
+E-Mail: <a href="mailto:office@gemma-golfn.at" target="_blank" rel="noopener">office@gemma-golfn.at</a></p>
+</div>
+		<span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '><section id="nav_menu-5" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">GOLFSCHULE</h3><div class="menu-footer-menu-1-golfschule-container"><ul id="menu-footer-menu-1-golfschule" class="menu"><li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66"><a href="https://gemma-golfn.at/golfschule/#professionals">Unsere Professionals</a></li>
+<li id="menu-item-452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-452"><a href="https://gemma-golfn.at/der-erste-schritt-zur-oegv-platzreife-ab-e-99/">Der erste Schritt zur ÖGV Platzreife – ab € 99,-</a></li>
+<li id="menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-451"><a href="https://gemma-golfn.at/workshops/">Workshops</a></li>
+<li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-449"><a href="https://gemma-golfn.at/golfreisen/">Golfreisen</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '><section id="nav_menu-4" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">TOPTRACER</h3><div class="menu-footer-menu-2-toptracer-container"><ul id="menu-footer-menu-2-toptracer" class="menu"><li id="menu-item-1335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1335"><a href="https://gemma-golfn.at/toptracer/">Was ist Topracer?</a></li>
+<li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71"><a href="https://gemma-golfn.at/top-tracer/#tracersec5">Preisliste</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '><section id="nav_menu-3" class="widget clearfix widget_nav_menu"><h3 class="widgettitle">Proshop und Fitting</h3><div class="menu-footer-menu-3-proshop-fitting-container"><ul id="menu-footer-menu-3-proshop-fitting" class="menu"><li id="menu-item-454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454"><a href="https://gemma-golfn.at/proshop-und-fitting/">Pro Shop</a></li>
+<li id="menu-item-73" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a href="https://gemma-golfn.at/proshop-und-fitting/#schlaegerfitting">Schlägerfitting</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_fifth  el_after_av_one_fifth  el_before_av_one_fifth '><section id="nav_menu-2" class="widget clearfix widget_nav_menu"><div class="menu-footer-menu-4-ueber-uns-container"><ul id="menu-footer-menu-4-ueber-uns" class="menu"><li id="menu-item-458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-458"><a href="https://gemma-golfn.at/?page_id=48">ÜBER UNS</a></li>
+<li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-457"><a href="https://gemma-golfn.at/sekretariat/">SEKRETARIAT</a></li>
+<li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="https://gemma-golfn.at/events/">EVENTS</a></li>
+<li id="menu-item-456" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-456"><a href="https://gemma-golfn.at/hotelpackages/">HOTELPACKAGES</a></li>
+</ul></div><span class="seperator extralight-border"></span></section></div>
+					</div>
+
+				<!-- ####### END FOOTER CONTAINER ####### -->
+				</div>
+
+	
+
+	
+				<footer class='container_wrap socket_color' id='socket'  role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter" >
+                    <div class='container'>
+
+                        <span class='copyright'>Copyright 2023 <strong>Gemma Golfn GmbH</strong> </span>
+
+                        <ul class='noLightbox social_bookmarks icon_count_2'><li class='social_bookmarks_facebook av-social-link-facebook social_icon_1'><a target="_blank" aria-label="Link zu Facebook" href="https://www.facebook.com/gemmagolfn" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="Facebook" rel="noopener"><span class='avia_hidden_link_text'>Facebook</span></a></li><li class='social_bookmarks_instagram av-social-link-instagram social_icon_2'><a target="_blank" aria-label="Link zu Instagram" href="https://www.instagram.com/gemmagolfn/?hl=de" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="Instagram" rel="noopener"><span class='avia_hidden_link_text'>Instagram</span></a></li></ul><nav class='sub_menu_socket'  role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" ><div class="avia3-menu"><ul id="avia3-menu" class="menu"><li id="menu-item-594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-1"><a href="https://gemma-golfn.at/?page_id=577" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Impressum</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-2"><a href="https://gemma-golfn.at/agb/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">AGB</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+<li id="menu-item-596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-top-level menu-item-top-level-3"><a href="https://gemma-golfn.at/datenschutz/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text">Datenschutz</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+</ul></div></nav>
+                    </div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+		
+		<!-- end wrap_all --></div>
+
+<a href='#top' title='Nach oben scrollen' id='scroll-top-link' aria-hidden='true' data-av_icon='' data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Nach oben scrollen</span></a>
+
+<div id="fb-root"></div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/enfold-gemma/*","/wp-content/themes/enfold/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>
+jQuery(window).load(function(){
+	jQuery('img').removeAttr('title');       
+});
+</script>
+
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = 'https://gemma-golfn.at/wp-content/themes/enfold/framework/';
+    avia_framework_globals.installedAt = 'https://gemma-golfn.at/wp-content/themes/enfold/';
+    avia_framework_globals.ajaxurl = 'https://gemma-golfn.at/wp-admin/admin-ajax.php';
+/* ]]> */ 
+</script>
+ 
+ <script data-cfasync="false" data-no-minify="1" data-no-optimize="1" id="borlabs-cookie-core-js-module" src="https://gemma-golfn.at/wp-content/plugins/borlabs-cookie/assets/javascript/borlabs-cookie.min.js?ver=3.4.2" type="module"></script>
+<!--googleoff: all--><div data-nosnippet data-borlabs-cookie-consent-required='true' id='BorlabsCookieBox'></div><div id='BorlabsCookieWidget' class='brlbs-cmpnt-container'></div><!--googleon: all--><noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=144073177874151&ev=timeonpage_30&noscript=1&cd%5Bpage_title%5D=The+Gemma+Golfn+Headcover+-+Limited+Edition+%E2%80%93+Driver&cd%5Bpost_type%5D=post&cd%5Bpost_id%5D=1630&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=gemma-golfn.at%2Fwp-content%2Fuploads%2F2024%2F01%2Fgemma-golfn-event-galerie-%2596-4.jpg" alt=""></noscript>
+<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=144073177874151&ev=PageView&noscript=1&cd%5Bpost_category%5D=Allgemein&cd%5Bpage_title%5D=The+Gemma+Golfn+Headcover+-+Limited+Edition+%E2%80%93+Driver&cd%5Bpost_type%5D=post&cd%5Bpost_id%5D=1630&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=gemma-golfn.at%2Fwp-content%2Fuploads%2F2024%2F01%2Fgemma-golfn-event-galerie-%2596-4.jpg" alt=""></noscript>
+<script id="avia-default-js" src="https://gemma-golfn.at/wp-content/themes/enfold/js/avia.js?ver=4.7.6.4"></script>
+<script id="avia-shortcodes-js" src="https://gemma-golfn.at/wp-content/themes/enfold/js/shortcodes.js?ver=4.7.6.4"></script>
+<script id="avia-module-contact-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/contact/contact.js?ver=7.0"></script>
+<script id="avia-module-countdown-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/countdown/countdown.js?ver=7.0"></script>
+<script id="avia-module-gallery-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/gallery/gallery.js?ver=7.0"></script>
+<script id="avia-module-slideshow-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow.js?ver=7.0"></script>
+<script id="avia-module-isotope-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/portfolio/isotope.js?ver=7.0"></script>
+<script id="avia-module-masonry-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/masonry_entries/masonry_entries.js?ver=7.0"></script>
+<script id="avia-module-slideshow-video-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow/slideshow-video.js?ver=7.0"></script>
+<script id="avia-module-slideshow-accordion-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_accordion/slideshow_accordion.js?ver=7.0"></script>
+<script id="avia-module-slideshow-fullscreen-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_fullscreen/slideshow_fullscreen.js?ver=7.0"></script>
+<script id="avia-module-slideshow-ls-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/slideshow_layerslider/slideshow_layerslider.js?ver=7.0"></script>
+<script id="avia-module-tabs-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/tabs/tabs.js?ver=7.0"></script>
+<script id="avia-module-video-js" src="https://gemma-golfn.at/wp-content/themes/enfold/config-templatebuilder/avia-shortcodes/video/video.js?ver=7.0"></script>
+<script id="avia-popup-js-js" src="https://gemma-golfn.at/wp-content/themes/enfold/js/aviapopup/jquery.magnific-popup.min.js?ver=4.7.6.4"></script>
+<script id="avia-lightbox-activation-js" src="https://gemma-golfn.at/wp-content/themes/enfold/js/avia-snippet-lightbox.js?ver=4.7.6.4"></script>
+<script id="avia-megamenu-js" src="https://gemma-golfn.at/wp-content/themes/enfold/js/avia-snippet-megamenu.js?ver=4.7.6.4"></script>
+<script id="avia-sticky-header-js" src="https://gemma-golfn.at/wp-content/themes/enfold/js/avia-snippet-sticky-header.js?ver=4.7.6.4"></script>
+<script id="avia-widget-js-js" src="https://gemma-golfn.at/wp-content/themes/enfold/js/avia-snippet-widget.js?ver=4.7.6.4"></script>
+<script id="avia_google_maps_front_script-js" src="https://gemma-golfn.at/wp-content/themes/enfold/framework/js/conditional_load/avia_google_maps_front.js?ver=4.7.6.4"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://gemma-golfn.at/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://gemma-golfn.at/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<template id="brlbs-cmpnt-cb-template-enfold-recaptcha">
+ <div class="brlbs-cmpnt-container brlbs-cmpnt-content-blocker brlbs-cmpnt-with-individual-styles" data-borlabs-cookie-content-blocker-id="enfold-recaptcha" data-borlabs-cookie-content=""><div class="brlbs-cmpnt-cb-preset-b brlbs-cmpnt-cb-enfold-recaptcha"> <div class="brlbs-cmpnt-cb-thumbnail" style="background-image: url('https://gemma-golfn.at/wp-content/uploads/borlabs-cookie/1/bct-google-recaptcha-main.png')"></div> <div class="brlbs-cmpnt-cb-main"> <div class="brlbs-cmpnt-cb-content"> <p class="brlbs-cmpnt-cb-description">Sie müssen den Inhalt von <strong>reCAPTCHA</strong> laden, um das Formular abzuschicken. Bitte beachten Sie, dass dabei Daten mit Drittanbietern ausgetauscht werden.</p> <a class="brlbs-cmpnt-cb-provider-toggle" href="#" data-borlabs-cookie-show-provider-information role="button">Mehr Informationen</a> </div> <div class="brlbs-cmpnt-cb-buttons"> <a class="brlbs-cmpnt-cb-btn" href="#" data-borlabs-cookie-unblock role="button">Inhalt entsperren</a> <a class="brlbs-cmpnt-cb-btn" href="#" data-borlabs-cookie-accept-service role="button" style="display: inherit">Erforderlichen Service akzeptieren und Inhalte entsperren</a> </div> </div> </div></div>
+</template>
+<script>
+(function() {
+    const template = document.querySelector("#brlbs-cmpnt-cb-template-enfold-recaptcha");
+    const divsToInsertBlocker = document.querySelectorAll('body.brlbs-blocked-av-recaptcha-enabled .av-recaptcha-area');
+
+    for (const div of divsToInsertBlocker) {
+        const blocked = template.content.cloneNode(true).querySelector('.brlbs-cmpnt-container');
+        div.appendChild(blocked);
+        const form = div.closest('form');
+        if (form) {
+            const submitButtons = form.querySelectorAll('input.button');
+            for (const btn of submitButtons) {
+                if (btn.type === 'submit') {
+                    btn.disabled = true;
+                    btn.classList.add('av-recaptcha-submit');
+                    btn.classList.add('avia_button_inactive');
+                    btn.classList.add('brlbs-avia-contact-form-submit-btn');
+                }
+            }
+        }
+    }
+})();
+</script><template id="brlbs-cmpnt-cb-template-facebook-content-blocker">
+ <div class="brlbs-cmpnt-container brlbs-cmpnt-content-blocker brlbs-cmpnt-with-individual-styles" data-borlabs-cookie-content-blocker-id="facebook-content-blocker" data-borlabs-cookie-content=""><div class="brlbs-cmpnt-cb-preset-b brlbs-cmpnt-cb-facebook"> <div class="brlbs-cmpnt-cb-thumbnail" style="background-image: url('https://gemma-golfn.at/wp-content/uploads/borlabs-cookie/1/cb-facebook-main.png')"></div> <div class="brlbs-cmpnt-cb-main"> <div class="brlbs-cmpnt-cb-content"> <p class="brlbs-cmpnt-cb-description">Sie sehen gerade einen Platzhalterinhalt von <strong>Facebook</strong>. Um auf den eigentlichen Inhalt zuzugreifen, klicken Sie auf die Schaltfläche unten. Bitte beachten Sie, dass dabei Daten an Drittanbieter weitergegeben werden.</p> <a class="brlbs-cmpnt-cb-provider-toggle" href="#" data-borlabs-cookie-show-provider-information role="button">Mehr Informationen</a> </div> <div class="brlbs-cmpnt-cb-buttons"> <a class="brlbs-cmpnt-cb-btn" href="#" data-borlabs-cookie-unblock role="button">Inhalt entsperren</a> <a class="brlbs-cmpnt-cb-btn" href="#" data-borlabs-cookie-accept-service role="button" style="display: inherit">Erforderlichen Service akzeptieren und Inhalte entsperren</a> </div> </div> </div></div>
+</template>
+<script>
+(function() {
+        const template = document.querySelector("#brlbs-cmpnt-cb-template-facebook-content-blocker");
+        const divsToInsertBlocker = document.querySelectorAll('div.fb-video[data-href*="//www.facebook.com/"], div.fb-post[data-href*="//www.facebook.com/"]');
+        for (const div of divsToInsertBlocker) {
+            const blocked = template.content.cloneNode(true).querySelector('.brlbs-cmpnt-container');
+            blocked.dataset.borlabsCookieContent = btoa(unescape(encodeURIComponent(div.outerHTML)));
+            div.replaceWith(blocked);
+        }
+})()
+</script></body>
+</html>

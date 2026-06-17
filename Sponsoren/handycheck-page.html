@@ -1,0 +1,3447 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>handycheck.at - Ihr Unternehmen zahlt wahrscheinlich zu viel.</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="description" content="KI-gest&uuml;tzter Firmentarif-Check: Rechnung hochladen, sofortiges Einsparpotenzial sehen. Kostenlos, unverbindlich. Zertifizierte Drei Business Partner &ouml;sterreichweit.">
+  <meta name="keywords" content="Firmen Mobilfunk Check, Business Tarif Vergleich, Drei Business Partner, Mobilfunkkosten senken, Firmenhandy Tarif, KI Rechnungsanalyse, Handyvertrag Firma, Mobilfunk Einsparung Unternehmen, &Ouml;sterreich">
+  <meta name="author" content="handycheck.at - Zertifizierte Drei Business Partner">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://handycheck.at/">
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://handycheck.at/">
+  <meta property="og:title" content="handycheck.at - Zahlt dein Unternehmen zu viel f&uuml;r Mobilfunk?">
+  <meta property="og:description" content="KI-gest&uuml;tzter Firmentarif-Check: Rechnung hochladen, sofort Einsparpotenzial sehen. Kostenlos &amp; unverbindlich. Zertifizierte Drei Business Partner.">
+  <meta property="og:image" content="https://handycheck.at/logos/handycheck-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:site_name" content="handycheck.at">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="handycheck.at - Zahlt dein Unternehmen zu viel f&uuml;r Mobilfunk?">
+  <meta name="twitter:description" content="KI-gest&uuml;tzter Firmentarif-Check: Rechnung hochladen, sofort Einsparpotenzial sehen. Kostenlos &amp; unverbindlich.">
+  <meta name="twitter:image" content="https://handycheck.at/logos/handycheck-og.jpg">
+
+  <!-- Geo & Language -->
+  <meta name="geo.region" content="AT">
+  <meta name="geo.placename" content="&Ouml;sterreich">
+  <meta http-equiv="content-language" content="de-AT">
+
+  <!-- Google Consent Mode v2 + GTM (wird NUR geladen wenn User zustimmt) -->
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+  var _gtmLoaded = false;
+  function loadGTM() {
+    if (_gtmLoaded) return;
+    _gtmLoaded = true;
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5G7C9ZNC');
+  }
+  // GTM sofort laden wenn User bereits zugestimmt hat
+  (function(){
+    try {
+      var c = JSON.parse(localStorage.getItem('cookie_consent'));
+      if (c && (c.statistics === 'granted' || c.marketing === 'granted')) { loadGTM(); }
+    } catch(e) {
+      if (localStorage.getItem('cookie_consent') === 'granted') { loadGTM(); }
+    }
+  })();
+  </script>
+
+  <style>
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('/fonts/inter-300.ttf') format('truetype'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/inter-400.ttf') format('truetype'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/inter-500.ttf') format('truetype'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/inter-600.ttf') format('truetype'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/inter-700.ttf') format('truetype'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 800; font-display: swap; src: url('/fonts/inter-800.ttf') format('truetype'); }
+  </style>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #1d1d1f;
+      --gray: #6e6e73;
+      --light-gray: #f5f5f7;
+      --mid-gray: #d2d2d7;
+      --white: #ffffff;
+      --blue: #0071e3;
+      --blue-dark: #0077ed;
+      --green: #34c759;
+      --green-dark: #1a7a40;
+      --red: #ff3b30;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      color: var(--black);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* SKIP LINK */
+    a.skip-link {
+      position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+      background: var(--blue); color: var(--white); padding: 12px 24px; font-size: 14px; font-weight: 600;
+      border-radius: 0 0 8px 0; z-index: 1000; text-decoration: none;
+    }
+    a.skip-link:focus { left: 0; top: 0; width: auto; height: auto; overflow: visible; }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: transparent;
+      border-bottom: 1px solid transparent;
+      padding: 0 32px;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.3s, border-color 0.3s, backdrop-filter 0.3s;
+    }
+    nav.scrolled {
+      background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .nav-logo {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--black);
+      letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--blue); }
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .nav-right img { height: 40px; width: auto; object-fit: contain; }
+    .nav-badge { height: 56px; }
+    .nav-cert { display: flex; align-items: center; }
+    .nav-cert-logo { height: auto !important; width: 220px; max-height: 100px; object-fit: contain; }
+
+    /* HERO SEAL — Stamp + Shimmer + Shadow */
+    .hero-seal { text-align: center; margin: 28px 0 32px; position: relative; }
+    .hero-seal-wrap { display: inline-block; position: relative; overflow: hidden; border-radius: 50%; }
+    .hero-seal-img { height: 120px; width: auto; opacity: 0; transform: scale(1.5) rotate(-6deg); filter: blur(4px); display: block; transition: none; }
+    .hero-seal-img.stamped {
+      animation: sealStamp 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    }
+    .hero-seal-img.seal-visible {
+      opacity: 1 !important; transform: scale(1) rotate(0deg) !important; filter: blur(0) drop-shadow(0 6px 20px rgba(0,0,0,0.12)) !important;
+    }
+    .hero-seal-wrap::after {
+      content: '';
+      position: absolute;
+      top: -50%; left: -60%;
+      width: 40%; height: 200%;
+      background: linear-gradient(105deg, transparent 30%, rgba(255,215,0,0.25) 45%, rgba(255,255,255,0.4) 50%, rgba(255,215,0,0.25) 55%, transparent 70%);
+      transform: skewX(-15deg);
+      opacity: 0;
+      pointer-events: none;
+    }
+    .hero-seal-wrap.shimmer::after {
+      animation: sealShimmer 0.7s ease 0.9s forwards;
+    }
+    @keyframes sealStamp {
+      0% { transform: scale(1.5) rotate(-6deg); opacity: 0; filter: blur(4px); }
+      45% { transform: scale(0.93) rotate(0.5deg); opacity: 1; filter: blur(0); }
+      65% { transform: scale(1.03) rotate(-0.3deg); opacity: 1; filter: blur(0); }
+      100% { transform: scale(1) rotate(0deg); opacity: 1; filter: blur(0); }
+    }
+    @keyframes sealShimmer {
+      0% { left: -60%; opacity: 0; }
+      20% { opacity: 1; }
+      100% { left: 120%; opacity: 0; }
+    }
+
+    /* UPLOAD TRUST BAR */
+    .upload-trust-bar { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 24px 0 8px; padding: 16px 20px; background: var(--white); border-radius: 14px; border: 1px solid rgba(0,0,0,0.06); }
+    .upload-trust-item { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--gray); }
+    .upload-trust-item svg { width: 16px; height: 16px; stroke: var(--green-dark); fill: none; stroke-width: 2; flex-shrink: 0; }
+    .upload-trust-item.cert { color: var(--green-dark); }
+
+    /* UPLOAD TESTIMONIAL */
+    .upload-testimonial { display: flex; align-items: center; gap: 16px; margin: 20px auto 0; max-width: 500px; padding: 20px 24px; background: var(--white); border-radius: 16px; border: 1px solid rgba(0,0,0,0.06); text-align: left; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+    .upload-testimonial-logo { width: 140px; height: 140px; border-radius: 16px; object-fit: contain; flex-shrink: 0; }
+    .upload-testimonial-quote { font-size: 14px; color: var(--black); line-height: 1.6; font-weight: 500; }
+    .upload-testimonial-meta { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+    .upload-testimonial-author { font-size: 12px; font-weight: 600; color: var(--gray); }
+    .upload-testimonial-saving { font-size: 12px; font-weight: 700; color: var(--green-dark); background: rgba(52,199,89,0.1); padding: 2px 10px; border-radius: 6px; }
+
+
+    /* LAYOUT */
+    section { padding: 112px 24px; }
+    .container { max-width: 980px; margin: 0 auto; }
+    .container-narrow { max-width: 680px; margin: 0 auto; }
+
+    /* HERO */
+    .hero {
+      background:
+        radial-gradient(ellipse 90% 60% at 50% -20%, rgba(0,113,227,0.10) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(52,199,89,0.04) 0%, transparent 50%),
+        var(--white);
+      text-align: center;
+      padding: 140px 24px 80px;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: rgba(0,113,227,0.07);
+      border-radius: 980px;
+      padding: 7px 18px;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: clamp(32px, 5vw, 64px);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      color: var(--black);
+      max-width: 820px;
+      margin: 0 auto 28px;
+    }
+    h1 .hero-accent { color: var(--blue); }
+    .hero-sub {
+      font-size: clamp(17px, 2vw, 21px);
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--gray);
+      max-width: 580px;
+      margin: 0 auto 56px;
+    }
+    .hero-sub strong { color: var(--black); font-weight: 600; }
+    .hero-stats { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 56px; }
+    .stat-card { background: var(--light-gray); border-radius: 18px; padding: 28px 32px; min-width: 170px; text-align: center; }
+    .stat-card.stat-green { background: linear-gradient(135deg, #f0faf4, #e6f7ed); }
+    .stat-card.stat-green .stat-value { color: var(--green-dark); }
+    .stat-value { font-size: 28px; font-weight: 700; color: var(--black); letter-spacing: -1px; display: block; }
+    .stat-label { font-size: 12px; color: var(--gray); margin-top: 6px; display: block; line-height: 1.4; }
+    .hero-cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; align-items: center; }
+
+    /* SOCIAL PROOF BAR */
+    .social-proof-bar {
+      background: var(--light-gray);
+      border-top: 1px solid rgba(0,0,0,0.04);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      padding: 18px 24px;
+      text-align: center;
+    }
+    .social-proof-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .social-proof-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray);
+    }
+    .social-proof-item svg { color: var(--green); flex-shrink: 0; }
+
+    /* BUTTONS */
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 980px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      font-family: var(--font);
+    }
+    .btn-primary:hover { background: var(--blue-dark); transform: scale(1.02); }
+    .btn-primary:active { transform: scale(0.98); }
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--blue);
+      font-size: 15px;
+      font-weight: 500;
+      padding: 14px 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font);
+      transition: opacity 0.2s;
+    }
+    .btn-secondary:hover { opacity: 0.7; }
+
+    /* HOW IT WORKS */
+    .how-section { background: var(--white); text-align: center; }
+    h2 {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      color: var(--black);
+      margin-bottom: 16px;
+    }
+    .section-sub { font-size: 17px; color: var(--gray); margin-bottom: 64px; line-height: 1.5; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; text-align: left; }
+    .step { background: var(--light-gray); border-radius: 22px; padding: 40px 36px; }
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 50%;
+      margin-bottom: 22px;
+    }
+    .step h3 { font-size: 19px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 12px; }
+    .step p { font-size: 15px; color: var(--gray); line-height: 1.65; }
+
+    /* UPLOAD */
+    .upload-section { background: var(--light-gray); }
+    .segment-toggle {
+      display: inline-flex;
+      background: rgba(0,0,0,0.06);
+      border-radius: 980px;
+      padding: 4px;
+      margin-bottom: 32px;
+    }
+    .seg-btn {
+      padding: 8px 20px;
+      border-radius: 980px;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      background: transparent;
+      color: var(--gray);
+      transition: all 0.2s;
+      font-family: var(--font);
+    }
+    .seg-btn.active { background: var(--white); color: var(--black); box-shadow: 0 1px 6px rgba(0,0,0,0.12); }
+    .drop-zone {
+      border: 2px dashed var(--mid-gray);
+      border-radius: 22px;
+      padding: 60px 32px;
+      text-align: center;
+      background: var(--white);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      position: relative;
+    }
+    .drop-zone:hover, .drop-zone.dragover { border-color: var(--blue); background: #f0f7ff; }
+    .drop-zone input[type="file"] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
+    .drop-icon { width: 48px; height: 48px; margin: 0 auto 16px; color: var(--blue); }
+    .drop-icon-mobile { display: none; }
+    .drop-text-mobile { display: none; }
+    .drop-zone h3 { font-size: 17px; font-weight: 600; margin-bottom: 8px; color: var(--black); }
+    .drop-zone p { font-size: 13px; color: var(--gray); }
+    .drop-zone .info-gap-hint { font-size: 13px; color: var(--blue); font-weight: 500; margin-top: 14px; }
+    .file-selected-name { margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--green-dark); background: rgba(52,199,89,0.1); padding: 8px 16px; border-radius: 10px; display: none; }
+    .file-selected-name.has-file { display: block; }
+    .analyze-btn {
+      width: 100%;
+      margin-top: 24px;
+      padding: 18px;
+      font-size: 17px;
+      border-radius: 14px;
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: var(--font);
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .analyze-btn:hover { background: var(--blue-dark); }
+    .analyze-btn:disabled { background: var(--mid-gray); cursor: not-allowed; }
+
+    /* RESULTS */
+    #upload-results { margin-top: 48px; display: none; }
+    .results-header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; flex-wrap: wrap; }
+    .provider-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--white);
+      border-radius: 980px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--black);
+      border: 1px solid var(--mid-gray);
+    }
+    .provider-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+    .vvl-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: #e8f0fd; color: #1a56db;
+      border-radius: 980px; padding: 4px 12px;
+      font-size: 12px; font-weight: 600;
+    }
+    .ea-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: #fff3e0; color: #e65100;
+      border-radius: 980px; padding: 4px 12px;
+      font-size: 12px; font-weight: 600;
+    }
+
+    /* Line Cards */
+    .line-cards { display: flex; flex-direction: column; gap: 20px; }
+    .line-card {
+      background: var(--white);
+      border: 1px solid var(--mid-gray);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .line-card-header {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      padding: 22px 26px 18px;
+      border-bottom: 1px solid var(--mid-gray);
+      flex-wrap: wrap; gap: 12px;
+      background: var(--white);
+    }
+    .line-card-header-left { display: flex; flex-direction: column; gap: 3px; }
+    .line-number { font-size: 17px; font-weight: 700; font-family: 'SF Mono', 'Courier New', monospace; color: var(--black); letter-spacing: 0.5px; }
+    .line-user { font-size: 14px; font-weight: 600; color: var(--black); margin-top: 2px; }
+    .line-tariff { font-size: 13px; color: var(--gray); margin-top: 1px; }
+    .line-data-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: #e8f0fd; color: #1a56db;
+      border-radius: 6px; padding: 2px 8px;
+      font-size: 11px; font-weight: 600; margin-top: 4px; width: fit-content;
+    }
+    .usage-badges-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+    .usage-badge {
+      display: inline-flex; align-items: center; gap: 3px;
+      background: #f0f0f5; color: #444;
+      border-radius: 6px; padding: 2px 8px;
+      font-size: 11px; font-weight: 600;
+    }
+    /* Hardware section */
+    .hw-section {
+      border-top: 1px solid var(--mid-gray); padding: 16px 24px;
+      background: #fafafa;
+    }
+    .hw-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gray); margin-bottom: 10px; }
+    .hw-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+    .hw-option {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--white); border: 1px solid var(--mid-gray);
+      border-radius: 10px; padding: 8px 14px; font-size: 13px;
+    }
+    .hw-name { font-weight: 600; color: var(--black); }
+    .hw-price { color: var(--blue); font-weight: 700; white-space: nowrap; }
+    .hw-hint { font-size: 11px; color: var(--gray); }
+    .hw-budget-hint { font-size: 12px; color: var(--blue); padding: 8px 24px 12px; }
+    .line-card-header-right { text-align: right; }
+    .line-current-cost { font-size: 17px; font-weight: 700; color: var(--black); }
+    .line-current-label { font-size: 12px; color: var(--gray); margin-bottom: 6px; }
+    .saving-pill {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: #dcf5e7; color: #1a7a40;
+      border-radius: 980px; padding: 5px 14px;
+      font-size: 13px; font-weight: 700;
+    }
+    .saving-pill.none { background: var(--light-gray); color: var(--gray); font-weight: 500; }
+
+    /* Recommendation grid */
+    .rec-section { padding: 22px 26px; }
+    .rec-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray); margin-bottom: 14px; }
+    .rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+    .rec-item {
+      background: var(--light-gray);
+      border-radius: 16px; padding: 18px 20px;
+      border: 1.5px solid transparent;
+      transition: border-color 0.15s;
+      position: relative;
+    }
+    .rec-item:first-child { border-color: #2e7d32; border-width: 2px; background: #e8f5e9; }
+    .rec-item-badge {
+      position: absolute; top: -8px; left: 16px;
+      background: var(--blue); color: white;
+      font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+      border-radius: 4px; padding: 2px 7px;
+    }
+    .rec-item-name { font-size: 13px; font-weight: 700; color: var(--black); margin-bottom: 3px; line-height: 1.3; }
+    .rec-device-note { font-size: 11px; color: var(--blue); font-weight: 500; margin-bottom: 6px; display: flex; align-items: center; gap: 3px; }
+    .rec-item-price { font-size: 22px; font-weight: 800; color: var(--blue); letter-spacing: -0.5px; line-height: 1; margin: 8px 0 2px; }
+    .netto-note { font-size: 11px; color: var(--gray); margin-bottom: 4px; }
+    .rec-item-saving { font-size: 12px; color: #1a7a40; font-weight: 600; background: #dcf5e7; border-radius: 4px; padding: 2px 7px; display: inline-block; margin-top: 4px; }
+    .rec-breakdown { font-size: 11px; color: var(--gray); margin-top: 5px; line-height: 1.4; }
+
+    .total-saving-box {
+      background: linear-gradient(135deg, #1d7a3a 0%, #0d5c2a 100%);
+      border-radius: 22px; padding: 40px 36px;
+      text-align: center; margin-top: 28px;
+      color: white;
+    }
+    .total-saving-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.7); margin-bottom: 6px; }
+    .total-saving-amount { font-size: 56px; font-weight: 800; letter-spacing: -2px; color: white; line-height: 1; }
+    .total-saving-period { font-size: 16px; color: rgba(255,255,255,0.8); margin: 4px 0 12px; }
+    .total-saving-year { font-size: 18px; font-weight: 700; color: #7af7a3; }
+    .total-saving-weekly { font-size: 14px; color: rgba(255,255,255,0.65); margin-top: 8px; }
+    .total-saving-disclaimer { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 16px; }
+    .optimal-box { background: var(--white); border-radius: 22px; padding: 36px; text-align: center; margin-top: 24px; border: 1px solid var(--mid-gray); }
+    .optimal-icon { font-size: 36px; margin-bottom: 12px; }
+    .optimal-box h3 { font-size: 19px; font-weight: 600; margin-bottom: 8px; }
+    .optimal-box p { font-size: 15px; color: var(--gray); }
+
+    /* DISCOUNT PRICE DISPLAY */
+    .rec-price-row { margin: 8px 0 2px; }
+    .rec-price-orig { font-size: 13px; color: var(--gray); text-decoration: line-through; display: inline-block; margin-right: 4px; }
+    .rec-discount-badge { display: inline-block; background: #ff3b30; color: white; font-size: 10px; font-weight: 700; border-radius: 4px; padding: 1px 5px; vertical-align: middle; letter-spacing: 0.03em; }
+    .rec-price-duration { font-size: 10px; color: var(--gray); margin-top: 1px; }
+    .rec-features { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+    .rec-feature-chip { font-size: 10px; color: #3a3a3c; background: #f0f0f5; border-radius: 4px; padding: 2px 6px; white-space: nowrap; }
+    .rec-feature-chip.highlight { background: #e8f4ff; color: #0056b3; font-weight: 600; }
+
+    /* POOL CHOICE SECTION */
+    .pool-choice-section { margin-top: 28px; }
+    .pool-hero-banner {
+      background: linear-gradient(135deg, #0071e3 0%, #004daa 100%);
+      border-radius: 22px; padding: 32px 28px; text-align: center; color: white; margin-bottom: 24px;
+    }
+    .pool-hero-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(255,255,255,0.75); margin-bottom: 6px; }
+    .pool-hero-amount { font-size: 64px; font-weight: 800; letter-spacing: -2px; line-height: 1; margin-bottom: 6px; }
+    .pool-hero-sub { font-size: 14px; color: rgba(255,255,255,0.8); }
+    .choice-heading { font-size: 20px; font-weight: 700; text-align: center; margin-bottom: 6px; letter-spacing: -0.3px; }
+    .choice-sub { font-size: 14px; color: var(--gray); text-align: center; margin-bottom: 20px; }
+    .choice-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px; }
+    @media(max-width:540px){ .choice-cards { grid-template-columns: 1fr; } }
+    .choice-card {
+      background: var(--white); border: 2px solid var(--mid-gray); border-radius: 20px;
+      padding: 24px 20px; cursor: pointer; transition: all 0.2s; text-align: center; user-select: none;
+    }
+    .choice-card:hover { border-color: var(--blue); box-shadow: 0 4px 20px rgba(0,113,227,0.12); }
+    .choice-card.selected { border-color: var(--blue); background: rgba(0,113,227,0.05); box-shadow: 0 4px 24px rgba(0,113,227,0.18); }
+    .choice-card.dimmed { opacity: 0.4; border-color: var(--mid-gray); }
+    .choice-card-icon { font-size: 28px; margin-bottom: 8px; }
+    .choice-card-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gray); margin-bottom: 4px; }
+    .choice-card-amount { font-size: 42px; font-weight: 800; letter-spacing: -1.5px; color: var(--black); line-height: 1; margin-bottom: 4px; }
+    .choice-card-desc { font-size: 12px; color: var(--gray); line-height: 1.5; margin-bottom: 14px; }
+    .choice-card-btn { display: inline-block; padding: 9px 20px; background: var(--mid-gray); color: var(--black); border-radius: 20px; font-size: 13px; font-weight: 600; transition: all 0.2s; }
+    .choice-card.selected .choice-card-btn { background: var(--blue); color: white; }
+    .choice-note { text-align: center; font-size: 12px; color: var(--gray); margin-top: 4px; }
+    .choice-required-hint { text-align: center; font-size: 15px; color: #d32f2f; margin-top: 16px; display: none; font-weight: 700; background: #fef2f2; border: 2px solid #d32f2f; border-radius: 12px; padding: 14px 20px; animation: pulse-hint 0.6s ease-in-out 2; }
+    @keyframes pulse-hint { 0%,100% { transform: scale(1); } 50% { transform: scale(1.03); } }
+
+    /* AFTER RESULTS CTA */
+    .after-results-cta {
+      margin-top: 32px;
+      text-align: center;
+      background: var(--white);
+      border: 1px solid var(--mid-gray);
+      border-radius: 22px;
+      padding: 32px 28px;
+    }
+    .after-results-cta .urgency-line {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .after-results-cta h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+    .after-results-cta p {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+
+    /* QUICK CHECK */
+    .quick-section { background: var(--white); }
+    .qc-step { display: none; }
+    .qc-step.active { display: block; }
+    .qc-question { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 24px; color: var(--black); }
+    .qc-progress { display: flex; gap: 6px; margin-bottom: 32px; }
+    .qc-progress-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--mid-gray); transition: background 0.2s; }
+    .qc-progress-dot.done { background: var(--blue); }
+    .option-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+    .option-btn {
+      background: var(--light-gray);
+      border: 2px solid transparent;
+      border-radius: 16px;
+      padding: 22px 18px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--black);
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: var(--font);
+      box-shadow: none;
+    }
+    .option-btn:hover { border-color: var(--blue); background: #f0f7ff; }
+    .option-btn small { display: block; font-size: 12px; font-weight: 400; color: var(--gray); margin-top: 4px; }
+
+    /* QC RESULT */
+    #qc-result { display: none; text-align: center; }
+    .qc-result-label { font-size: 15px; color: var(--gray); margin-bottom: 12px; }
+    .qc-saving-range { font-size: clamp(36px, 6vw, 64px); font-weight: 800; letter-spacing: -2px; color: var(--black); margin-bottom: 8px; }
+    .qc-saving-range span { color: var(--green); }
+    .qc-saving-year { font-size: 19px; color: var(--gray); margin-bottom: 4px; }
+    .qc-saving-year strong { color: var(--black); font-weight: 700; }
+    .qc-loss-12m { font-size: 16px; color: var(--red); font-weight: 600; margin-bottom: 8px; }
+    .netto-info { font-size: 13px; color: var(--gray); margin-bottom: 40px; }
+    .qc-result-cta-label { font-size: 17px; font-weight: 500; color: var(--black); margin-bottom: 20px; }
+
+    /* LEAD FORM */
+    #lead-form-section { background: var(--light-gray); }
+    .lead-form-wrap { max-width: 560px; margin: 0 auto; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    @media (max-width: 600px) { .form-grid { grid-template-columns: 1fr; } }
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+    .form-group.full { grid-column: 1 / -1; }
+    label { font-size: 13px; font-weight: 500; color: var(--black); }
+    label .req { color: var(--blue); margin-left: 2px; }
+    input[type="text"], input[type="tel"], input[type="email"], textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--mid-gray);
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: var(--font);
+      color: var(--black);
+      background: var(--white);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus, textarea:focus { border-color: var(--blue); }
+    textarea { resize: vertical; min-height: 100px; }
+    .dsgvo-check { display: flex; align-items: flex-start; gap: 10px; margin-top: 16px; margin-bottom: 24px; }
+    .dsgvo-check input[type="checkbox"] { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--blue); flex-shrink: 0; cursor: pointer; }
+    .dsgvo-check label { font-size: 13px; color: var(--gray); line-height: 1.5; cursor: pointer; }
+    .dsgvo-check a { color: #005bb5; text-decoration: underline; }
+    .submit-btn {
+      width: 100%;
+      padding: 18px;
+      background: var(--blue);
+      color: var(--white);
+      border: none;
+      border-radius: 14px;
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: var(--font);
+      transition: background 0.2s;
+    }
+    .submit-btn:hover { background: var(--blue-dark); }
+    .submit-btn:disabled { background: var(--mid-gray); cursor: not-allowed; }
+    .form-success { display: none; text-align: center; padding: 48px 32px; }
+    .form-success-icon { font-size: 48px; margin-bottom: 16px; }
+    .form-success h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+    .form-success p { font-size: 16px; color: var(--gray); line-height: 1.6; }
+
+    /* ADVISOR CARD — Redesign */
+    .advisor-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: var(--white);
+      border-radius: 20px;
+      padding: 24px 28px;
+      margin-bottom: 36px;
+      border: 1px solid var(--mid-gray);
+    }
+    .advisor-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), #005bb5);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .advisor-info { display: flex; flex-direction: column; gap: 2px; }
+    .advisor-info .advisor-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--blue); }
+    .advisor-info strong { display: block; font-size: 16px; font-weight: 600; color: var(--black); }
+    .advisor-info span { font-size: 13px; color: var(--gray); line-height: 1.4; }
+
+    /* COMPARISON */
+    .comparison-section { background: var(--white); }
+    .comparison-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 18px; overflow: hidden; background: var(--white); border: 1px solid var(--mid-gray); }
+    .comparison-table th { padding: 20px 24px; font-size: 14px; font-weight: 600; text-align: center; background: var(--light-gray); color: var(--gray); letter-spacing: 0.02em; }
+    .comparison-table th:first-child { text-align: left; color: var(--black); }
+    .col-handycheck { background: #f0f7ff !important; color: #005bb5 !important; }
+    .comparison-table td { padding: 16px 24px; font-size: 14px; border-top: 1px solid var(--light-gray); vertical-align: middle; }
+    .comparison-table td:first-child { font-weight: 500; color: var(--black); }
+    .comparison-table td:nth-child(2) { background: rgba(0,113,227,0.03); text-align: center; color: var(--black); }
+    .comparison-table td:nth-child(3) { text-align: center; color: var(--gray); }
+    .check { color: var(--green); font-weight: 600; }
+    .cross { color: var(--red); }
+    @media (max-width: 640px) { .comparison-table th, .comparison-table td { padding: 12px 14px; font-size: 13px; } }
+
+    /* TRUST */
+    .trust-section { background: var(--light-gray); text-align: center; }
+    .trust-badge-img { height: 140px; width: auto; margin: 0 auto 36px; display: block; }
+    .trust-text { font-size: 17px; color: var(--gray); line-height: 1.7; max-width: 540px; margin: 0 auto 48px; }
+    .trust-numbers { display: flex; justify-content: center; gap: 0; flex-wrap: wrap; margin-bottom: 48px; max-width: 720px; margin-left: auto; margin-right: auto; }
+    .trust-number { text-align: center; flex: 1; min-width: 140px; padding: 0 12px; position: relative; }
+    .trust-number + .trust-number::before { content: ''; position: absolute; left: 0; top: 8px; bottom: 8px; width: 1px; background: var(--mid-gray); }
+    .trust-number-value { font-size: 36px; font-weight: 800; color: var(--black); letter-spacing: -1.5px; display: block; }
+    .trust-number-value .trust-accent { color: var(--green-dark); }
+    .trust-number-label { font-size: 12px; color: var(--gray); margin-top: 6px; display: block; line-height: 1.4; }
+
+    /* TRUST STRIP INLINE */
+    .trust-inline {
+      display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;
+      padding: 28px 0; margin-bottom: 40px;
+      border-top: 1px solid rgba(0,0,0,0.06); border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .trust-inline-item { display: flex; align-items: center; gap: 8px; }
+    .trust-inline-item svg { width: 18px; height: 18px; stroke: var(--green-dark); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+    .trust-inline-label { font-size: 13px; font-weight: 600; color: var(--black); letter-spacing: -0.1px; }
+
+    /* TRUST CTA */
+    .trust-cta { margin-top: 0; }
+    .trust-cta-btn {
+      display: inline-block; background: var(--blue); color: var(--white);
+      font-size: 17px; font-weight: 600; padding: 16px 40px;
+      border-radius: 980px; text-decoration: none; border: none; cursor: pointer;
+      font-family: var(--font); transition: background 0.2s, transform 0.15s;
+    }
+    .trust-cta-btn:hover { background: var(--blue-dark); transform: scale(1.02); }
+    .trust-cta-hint { font-size: 12px; color: var(--gray); margin-top: 12px; }
+    .trust-cta-hint strong { color: var(--black); }
+
+    @media (max-width: 640px) {
+      .trust-numbers { gap: 16px; }
+      .trust-number + .trust-number::before { display: none; }
+      .trust-number { min-width: 120px; }
+      .trust-number-value { font-size: 30px; }
+      .trust-inline { gap: 16px; padding: 20px 0; }
+      .trust-inline-label { font-size: 12px; }
+    }
+
+    /* FOOTER */
+    footer { background: var(--white); border-top: 1px solid rgba(0,0,0,0.06); padding: 48px 24px; text-align: center; }
+    .footer-logo { font-size: 16px; font-weight: 700; color: var(--black); letter-spacing: -0.3px; margin-bottom: 6px; }
+    .footer-logo span { color: var(--blue); }
+    .footer-tagline { font-size: 13px; color: var(--gray); margin-bottom: 20px; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 20px; }
+    .footer-links a { font-size: 13px; color: var(--gray); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--blue); }
+    .footer-copy { font-size: 12px; color: var(--gray); }
+
+    /* LOGO MARQUEE */
+    .logo-marquee { overflow: hidden; background: var(--white); padding: 40px 0 36px; border-bottom: 1px solid rgba(0,0,0,0.04); }
+    .logo-marquee-label { text-align: center; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6e6e73; margin-bottom: 24px; }
+    .marquee-track {
+      display: flex; width: max-content;
+      animation: marquee-scroll 35s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marquee-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .marquee-item {
+      flex-shrink: 0; display: flex; flex-direction: column; align-items: center;
+      padding: 0 40px; min-width: 180px;
+    }
+    .marquee-logo {
+      height: 48px; width: auto; max-width: 140px; object-fit: contain;
+      filter: grayscale(100%) opacity(0.55); transition: filter 0.3s;
+    }
+    .marquee-item:hover .marquee-logo { filter: grayscale(0%) opacity(1); }
+    .marquee-info { margin-top: 10px; text-align: center; }
+    .marquee-name { font-size: 11px; font-weight: 600; color: var(--gray); letter-spacing: -0.1px; }
+    .marquee-saving { font-size: 18px; font-weight: 800; color: var(--green-dark); margin-top: 6px; letter-spacing: -0.3px; background: rgba(52,199,89,0.12); padding: 4px 12px; border-radius: 8px; }
+    @media (max-width: 640px) {
+      .marquee-item { padding: 0 24px; min-width: 140px; }
+      .marquee-logo { height: 36px; max-width: 110px; }
+      .marquee-saving { font-size: 14px; padding: 3px 8px; }
+    }
+
+    /* LIVE COUNTER */
+    .live-pulse { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--green); margin-right: 6px; animation: pulse-dot 2s ease-in-out infinite; }
+    @keyframes pulse-dot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.8); } }
+    .live-counter-bar {
+      display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap;
+      margin-top: 20px; padding: 14px 24px;
+      background: linear-gradient(135deg, rgba(52,199,89,0.06) 0%, rgba(0,113,227,0.04) 100%);
+      border-radius: 980px; font-size: 13px; color: var(--gray); font-weight: 500;
+    }
+    .live-counter-bar strong { color: var(--black); font-weight: 700; }
+
+    /* KUNDENSTIMMEN */
+    .testimonials-section { background: var(--white); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 960px; margin: 0 auto; }
+    .testimonial-card {
+      background: linear-gradient(145deg, #ffffff 0%, #fafbfc 100%);
+      border-radius: 18px; padding: 28px 24px;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+      position: relative;
+    }
+    .testimonial-quote { font-size: 15px; font-weight: 500; color: var(--black); line-height: 1.6; margin-bottom: 16px; }
+    .testimonial-saving { display: inline-block; background: rgba(52,199,89,0.08); color: var(--green-dark); font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 980px; margin-bottom: 12px; }
+    .testimonial-author { font-size: 12px; color: var(--gray); line-height: 1.4; }
+    .testimonial-author strong { color: var(--black); font-weight: 600; }
+    .testimonial-icon { position: absolute; top: 20px; right: 20px; font-size: 28px; opacity: 0.08; }
+    .testimonial-logo { height: 32px; width: auto; max-width: 100px; object-fit: contain; filter: grayscale(100%) opacity(0.4); margin-bottom: 14px; }
+    .testimonial-card:hover .testimonial-logo { filter: grayscale(0%) opacity(0.85); transition: filter 0.3s; }
+    @media (max-width: 860px) { .testimonials-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 540px) { .testimonials-grid { grid-template-columns: 1fr; } }
+
+    /* DATENSCHUTZ-SEKTION */
+    .dataprotect-section { background: var(--white); }
+    .dataprotect-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 780px; margin: 0 auto; }
+    .dataprotect-card {
+      text-align: center; padding: 32px 20px;
+      background: linear-gradient(145deg, #ffffff 0%, #fafbfc 100%);
+      border-radius: 18px; border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    }
+    .dataprotect-icon {
+      width: 52px; height: 52px; border-radius: 14px; margin: 0 auto 16px;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, rgba(0,113,227,0.08) 0%, rgba(0,77,153,0.04) 100%);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    .dataprotect-icon svg { width: 24px; height: 24px; stroke: #0071e3; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .dataprotect-title { font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 6px; letter-spacing: -0.2px; }
+    .dataprotect-desc { font-size: 13px; color: var(--gray); line-height: 1.5; }
+    @media (max-width: 640px) { .dataprotect-grid { grid-template-columns: 1fr; max-width: 400px; } }
+
+    /* SPINNER */
+    .spinner { width: 20px; height: 20px; border: 2.5px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* COOKIE OVERLAY */
+    #cookie-overlay {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 9998;
+      display: none;
+    }
+    body.cookie-pending { overflow: hidden !important; }
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--white);
+      color: var(--black);
+      z-index: 9999;
+      box-shadow: 0 -4px 40px rgba(0,0,0,0.18);
+      padding: 28px 32px 24px;
+      display: none;
+      flex-direction: column;
+      gap: 16px;
+      font-size: 13px;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .cookie-title { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+    .cookie-text { color: var(--gray); line-height: 1.6; font-size: 13px; }
+    .cookie-text a { color: var(--blue); text-decoration: underline; }
+    .cookie-categories { display: flex; flex-direction: column; gap: 0; }
+    .cookie-group { background: var(--light-gray); border-radius: 10px; overflow: hidden; }
+    .cookie-group + .cookie-group { margin-top: 10px; }
+    .cookie-group-header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; cursor: default; }
+    .cookie-group-header input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--blue); cursor: pointer; flex-shrink: 0; }
+    .cookie-group-header input[disabled] { opacity: 0.5; cursor: default; }
+    .cookie-group-info { flex: 1; }
+    .cookie-group-name { font-size: 15px; font-weight: 600; color: var(--black); }
+    .cookie-group-desc { font-size: 12px; color: var(--gray); line-height: 1.5; margin-top: 2px; }
+    .cookie-group-toggle { color: var(--blue); font-size: 12px; font-weight: 500; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: 4px; background: none; border: none; font-family: var(--font); padding: 0; }
+    .cookie-group-toggle:hover { text-decoration: underline; }
+    .cookie-group-toggle svg { width: 14px; height: 14px; fill: var(--blue); transition: transform 0.2s; }
+    .cookie-group.open .cookie-group-toggle svg { transform: rotate(180deg); }
+    .cookie-group-details { display: none; border-top: 1px solid var(--mid-gray); padding: 0 16px; }
+    .cookie-group.open .cookie-group-details { display: block; }
+    .cookie-service { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .cookie-service:last-child { border-bottom: none; }
+    .cookie-service-name { font-size: 13px; font-weight: 500; color: var(--black); }
+    .cookie-service-provider { font-size: 11px; color: var(--gray); }
+    .cookie-service-right { display: flex; align-items: center; gap: 10px; }
+    .cookie-service-status { font-size: 11px; color: var(--gray); }
+    .cookie-switch { position: relative; width: 42px; height: 24px; flex-shrink: 0; }
+    .cookie-switch input { opacity: 0; width: 0; height: 0; }
+    .cookie-switch-slider { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: var(--mid-gray); border-radius: 24px; cursor: pointer; transition: 0.2s; }
+    .cookie-switch-slider::before { content: ''; position: absolute; height: 18px; width: 18px; left: 3px; bottom: 3px; background: white; border-radius: 50%; transition: 0.2s; }
+    .cookie-switch input:checked + .cookie-switch-slider { background: var(--blue); }
+    .cookie-switch input:checked + .cookie-switch-slider::before { transform: translateX(18px); }
+    .cookie-switch input:disabled + .cookie-switch-slider { opacity: 0.5; cursor: default; }
+    .cookie-btns { display: flex; gap: 10px; }
+    .cookie-btn { border: none; border-radius: 8px; padding: 12px 24px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: var(--font); transition: all 0.2s; flex: 1; text-align: center; }
+    .cookie-btn-accept { background: var(--blue); color: var(--white); }
+    .cookie-btn-accept:hover { background: var(--blue-dark); }
+    .cookie-btn-save { background: var(--light-gray); color: var(--black); }
+    .cookie-btn-save:hover { background: var(--mid-gray); color: var(--white); }
+    .cookie-btn-decline { background: transparent; color: var(--gray); border: 1px solid var(--mid-gray) !important; }
+    .cookie-btn-decline:hover { color: var(--black); border-color: var(--gray) !important; }
+    .cookie-footer-links { display: flex; gap: 16px; font-size: 12px; }
+    .cookie-footer-links a { color: var(--gray); text-decoration: underline; }
+    #cookie-settings-btn {
+      position: fixed; bottom: 16px; left: 16px; z-index: 998;
+      height: 38px; border-radius: 980px;
+      background: var(--black); color: var(--white); border: none;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+      cursor: pointer; display: flex; align-items: center; gap: 7px;
+      padding: 0 14px 0 11px;
+      font-family: var(--font); font-size: 12px; font-weight: 600;
+      transition: all 0.2s; opacity: 0.85;
+    }
+    #cookie-settings-btn:hover { opacity: 1; box-shadow: 0 4px 24px rgba(0,0,0,0.25); transform: translateY(-1px); }
+    #cookie-settings-btn svg { width: 16px; height: 16px; fill: var(--white); flex-shrink: 0; }
+
+    /* SAVINGS DISCLAIMER */
+    .total-saving-disclaimer { margin-top: 14px; font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 12px; }
+
+    /* IDENTITY SECTION */
+    .identity-section {
+      background: var(--black);
+      padding: 100px 24px;
+      text-align: center;
+    }
+    .identity-eyebrow {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 28px;
+    }
+    .identity-headline {
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .identity-sub {
+      font-size: 17px;
+      color: rgba(255,255,255,0.55);
+      max-width: 560px;
+      margin: 0 auto 72px;
+      line-height: 1.65;
+    }
+    .identity-pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2px;
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.07);
+      border-radius: 22px;
+      overflow: hidden;
+    }
+    .pillar {
+      background: rgba(255,255,255,0.03);
+      padding: 44px 36px;
+      text-align: left;
+      transition: background 0.2s;
+    }
+    .pillar:hover { background: rgba(255,255,255,0.06); }
+    .pillar-icon {
+      width: 44px; height: 44px;
+      background: rgba(0,113,227,0.18);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 24px;
+      color: #5ac8fa;
+    }
+    .pillar h3 {
+      font-size: 17px; font-weight: 600;
+      color: var(--white); margin-bottom: 10px;
+      letter-spacing: -0.3px; line-height: 1.3;
+    }
+    .pillar p {
+      font-size: 14px; color: rgba(255,255,255,0.7);
+      line-height: 1.65; margin: 0;
+    }
+    .identity-exclusive {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,113,227,0.15);
+      border: 1px solid rgba(0,113,227,0.3);
+      border-radius: 980px;
+      padding: 8px 20px;
+      font-size: 12px; font-weight: 600;
+      color: #5ac8fa;
+      margin-top: 56px;
+      letter-spacing: 0.02em;
+    }
+
+    /* TRUST STRIP (under hero) */
+    .trust-strip {
+      background: var(--white);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 14px 24px;
+    }
+    .trust-strip-inner {
+      display: flex; justify-content: center; align-items: center;
+      gap: 28px; flex-wrap: wrap; max-width: 860px; margin: 0 auto;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 500; color: var(--gray);
+      white-space: nowrap;
+    }
+    .trust-item-dot {
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--green); flex-shrink: 0;
+    }
+    .trust-divider {
+      width: 1px; height: 16px;
+      background: var(--mid-gray);
+      flex-shrink: 0;
+    }
+
+    /* FAQ */
+    .faq-section { padding: 80px 32px; background: var(--white); }
+    .faq-list { max-width: 700px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--mid-gray); }
+    .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 20px 0; font-size: 16px; font-weight: 600; color: var(--black); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: var(--font); line-height: 1.4; }
+    .faq-q:hover { color: var(--blue); }
+    .faq-icon { font-size: 20px; flex-shrink: 0; transition: transform 0.2s; color: var(--blue); }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 0 20px; }
+    .faq-item.open .faq-a { display: block; }
+    .faq-a p { margin: 0; font-size: 15px; color: #444; line-height: 1.7; }
+
+    /* GEWINNSPIEL BANNER */
+    .gewinnspiel-banner {
+      background: linear-gradient(135deg, #fefef9 0%, #fffdf5 50%, #fefef9 100%);
+      border-top: 1px solid rgba(0,0,0,0.04);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      padding: 40px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .gewinnspiel-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .gewinnspiel-image {
+      flex-shrink: 0;
+      width: 220px;
+      position: relative;
+    }
+    .gewinnspiel-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .gewinnspiel-badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: linear-gradient(135deg, #ff3b30, #ff6b5a);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 980px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      box-shadow: 0 4px 12px rgba(255,59,48,0.3);
+      white-space: nowrap;
+    }
+    .gewinnspiel-content { flex: 1; }
+    .gewinnspiel-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #b8860b;
+      margin-bottom: 12px;
+    }
+    .gewinnspiel-title {
+      font-size: clamp(20px, 2.5vw, 28px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.8px;
+      color: var(--black);
+      margin-bottom: 10px;
+    }
+    .gewinnspiel-desc {
+      font-size: 15px;
+      color: var(--gray);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .gewinnspiel-desc strong { color: var(--black); }
+    .gewinnspiel-counter {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(52,199,89,0.08);
+      border: 1px solid rgba(52,199,89,0.2);
+      border-radius: 980px;
+      padding: 8px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--green-dark);
+      margin-bottom: 16px;
+    }
+    .gewinnspiel-counter .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      animation: gsPulse 2s ease-in-out infinite;
+    }
+    @keyframes gsPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+    .gewinnspiel-sponsor {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--gray);
+      margin-top: 12px;
+    }
+    .gewinnspiel-sponsor strong { color: var(--black); font-weight: 600; }
+    .gewinnspiel-cta {
+      display: inline-block;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 980px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      font-family: var(--font);
+    }
+    .gewinnspiel-cta:hover { background: var(--blue-dark); transform: scale(1.02); }
+    .gewinnspiel-legal {
+      font-size: 11px;
+      color: #aeaeb2;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    .gewinnspiel-legal a { color: #aeaeb2; text-decoration: underline; }
+    .gewinnspiel-ausgelost {
+      display: none;
+      background: rgba(255,59,48,0.06);
+      border: 1px solid rgba(255,59,48,0.15);
+      border-radius: 980px;
+      padding: 8px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--red);
+    }
+    @media (max-width: 768px) {
+      .gewinnspiel-inner { flex-direction: column; text-align: center; gap: 24px; }
+      .gewinnspiel-image { width: 180px; margin: 0 auto; }
+      .gewinnspiel-badge { top: -8px; right: -4px; }
+      .gewinnspiel-counter { margin-left: auto; margin-right: auto; }
+      .gewinnspiel-sponsor { justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      .gewinnspiel-banner { padding: 32px 16px; }
+      .gewinnspiel-image { width: 150px; }
+    }
+
+    /* ANIMATIONS */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      section { padding: 80px 20px; }
+      .hero { padding: 100px 20px 64px; }
+      nav { padding: 0 20px; }
+      .nav-right img.nav-badge { height: 44px !important; }
+      .stat-card { min-width: 120px; padding: 20px 22px; }
+      .stat-value { font-size: 22px; }
+      .social-proof-inner { gap: 16px; }
+      .trust-numbers { gap: 24px; }
+      .step { padding: 28px 24px; }
+      .faq-section { padding: 60px 20px; }
+      .identity-section { padding: 72px 20px; }
+      .pillar { padding: 32px 24px; }
+      .comparison-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .advisor-card { flex-direction: column; text-align: center; gap: 12px; padding: 20px; }
+      .advisor-info { align-items: center; }
+      .trust-strip-inner { gap: 16px; }
+      .trust-divider { display: none; }
+      .trust-item { font-size: 12px; }
+      .upload-trust-bar { gap: 12px; padding: 14px 16px; }
+      .upload-trust-item { font-size: 11px; }
+      .upload-testimonial { gap: 10px; padding: 14px 16px; }
+      .upload-testimonial-logo { width: 110px; height: 110px; }
+      .nav-cert-logo { width: 180px !important; }
+      .hero-seal-img { height: 120px; }
+      .hero-seal { margin: 20px 0 24px; }
+      #cookie-banner { padding: 20px 16px 18px; }
+      .cookie-group-header { flex-wrap: wrap; }
+      .cookie-group-toggle { margin-top: 6px; }
+      .cookie-btns { flex-direction: column; }
+      .cookie-btn { width: 100%; text-align: center; }
+      .cookie-service { flex-wrap: wrap; gap: 8px; }
+    }
+    @media (max-width: 480px) {
+      h1 { letter-spacing: -1.5px; }
+      .hero-stats { gap: 10px; }
+      .stat-card { flex: 1; min-width: 0; }
+      .social-proof-item { font-size: 12px; }
+      nav { height: 72px; padding: 0 16px; }
+      .nav-logo img { height: 68px !important; }
+      .nav-cert-logo { width: 140px !important; }
+      .hero-seal-img { height: 120px; }
+      .hero-seal { margin: 16px 0 20px; }
+      .upload-trust-bar { flex-direction: column; gap: 8px; align-items: flex-start; }
+      .upload-testimonial { flex-direction: column; text-align: center; align-items: center; }
+      .wko-placeholder { font-size: 10px; }
+      section { padding: 60px 16px; }
+      .hero { padding: 80px 16px 56px; }
+      .total-saving-amount { font-size: 40px; }
+      .total-saving-box { padding: 28px 20px; border-radius: 16px; }
+      .pool-hero-amount { font-size: 44px; }
+      .pool-hero-banner { padding: 24px 18px; border-radius: 16px; }
+      .choice-card-amount { font-size: 32px; }
+      .rec-grid { grid-template-columns: 1fr; }
+      .rec-section { padding: 16px 18px; }
+      .line-card { margin-bottom: 16px; }
+      .drop-zone { padding: 36px 20px; min-height: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+      .drop-icon-desktop { display: none; }
+      .drop-icon-mobile { display: block; width: 52px; height: 52px; margin: 0 auto 12px; }
+      .drop-text-desktop { display: none; }
+      .drop-text-mobile { display: block; font-size: 17px; }
+      .analyze-btn-sticky { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; padding: 12px 16px; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-top: 1px solid rgba(0,0,0,0.06); }
+      .analyze-btn-sticky .analyze-btn { margin-top: 0; border-radius: 12px; }
+      .lead-form-wrap { padding: 28px 18px; }
+      .line-card-header { padding: 16px 18px 14px; flex-direction: column; }
+      .line-card-header-right { text-align: left; display: flex; align-items: center; gap: 12px; }
+      .hw-section { padding: 12px 16px; }
+      .hw-list { flex-direction: column; }
+      .hw-option { width: 100%; }
+      .option-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .option-btn { padding: 16px 12px; font-size: 14px; }
+      .qc-question { font-size: 18px; }
+      .after-results-cta { padding: 24px 18px; }
+      .after-results-cta h3 { font-size: 17px; }
+      footer { padding: 32px 16px; }
+      .footer-links { flex-wrap: wrap; gap: 14px; }
+      .identity-pillars { gap: 1px; }
+      .pillar { padding: 28px 20px; }
+      .trust-pill { padding: 8px 14px; font-size: 13px; }
+      .segment-toggle { margin-bottom: 24px; }
+      .seg-btn { padding: 7px 14px; font-size: 13px; }
+      .analyze-btn { padding: 16px; font-size: 15px; }
+      .submit-btn { padding: 16px; font-size: 15px; }
+      .dsgvo-check label { font-size: 12px; }
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "handycheck.at",
+      "url": "https://handycheck.at",
+      "description": "KI-gestuetzter Firmentarif-Check: Rechnung hochladen, sofortiges Einsparpotenzial sehen.",
+      "inLanguage": "de-AT"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "handycheck.at",
+      "legalName": "dbcc GmbH",
+      "url": "https://handycheck.at",
+      "logo": "https://handycheck.at/logos/handycheck-logo.png",
+      "description": "Kostenloser KI-gestuetzter Business-Mobilfunk-Check. Zertifizierte Drei Business Partner oesterreichweit.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "AT"
+      },
+      "knowsLanguage": "de",
+      "sameAs": [
+        "https://www.facebook.com/handycheck.at",
+        "https://www.instagram.com/handycheck.at"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "office@dreibusiness.cc",
+        "contactType": "customer service",
+        "availableLanguage": "German"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ist der Check wirklich kostenlos und unverbindlich?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, vollstaendig. Der Tarif-Check kostet nichts und verpflichtet Sie zu gar nichts. Wir zeigen Ihnen das Einsparpotenzial - ob Sie wechseln oder bleiben, entscheiden ausschliesslich Sie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was passiert mit meiner hochgeladenen Rechnung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ihre Rechnung wird verschluesselt uebertragen und von unserer KI analysiert. Nach der Auswertung wird sie maximal 30 Tage aufbewahrt und danach automatisch geloescht. Die Analyse erfolgt DSGVO-konform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ich bin Drei-Bestandskunde - kann ich trotzdem sparen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, sehr oft sogar erheblich. Tarife aendern sich regelmaessig - viele Bestandskunden sind noch auf alten, teureren Tarifen. Zusaetzlich gibt es attraktive Vertragsverlaengerungsangebote mit neuen Smartphones zu Top-Konditionen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gilt der Check nur fuer Drei-Kunden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein. Wir analysieren Rechnungen aller oesterreichischen Anbieter (A1, Magenta, Spusu, HoT, bob, etc.) und zeigen, was ein Wechsel zu Drei Business bringen wuerde."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert es, bis jemand bei mir anruft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ihr regionaler Drei Business Partner meldet sich so rasch wie moeglich - persoenlich, ohne Callcenter. Waehrend der Geschaeftszeiten (Mo-Fr 8-18 Uhr) in der Regel noch am selben Tag."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Warum werden nur Drei-Tarife als Empfehlung angezeigt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "handycheck.at ist ein Service der zertifizierten Drei Business Partner Oesterreichs. Wir kennen die Drei-Tarife in- und auswendig und koennen Ihnen das bestmoegliche Angebot machen - inklusive Sonderkonditionen, die online nicht verfuegbar sind."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G7C9ZNC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip-link" href="#upload-section">Zum Inhalt springen</a>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Hauptnavigation">
+  <a href="/" class="nav-logo">
+    <img src="/logos/handycheck-logo.png" alt="handycheck.at - Zur Startseite" style="height:72px;width:auto;">
+  </a>
+  <div class="nav-right">
+    <div class="nav-cert">
+      <img src="/logos/BusinessExpert_Balken_Logo_01_26_V3.png" alt="Drei BusinessPartner Expert 2026" class="nav-cert-logo">
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+<!-- HERO -->
+<section class="hero">
+  <span class="hero-eyebrow">&#10024; &Ouml;sterreichs erste KI-Rechnungsanalyse f&uuml;r Business-Tarife &middot; Kostenlos &amp; unverbindlich</span>
+  <h1>Zahlt dein Unternehmen zu viel&nbsp;f&uuml;r&nbsp;<span class="hero-accent">Mobilfunk?</span></h1>
+  <p class="hero-sub">Lade einfach deine aktuelle Rechnung hoch - unsere KI analysiert jede Rufnummer in Sekunden. Danach meldet sich dein Expertenteam mit <strong>25+ Jahren Erfahrung</strong> pers&ouml;nlich bei dir.</p>
+  <div class="hero-seal">
+    <div class="hero-seal-wrap" id="hero-seal-wrap">
+      <img src="/logos/BusinessExpert_Siegel_Logos_01_26.png" alt="Drei Business Partner Expert 2026 - Gepr&uuml;fte Top-Beratung" class="hero-seal-img" id="hero-seal-img">
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card fade-in">
+      <span class="stat-value">bis &euro;&nbsp;400</span>
+      <span class="stat-label">Typische Ersparnis<br>pro Monat</span>
+    </div>
+    <div class="stat-card stat-green fade-in" style="transition-delay:0.1s">
+      <span class="stat-value">&Oslash; 23&nbsp;%</span>
+      <span class="stat-label">Weniger Kosten bei<br>unseren Kunden</span>
+    </div>
+    <div class="stat-card fade-in" style="transition-delay:0.2s">
+      <span class="stat-value">1.200+</span>
+      <span class="stat-label">Analysen bereits<br>durchgef&uuml;hrt</span>
+    </div>
+  </div>
+  <div class="hero-cta">
+    <a href="#upload-section" class="btn-primary">Jetzt kostenlos analysieren</a>
+    <a href="#quick-check" class="btn-secondary">Schnellcheck ohne Upload &rarr;</a>
+  </div>
+  <div class="live-counter-bar fade-in" id="live-counter" style="display:none;">
+    <span><span class="live-pulse"></span><strong id="lc-today">0</strong> Analysen heute</span>
+    <span><strong id="lc-week">0</strong> diese Woche</span>
+    <span>Letzte Analyse: <strong id="lc-last">gerade eben</strong></span>
+  </div>
+</section>
+
+<!-- GEWINNSPIEL BANNER -->
+<div class="gewinnspiel-banner" id="gewinnspiel-banner">
+  <div class="gewinnspiel-inner">
+    <div class="gewinnspiel-image">
+      <img src="/logos/vivo-v70-gewinnspiel.jpg" alt="Vivo V70 - Gewinnspiel handycheck.at" loading="eager">
+      <div class="gewinnspiel-badge">Gewinnspiel</div>
+    </div>
+    <div class="gewinnspiel-content">
+      <div class="gewinnspiel-eyebrow">&#127942; Limitierte Aktion</div>
+      <div class="gewinnspiel-title">Dein Firmen-Check k&ouml;nnte sich doppelt&nbsp;lohnen.</div>
+      <p class="gewinnspiel-desc">
+        Lade deine Firmenrechnung hoch <strong>und</strong> hinterlasse deine Kontaktdaten &mdash; schon nimmst du an der Verlosung eines brandneuen <strong>Vivo V70</strong> teil (ZEISS-Kamera, Wert <strong>&euro;&nbsp;449</strong>). Limitiert auf die ersten <strong>99&nbsp;Teilnehmer</strong>.
+      </p>
+      <div class="gewinnspiel-counter" id="gs-counter">
+        <span class="pulse-dot"></span>
+        Noch <strong id="gs-remaining">99</strong> von 99 Pl&auml;tzen frei
+      </div>
+      <div class="gewinnspiel-ausgelost" id="gs-ausgelost">
+        Alle 99 Pl&auml;tze vergeben &mdash; Verlosung l&auml;uft!
+      </div>
+      <br>
+      <a href="#upload-section" class="gewinnspiel-cta">Jetzt mitmachen &rarr;</a>
+      <div class="gewinnspiel-sponsor">
+        Gesponsert von <strong>Vivo &Ouml;sterreich</strong> &middot; Offizieller Vivo Partner
+      </div>
+      <p class="gewinnspiel-legal">
+        Teilnahme ab 18 Jahren, Sitz in &Ouml;sterreich. Rechtsweg ausgeschlossen.
+        <a href="/gewinnspiel-teilnahmebedingungen">Teilnahmebedingungen</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="trust-item">
+      <div class="trust-item-dot"></div>
+      &Oslash;&nbsp;25+ Jahre Telekommunikations-Erfahrung
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-item-dot"></div>
+      Drei Business Expert 2026
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-item-dot"></div>
+      &Ouml;sterreichweit verf&uuml;gbar
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-item-dot"></div>
+      Pers&ouml;nliche Beratung - keine Warteschleife
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-item-dot"></div>
+      DSGVO-konform &middot; Keine Registrierung
+    </div>
+  </div>
+</div>
+
+<!-- KUNDEN LOGO MARQUEE -->
+<div class="logo-marquee">
+  <div class="logo-marquee-label">Diese Unternehmen sparen bereits mit uns</div>
+  <div style="overflow:hidden;">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <img src="/logos/kunde-metzenhof.jpg" alt="Golfpark Metzenhof" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">Golfpark Metzenhof</div><div class="marquee-saving">&minus;31 % Ersparnis</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-padre.png" alt="Padre Azul / Tradition Mexico" class="marquee-logo" style="background:#1d1d1f;border-radius:8px;padding:6px;" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">Tradition Mexico GmbH</div><div class="marquee-saving">&minus;28 % Ersparnis</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-spar.png" alt="SPAR Lohnsburg" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">SPAR Lohnsburg</div><div class="marquee-saving">&euro; 95 / Monat gespart</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-braeutigam.jpg" alt="Elektro Br&auml;utigam" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">Elektro Br&auml;utigam</div><div class="marquee-saving">&minus;25 % Ersparnis</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-rrs.png" alt="RRS GmbH" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">RRS GmbH</div><div class="marquee-saving">&minus;28 % Ersparnis</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-apro.png" alt="apro Kassensysteme" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">apro Kassensysteme</div><div class="marquee-saving">&euro; 450 / Monat gespart</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-metzenhof.jpg" alt="Golfpark Metzenhof" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">Golfpark Metzenhof</div><div class="marquee-saving">&minus;31 % Ersparnis</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-padre.png" alt="Padre Azul / Tradition Mexico" class="marquee-logo" style="background:#1d1d1f;border-radius:8px;padding:6px;" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">Tradition Mexico GmbH</div><div class="marquee-saving">&minus;28 % Ersparnis</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-spar.png" alt="SPAR Lohnsburg" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">SPAR Lohnsburg</div><div class="marquee-saving">&euro; 95 / Monat gespart</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-braeutigam.jpg" alt="Elektro Br&auml;utigam" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">Elektro Br&auml;utigam</div><div class="marquee-saving">&minus;25 % Ersparnis</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-rrs.png" alt="RRS GmbH" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">RRS GmbH</div><div class="marquee-saving">&minus;28 % Ersparnis</div></div>
+      </div>
+      <div class="marquee-item">
+        <img src="/logos/kunde-apro.png" alt="apro Kassensysteme" class="marquee-logo" loading="lazy">
+        <div class="marquee-info"><div class="marquee-name">apro Kassensysteme</div><div class="marquee-saving">&euro; 450 / Monat gespart</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="container">
+    <h2 class="fade-in">So einfach geht&rsquo;s</h2>
+    <p class="section-sub fade-in">Drei Schritte. Keine Registrierung. Keine versteckten Kosten.</p>
+    <div class="steps">
+      <div class="step fade-in">
+        <div class="step-number">1</div>
+        <h3>Rechnung hochladen</h3>
+        <p>Einfach die aktuelle Mobilfunkrechnung hochladen - PDF, Foto oder Screenshot. Funktioniert mit A1, Magenta, Drei und allen anderen Anbietern.</p>
+      </div>
+      <div class="step fade-in" style="transition-delay:0.1s">
+        <div class="step-number">2</div>
+        <h3>Sofortergebnis sehen</h3>
+        <p>Unsere KI analysiert jede einzelne Rufnummer, erkennt den Verbrauch und zeigt Ihnen genau, wie viel Sie pro SIM-Karte und insgesamt sparen können.</p>
+      </div>
+      <div class="step fade-in" style="transition-delay:0.2s">
+        <div class="step-number">3</div>
+        <h3>Pers&ouml;nliche Beratung &amp; Umsetzung</h3>
+        <p>Ihr zertifizierter <strong>Drei Business Experte</strong> ruft Sie innerhalb weniger Stunden zur&uuml;ck - und wickelt alles f&uuml;r Sie ab. Kein Aufwand, kein Risiko, direkter Drei-Zugang.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTITY SECTION -->
+<section class="identity-section">
+  <div class="container">
+    <p class="identity-eyebrow">Warum handycheck.at</p>
+    <h2 class="identity-headline">Wir suchen nicht den g&uuml;nstigsten Tarif.<br>Wir suchen den richtigen.</h2>
+    <p class="identity-sub">Jedes Unternehmen ist anders. Deshalb analysiert unsere KI deine Rechnung - und danach setzt sich ein Experte pers&ouml;nlich mit dir zusammen.</p>
+    <div class="identity-pillars">
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>KI analysiert<br>deine Rechnung</h3>
+        <p>&Ouml;sterreichs erste KI-Rechnungsanalyse f&uuml;r Business-Tarife. In Sekunden. F&uuml;r A1, Magenta, Drei und alle anderen Anbieter.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Experte pr&uuml;ft<br>pers&ouml;nlich</h3>
+        <p>&Oslash; 25+ Jahre Telekommunikations-Erfahrung. Ein Ansprechpartner. Keine Warteschleife.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Du entscheidest<br>ohne Druck</h3>
+        <p>Kostenlos, unverbindlich. Wir wickeln alles ab - du unterschreibst nur wenn du willst.</p>
+      </div>
+    </div>
+    <div class="identity-exclusive">&#10022; Diese Analyse gibt es in &Ouml;sterreich kein zweites Mal</div>
+  </div>
+</section>
+
+<!-- UPLOAD SECTION -->
+<section class="upload-section" id="upload-section">
+  <div class="container-narrow">
+    <h2 class="fade-in">Ihre Rechnung - Ihr Ergebnis</h2>
+    <p class="section-sub fade-in">Einfach hochladen. Unsere KI erkennt versteckte Kosten, die Sie auf der Rechnung nie bewusst wahrgenommen haben.</p>
+
+    <div style="text-align:center; margin-bottom:32px;">
+      <span style="display:inline-flex;align-items:center;gap:8px;background:#f0f7ff;border-radius:980px;padding:8px 20px;font-size:13px;font-weight:600;color:#005bb5;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        Firmentarif-Check für Unternehmen &amp; Selbstständige
+      </span>
+    </div>
+
+    <div class="drop-zone" id="drop-zone">
+      <input type="file" id="invoice-file" accept=".pdf,.jpg,.jpeg,.png" onchange="onFileSelected(this)" aria-label="Mobilfunkrechnung hochladen (PDF, JPG oder PNG)">
+      <svg class="drop-icon drop-icon-desktop" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="12" fill="currentColor" fill-opacity="0.1"/>
+        <path d="M24 30V18M24 18L19 23M24 18L29 23" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 34h20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <svg class="drop-icon drop-icon-mobile" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" rx="12" fill="currentColor" fill-opacity="0.1"/>
+        <circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M14 18h4l2-4h8l2 4h4a2 2 0 012 2v14a2 2 0 01-2 2H12a2 2 0 01-2-2V20a2 2 0 012-2h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3 class="drop-text-desktop">Rechnung hier ablegen oder klicken</h3>
+      <h3 class="drop-text-mobile">Rechnung fotografieren oder ausw&auml;hlen</h3>
+      <p>PDF, JPG oder PNG &middot; Max. 20 MB &middot; A1, Magenta, Drei &amp; mehr</p>
+      <p class="info-gap-hint">Unsere KI findet Einsparpotenziale, die Ihnen bisher verborgen blieben.</p>
+      <p class="file-selected-name" id="file-name-display"></p>
+    </div>
+
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:16px;margin-top:16px;">
+      <span style="font-size:12px;color:var(--gray);display:flex;align-items:center;gap:5px;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Rechnung wird sofort nach Analyse gel&ouml;scht
+      </span>
+      <span style="font-size:12px;color:var(--gray);display:flex;align-items:center;gap:5px;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        Ergebnis in ca. 30&ndash;60 Sekunden
+      </span>
+      <span style="font-size:12px;color:var(--gray);display:flex;align-items:center;gap:5px;">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        Kein Konto, keine Registrierung
+      </span>
+    </div>
+
+    <div style="margin:16px auto;max-width:540px;background:var(--light-gray);border-radius:12px;padding:14px 18px;border:1px solid var(--mid-gray);">
+      <label style="font-size:12px;color:#1d1d1f;display:flex;align-items:flex-start;gap:10px;cursor:pointer;line-height:1.6;">
+        <input type="checkbox" id="upload-consent" onchange="document.getElementById('analyze-btn').disabled = !this.checked || !document.getElementById('invoice-file').files.length" style="margin-top:3px;accent-color:var(--blue);flex-shrink:0;width:16px;height:16px;">
+        <span>Ich stimme zu, dass meine Rechnung zur Tarifanalyse an die KI-Schnittstelle von Anthropic &uuml;bermittelt wird (Vertragspartner: Anthropic Ireland Ltd., Datenverarbeitung in den USA, abgesichert durch EU-Standardvertragsklauseln). Die Daten werden <strong>nicht f&uuml;r KI-Training</strong> verwendet. Die Rechnung wird <strong>maximal 30 Tage</strong> zur Bearbeitung gespeichert und danach automatisch gel&ouml;scht. &nbsp;<a href="/datenschutz" style="color:#005bb5;text-decoration:underline;">Mehr erfahren</a></span>
+      </label>
+    </div>
+
+    <button class="analyze-btn" id="analyze-btn" onclick="startAnalysis()" disabled>
+      Jetzt analysieren
+    </button>
+
+    <!-- TRUST BAR direkt beim Upload -->
+    <div class="upload-trust-bar">
+      <div class="upload-trust-item cert">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+        Drei Business Expert 2026
+      </div>
+      <div class="upload-trust-item">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        SSL-verschl&uuml;sselt
+      </div>
+      <div class="upload-trust-item">
+        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2.5"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        DSGVO-konform
+      </div>
+      <div class="upload-trust-item">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        Pers&ouml;nlicher Betreuer
+      </div>
+    </div>
+
+    <!-- KUNDENSTIMME direkt beim Upload -->
+    <div class="upload-testimonial">
+      <img src="/logos/kunde-braeutigam.jpg" alt="Elektro Br&auml;utigam" class="upload-testimonial-logo" loading="lazy">
+      <div>
+        <div class="upload-testimonial-quote">&bdquo;22 SIM-Karten, 3 Standorte - der komplette Wechsel wurde f&uuml;r uns abgewickelt.&ldquo;</div>
+        <div class="upload-testimonial-meta">
+          <span class="upload-testimonial-author">Elektro Br&auml;utigam</span>
+          <span class="upload-testimonial-saving">&minus;25 % Einsparung</span>
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align:center;font-size:12px;color:var(--gray);margin-top:14px;line-height:1.5;">
+      &#9432;&nbsp; Die Empfehlungen basieren auf aktuellen <strong>Drei Business Tarifen</strong> -
+      handycheck.at ist ein Service der zertifizierten <strong>Drei Business Partner</strong> &Ouml;sterreichs.
+    </p>
+
+    <div id="upload-results" translate="no">
+      <div class="results-header">
+        <div class="provider-badge">
+          <div class="provider-dot"></div>
+          <span id="provider-name">Anbieter erkannt</span>
+        </div>
+        <span style="font-size:13px; color:var(--gray);" id="invoice-period-display"></span>
+      </div>
+      <div class="line-cards" id="line-cards"></div>
+      <div id="total-saving-area"></div>
+      <div id="binding-warning-area"></div>
+      <div id="mna-hint-area"></div>
+      <div id="pool-choice-area"></div>
+      <div class="after-results-cta" id="after-results-cta" style="display:none;">
+        <p class="urgency-line" id="weekly-loss-line"></p>
+        <h3>Ihr pers&ouml;nliches Angebot vom Experten.</h3>
+        <p>Die KI hat die Ersteinsch&auml;tzung geliefert - jetzt pr&uuml;ft Ihr zertifizierter Drei Business Experte die Zahlen und macht Ihnen Ihr <strong>pers&ouml;nliches Angebot</strong>. Kostenlos, unverbindlich, direkt aus O&Ouml;.</p>
+        <a href="#lead-form-section" class="btn-primary">Kostenloses Angebot anfordern &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK CHECK -->
+<section class="quick-section" id="quick-check">
+  <div class="container-narrow">
+    <h2 class="fade-in">Schnellcheck - 3 Fragen, sofortige Einsch&auml;tzung</h2>
+    <p class="section-sub fade-in">Kein Upload, keine Registrierung. Drei kurze Fragen - und Sie wissen sofort, ob Sie zu viel zahlen.</p>
+
+    <div class="qc-step active" id="qc-step-1">
+      <div class="qc-progress">
+        <div class="qc-progress-dot done"></div>
+        <div class="qc-progress-dot"></div>
+        <div class="qc-progress-dot"></div>
+      </div>
+      <p class="qc-question">Wie viele SIM-Karten hat Ihr Unternehmen?</p>
+      <div class="option-grid">
+        <button class="option-btn" onclick="selectSims('1', 30)">1<small>SIM-Karte</small></button>
+        <button class="option-btn" onclick="selectSims('2–5', 100)">2–5<small>SIM-Karten</small></button>
+        <button class="option-btn" onclick="selectSims('6–15', 275)">6–15<small>SIM-Karten</small></button>
+        <button class="option-btn" onclick="selectSims('15+', 600)">15+<small>SIM-Karten</small></button>
+      </div>
+    </div>
+
+    <div class="qc-step" id="qc-step-2">
+      <div class="qc-progress">
+        <div class="qc-progress-dot done"></div>
+        <div class="qc-progress-dot done"></div>
+        <div class="qc-progress-dot"></div>
+      </div>
+      <p class="qc-question">Was zahlen Sie ungef&auml;hr pro Monat gesamt?</p>
+      <div class="option-grid">
+        <button class="option-btn" onclick="selectBill('unter € 50', 30)">unter € 50</button>
+        <button class="option-btn" onclick="selectBill('€ 50–150', 100)">€ 50–150</button>
+        <button class="option-btn" onclick="selectBill('€ 150–400', 275)">€ 150–400</button>
+        <button class="option-btn" onclick="selectBill('über € 400', 550)">über € 400</button>
+      </div>
+    </div>
+
+    <div class="qc-step" id="qc-step-3">
+      <div class="qc-progress">
+        <div class="qc-progress-dot done"></div>
+        <div class="qc-progress-dot done"></div>
+        <div class="qc-progress-dot done"></div>
+      </div>
+      <p class="qc-question">Bei welchem Anbieter sind Sie aktuell?</p>
+      <div class="option-grid">
+        <button class="option-btn" onclick="selectProvider('Drei')">Drei</button>
+        <button class="option-btn" onclick="selectProvider('A1')">A1</button>
+        <button class="option-btn" onclick="selectProvider('Magenta')">Magenta</button>
+        <button class="option-btn" onclick="selectProvider('Anderer')">Anderer</button>
+      </div>
+    </div>
+
+    <div id="qc-result">
+      <p class="qc-result-label">&#129302; Grobe Ersteinsch&auml;tzung - Einsparpotenzial</p>
+      <div class="qc-saving-range">
+        <span id="saving-min">€ 0</span> – <span id="saving-max">€ 0</span>
+        <br><small style="font-size:0.35em; letter-spacing:0; color:var(--gray); font-weight:400;">pro Monat netto (Sch&auml;tzung)</small>
+      </div>
+      <p class="qc-saving-year">Hochrechnung: bis zu <strong id="saving-year">€ 0</strong> pro Jahr</p>
+      <p class="qc-loss-12m" id="qc-loss-12m"></p>
+      <p class="netto-info">Grobe Sch&auml;tzung ohne Rechnungsanalyse &middot; Das genaue Angebot erstellt Ihr Experte im pers&ouml;nlichen Gespr&auml;ch</p>
+      <p class="qc-result-cta-label">Jetzt pers&ouml;nliches Angebot vom Experten holen.</p>
+      <a href="#lead-form-section" class="btn-primary">Pers&ouml;nliches Angebot anfordern &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- LEAD FORM -->
+<section id="lead-form-section">
+  <div class="container-narrow">
+    <h2 class="fade-in">Jetzt R&uuml;ckruf anfordern - kostenlos &amp; unverbindlich.</h2>
+    <p class="section-sub fade-in">Ihr pers&ouml;nlicher Drei Business Experte erkl&auml;rt Ihnen in einem kurzen Gespr&auml;ch genau, wie viel Sie sparen k&ouml;nnen und was der n&auml;chste Schritt w&auml;re. Keine Verpflichtung, kein Verkaufsdruck.</p>
+
+    <div class="advisor-card fade-in">
+      <div class="advisor-avatar" style="background:linear-gradient(135deg,#0055d4,#0071e3);font-size:22px;">&#128101;</div>
+      <div class="advisor-info">
+        <span class="advisor-title">Ihr Expertenteam</span>
+        <strong>&Oslash; 25+ Jahre Telekom-Erfahrung. Pers&ouml;nlich. Direkt. &Ouml;sterreichweit.</strong>
+        <span>Zertifizierte Drei Business Partner &middot; Pers&ouml;nliche Beratung in Ihrer Region &middot; Kein Callcenter &middot; R&uuml;ckruf so rasch wie m&ouml;glich</span>
+      </div>
+    </div>
+
+    <div id="lead-form-inner">
+      <form id="lead-form" onsubmit="submitLeadForm(event)">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="f-anrede">Anrede<span class="req">*</span></label>
+            <select id="f-anrede" name="anrede" required style="width:100%;padding:12px 14px;border:1px solid #d2d2d7;border-radius:10px;font-size:15px;color:#1d1d1f;background:#fff;appearance:auto;">
+              <option value="" disabled selected>W&auml;hlen</option>
+              <option value="Herr">Herr</option>
+              <option value="Frau">Frau</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-name">Name<span class="req">*</span></label>
+            <input type="text" id="f-name" name="name" placeholder="Max Mustermann" required>
+          </div>
+          <div class="form-group">
+            <label for="f-company">Firma</label>
+            <input type="text" id="f-company" name="company" placeholder="Muster GmbH">
+          </div>
+          <div class="form-group">
+            <label for="f-phone">Telefon<span class="req">*</span></label>
+            <input type="tel" id="f-phone" name="phone" placeholder="+43 664 ..." required>
+          </div>
+          <div class="form-group">
+            <label for="f-email">E-Mail <span style="font-weight:400;color:var(--gray);font-size:12px;">(Best&auml;tigung erhalten)</span></label>
+            <input type="email" id="f-email" name="email" placeholder="max@firma.at">
+          </div>
+          <div class="form-group">
+            <label for="f-plz">PLZ<span class="req">*</span> <span style="font-weight:400;color:var(--gray);font-size:12px;">(Firmenstandort)</span></label>
+            <input type="text" id="f-plz" name="plz" placeholder="z.B. 4910" maxlength="4" pattern="[0-9]{4}" inputmode="numeric" required>
+          </div>
+          <div class="form-group full">
+            <label for="f-message">Anmerkungen</label>
+            <textarea id="f-message" name="message" placeholder="Optionale Anmerkungen zu Ihrem aktuellen Tarif..."></textarea>
+          </div>
+        </div>
+        <input type="hidden" id="f-sims" name="simCount">
+        <input type="hidden" id="f-bill" name="monthlyBill">
+        <input type="hidden" id="f-provider-hidden" name="provider">
+        <input type="hidden" id="f-source" name="source" value="handycheck.at">
+        <input type="hidden" id="f-choice" name="vorteilChoice" value="">
+        <input type="hidden" id="f-pool-total" name="poolTotal" value="">
+        <input type="hidden" id="f-treubonus-total" name="treuBonusTotal" value="">
+        <div class="dsgvo-check">
+          <input type="checkbox" id="f-consent" name="consent" required>
+          <label for="f-consent">Ich stimme zu, dass meine Kontaktdaten (Name, Telefon, E-Mail) sowie die Ergebnisse meines Tarif-Checks von der dbcc GmbH zur Bearbeitung meiner Anfrage gespeichert und verarbeitet werden. Die Daten werden zur Kontaktaufnahme und Beratung an den f&uuml;r Ihre Region zust&auml;ndigen zertifizierten Drei Business Partner weitergeleitet und in unser CRM-System &uuml;bertragen. L&ouml;schung sp&auml;testens 3 Jahre nach Abschluss der Gesch&auml;ftsbeziehung. <a href="/datenschutz" style="color:#005bb5;text-decoration:underline;">Datenschutzerkl&auml;rung</a></label>
+        </div>
+        <div class="dsgvo-check" id="gs-checkbox-wrap" style="margin-top:8px;background:rgba(255,215,0,0.06);border:1px solid rgba(255,215,0,0.2);border-radius:10px;padding:12px 14px;">
+          <input type="checkbox" id="f-gewinnspiel" name="gewinnspiel">
+          <label for="f-gewinnspiel" style="font-size:13px;">&#127942; <strong>Ja, ich m&ouml;chte am Gewinnspiel teilnehmen</strong> und ein Vivo V70 (Wert &euro;&nbsp;449) gewinnen. Es gelten die <a href="/gewinnspiel-teilnahmebedingungen" style="color:#005bb5;text-decoration:underline;">Teilnahmebedingungen</a>. Veranstalter: dbcc GmbH.</label>
+        </div>
+        <button type="submit" class="submit-btn" id="submit-btn">Kostenlos R&uuml;ckruf anfordern &rarr;</button>
+      </form>
+    </div>
+
+    <div class="form-success" id="form-success">
+      <div class="form-success-icon">&#10003;</div>
+      <h3>Anfrage erhalten - wir melden uns!</h3>
+      <p>Ihr zertifizierter Drei Business Experte wird Sie innerhalb weniger Stunden pers&ouml;nlich zur&uuml;ckrufen.</p>
+      <p id="form-success-email-note" style="display:none;font-size:14px;color:#86868b;margin-top:8px;">&#128231; Eine Best&auml;tigung wurde an Ihre E-Mail-Adresse gesendet.</p>
+      <p style="font-size:14px;color:#86868b;margin-top:12px;">Tipp: Halten Sie kurz Ihre aktuelle Rechnung bereit - dann geht die Beratung besonders schnell.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="comparison-section">
+  <div class="container">
+    <h2 class="fade-in" style="text-align:center;">Warum handycheck.at mehr spart als jedes Vergleichsportal</h2>
+    <p class="section-sub fade-in" style="text-align:center;">Kein Algorithmus kennt Ihren Tarif so gut wie ein zertifizierter Drei Business Experte.</p>
+    <div style="overflow-x:auto;">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Merkmal</th>
+            <th class="col-handycheck">handycheck.at</th>
+            <th>Vergleichsportale</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rechnungsanalyse</td>
+            <td><span class="check">&#10003;</span> Ihre echten Kosten</td>
+            <td><span class="cross">&#10007;</span> Nur Listenpreise</td>
+          </tr>
+          <tr>
+            <td>Tiefe der Analyse</td>
+            <td><span class="check">&#10003;</span> Pro Rufnummer &middot; jede Leitung einzeln bewertet</td>
+            <td><span class="cross">&#10007;</span> Gesamttarif-Vergleich</td>
+          </tr>
+          <tr>
+            <td>Bearbeitungszeit</td>
+            <td><span class="check">&#10003;</span> Sofort - in 60 Sekunden</td>
+            <td><span class="cross">&#10007;</span> 2&ndash;5 Werktage</td>
+          </tr>
+          <tr>
+            <td>Pers&ouml;nliche Beratung</td>
+            <td><span class="check">&#10003;</span> Drei Business Experte</td>
+            <td><span class="cross">&#10007;</span> Kein Ansprechpartner</td>
+          </tr>
+          <tr>
+            <td>Lokaler Partner</td>
+            <td><span class="check">&#10003;</span> Regionaler Drei Business Partner</td>
+            <td><span class="cross">&#10007;</span> Anonymes Portal</td>
+          </tr>
+          <tr>
+            <td>Abschluss m&ouml;glich</td>
+            <td><span class="check">&#10003;</span> Direkt &amp; sofort</td>
+            <td><span class="cross">&#10007;</span> Weiterleitung zum Anbieter</td>
+          </tr>
+          <tr>
+            <td>Bestehende Kunden</td>
+            <td><span class="check">&#10003;</span> Auch Drei-Kunden optimierbar</td>
+            <td><span class="cross">&#10007;</span> Nur Neukunden</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust-section">
+  <div class="container-narrow">
+    <img src="/logos/BusinessExpert_Siegel_Logos_01_26.png" alt="Drei Business Partner Expert 2026" class="trust-badge-img fade-in" loading="lazy">
+    <p class="trust-text fade-in">KI-Analyse trifft pers&ouml;nliche Beratung - kein Callcenter, kein Bot. Ein echter Betreuer kontaktiert Sie 1:1 und begleitet Sie durch den gesamten Prozess.</p>
+
+    <div class="trust-cta fade-in">
+      <a href="#upload-section" class="trust-cta-btn">Jetzt pr&uuml;fen - dauert nur 60 Sekunden</a>
+      <p class="trust-cta-hint">Kostenlos &amp; unverbindlich &middot; <strong>Kein Verkaufsdruck</strong> &middot; Kein Konto n&ouml;tig</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" style="padding:80px 24px;">
+  <div class="container-narrow" style="text-align:center;">
+    <h2>Das sagen unsere Kunden</h2>
+    <p class="section-sub" style="margin-bottom:40px;">Echte Ergebnisse aus echten Analysen.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <img src="/logos/kunde-metzenhof.jpg" alt="Golfpark Metzenhof" class="testimonial-logo" loading="lazy">
+        <div class="testimonial-saving">&minus;31 % Ersparnis</div>
+        <p class="testimonial-quote">&bdquo;Wir dachten, unsere Tarife passen. 2 Minuten Upload, die KI hat alles gepr&uuml;ft - und dann hat sich ein pers&ouml;nlicher Berater gemeldet. Kein Callcenter, ein echter Ansprechpartner.&ldquo;</p>
+        <div class="testimonial-author"><strong>Golfpark Metzenhof</strong><br>4484 Kronstorf &middot; 6 SIM-Karten</div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <img src="/logos/kunde-spar.png" alt="SPAR Lohnsburg" class="testimonial-logo" loading="lazy">
+        <div class="testimonial-saving">&euro; 95 / Monat gespart</div>
+        <p class="testimonial-quote">&bdquo;&euro;&nbsp;95 im Monat - das sind &uuml;ber &euro;&nbsp;1.100 im Jahr. Die KI hat das sofort erkannt, und am n&auml;chsten Tag hat uns ein pers&ouml;nlicher Berater alles erkl&auml;rt. So muss das laufen.&ldquo;</p>
+        <div class="testimonial-author"><strong>SPAR</strong><br>4923 Lohnsburg &middot; 8 SIM-Karten</div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <img src="/logos/kunde-rrs.png" alt="RRS GmbH" class="testimonial-logo" loading="lazy">
+        <div class="testimonial-saving">&minus;28 % Einsparung</div>
+        <p class="testimonial-quote">&bdquo;Wir waren schon Drei-Kunden - und trotzdem hat die KI 28&nbsp;% Einsparpotenzial gefunden. Ein pers&ouml;nlicher Betreuer hat uns dann 1:1 durch den Umstieg begleitet. Bessere Tarife, gleicher Anbieter.&ldquo;</p>
+        <div class="testimonial-author"><strong>RRS GmbH</strong><br>4972 Utzenaich &middot; 14 SIM-Karten</div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <img src="/logos/kunde-apro.png" alt="apro Kassensysteme" class="testimonial-logo" loading="lazy">
+        <div class="testimonial-saving">&euro; 450 / Monat gespart</div>
+        <p class="testimonial-quote">&bdquo;50 Datenkarten f&uuml;r unsere Kassen - die KI hat &euro;&nbsp;5.400 Jahresersparnis errechnet. Dann hat sich ein Berater gemeldet und alles abgewickelt. Null Aufwand f&uuml;r uns.&ldquo;</p>
+        <div class="testimonial-author"><strong>apro Kassensysteme</strong><br>3312 Oed &middot; 50 Datenkarten</div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <img src="/logos/kunde-padre.png" alt="Tradition Mexico GmbH" class="testimonial-logo" style="background:#1d1d1f;border-radius:6px;padding:4px;" loading="lazy">
+        <div class="testimonial-saving">&minus;28 % Einsparung</div>
+        <p class="testimonial-quote">&bdquo;Als Gesch&auml;ftsf&uuml;hrer hat man f&uuml;r Mobilfunktarife keine Zeit. Rechnung hochgeladen, KI hat analysiert - und ein echter Berater hat mich pers&ouml;nlich angerufen. Kein Bot, ein Mensch.&ldquo;</p>
+        <div class="testimonial-author"><strong>Tradition Mexico GmbH</strong><br>6112 Wattens &middot; 10 SIM-Karten</div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <img src="/logos/kunde-braeutigam.jpg" alt="Elektro Br&auml;utigam" class="testimonial-logo" loading="lazy">
+        <div class="testimonial-saving">&minus;25 % Einsparung</div>
+        <p class="testimonial-quote">&bdquo;22 SIM-Karten &uuml;ber 3 Standorte - wir waren jahrelang bei Magenta. Die KI hat gezeigt, was m&ouml;glich ist, und ein pers&ouml;nlicher Betreuer hat den kompletten Wechsel f&uuml;r uns &uuml;bernommen.&ldquo;</p>
+        <div class="testimonial-author"><strong>Elektro Br&auml;utigam</strong><br>4300 St. Valentin &middot; 22 SIM-Karten</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA PROTECTION -->
+<section class="dataprotect-section" style="padding:72px 24px;">
+  <div class="container-narrow" style="text-align:center;">
+    <h2>So sch&uuml;tzen wir Ihre Daten</h2>
+    <p class="section-sub" style="margin-bottom:40px;">Sicherheit und Datenschutz stehen bei uns an erster Stelle.</p>
+    <div class="dataprotect-grid">
+      <div class="dataprotect-card fade-in">
+        <div class="dataprotect-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="dataprotect-title">Verschl&uuml;sselte &Uuml;bertragung</div>
+        <p class="dataprotect-desc">Ihre Daten werden mit 256-Bit TLS-Verschl&uuml;sselung &uuml;bertragen - der gleiche Standard wie beim Online-Banking.</p>
+      </div>
+      <div class="dataprotect-card fade-in">
+        <div class="dataprotect-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+        </div>
+        <div class="dataprotect-title">Keine Weitergabe</div>
+        <p class="dataprotect-desc">Ihre Rechnung wird ausschlie&szlig;lich f&uuml;r die Analyse verwendet und niemals an Dritte weitergegeben.</p>
+      </div>
+      <div class="dataprotect-card fade-in">
+        <div class="dataprotect-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="dataprotect-title">Automatische L&ouml;schung</div>
+        <p class="dataprotect-desc">Hochgeladene Dokumente werden nach sp&auml;testens 30 Tagen automatisch und unwiderruflich gel&ouml;scht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container-narrow">
+    <h2 style="text-align:center;margin-bottom:8px;">H&auml;ufig gestellte Fragen</h2>
+    <p class="section-sub" style="text-align:center;margin-bottom:40px;">Alles, was Sie vor dem Check wissen m&ouml;chten.</p>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Ist der Check wirklich kostenlos und unverbindlich?
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-a">
+          <p>Ja, vollst&auml;ndig. Der Tarif-Check kostet nichts und verpflichtet Sie zu gar nichts. Wir zeigen Ihnen das Einsparpotenzial - ob Sie wechseln oder bleiben, entscheiden ausschlie&szlig;lich Sie.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Was passiert mit meiner hochgeladenen Rechnung?
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-a">
+          <p>Ihre Rechnung wird verschl&uuml;sselt &uuml;bertragen und von unserer KI analysiert. Nach der Auswertung wird sie maximal 30 Tage f&uuml;r die Bearbeitung Ihrer Anfrage aufbewahrt und danach automatisch gel&ouml;scht. Die Analyse erfolgt DSGVO-konform &uuml;ber Anthropic (Vertragspartner in Irland, Verarbeitung in den USA mit EU-Datenschutzklauseln, kein Training, keine dauerhafte Speicherung). Details finden Sie in unserer <a href="/datenschutz" style="color:#0071e3;">Datenschutzerkl&auml;rung</a>.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Ich bin Drei-Bestandskunde - kann ich trotzdem sparen?
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-a">
+          <p>Ja, sehr oft sogar erheblich. Tarife &auml;ndern sich regelm&auml;&szlig;ig - viele Bestandskunden sind noch auf alten, teureren Tarifen. Zus&auml;tzlich gibt es f&uuml;r Drei-Kunden attraktive Vertragsverlängerungsangebote (VVL/TreuBonus) mit neuen Smartphones zu Top-Konditionen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Ich habe keine PDF-Rechnung - geht das auch ohne Upload?
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-a">
+          <p>Ja. Nutzen Sie den <strong>Schnellcheck</strong> (3 kurze Fragen ohne Upload) f&uuml;r eine erste Einsch&auml;tzung. F&uuml;r eine detaillierte Analyse pro SIM-Karte ben&ouml;tigen wir aber die Rechnung - auch ein Foto reicht.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Wie lange dauert es, bis jemand bei mir anruft?
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-a">
+          <p>Ihr regionaler Drei Business Partner meldet sich so rasch wie m&ouml;glich - pers&ouml;nlich, ohne Callcenter und ohne Warteschleife. W&auml;hrend der Gesch&auml;ftszeiten (Mo&ndash;Fr 8&ndash;18 Uhr) in der Regel noch am selben Tag.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Gilt der Check nur f&uuml;r Drei-Kunden?
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-a">
+          <p>Nein. Wir analysieren Rechnungen aller &ouml;sterreichischen Anbieter (A1, Magenta, Spusu, HoT, bob, etc.) und zeigen, was ein Wechsel zu Drei Business bringen w&uuml;rde. Auch Bestandskunden bei Drei profitieren vom Check.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Warum werden nur Drei-Tarife als Empfehlung angezeigt?
+          <span class="faq-icon">&#43;</span>
+        </button>
+        <div class="faq-a">
+          <p>handycheck.at ist ein Service der zertifizierten Drei Business Partner &Ouml;sterreichs, betrieben von der dbcc GmbH. Wir sind kein neutrales Vergleichsportal, sondern ein Netzwerk aus Drei-Spezialisten mit &uuml;ber 25 Jahren Telekom-Erfahrung. Das bedeutet: Wir kennen die Drei-Tarife in- und auswendig und k&ouml;nnen Ihnen das bestm&ouml;gliche Angebot machen - inklusive Sonderkonditionen, die online nicht verf&uuml;gbar sind. Ihr regionaler Drei Business Partner ber&auml;t Sie pers&ouml;nlich vor Ort.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-logo">handycheck<span>.at</span></div>
+  <div class="footer-tagline">Ein Service der dbcc GmbH in Zusammenarbeit mit den Drei Business Partnern &Ouml;sterreichs</div>
+  <div class="footer-links">
+    <a href="/impressum">Impressum</a>
+    <a href="/datenschutz">Datenschutz</a>
+    <a href="/agb">AGB</a>
+    <a href="/barrierefreiheit">Barrierefreiheit</a>
+    <a href="/gewinnspiel-teilnahmebedingungen">Gewinnspiel</a>
+  </div>
+  <div class="footer-contact" style="margin-bottom:20px;">
+    <a href="tel:+4377522626" style="font-size:13px;color:var(--gray);text-decoration:none;">Tel: +43 7752 22626</a>
+    <span style="color:var(--mid-gray);margin:0 6px;" aria-hidden="true">&middot;</span>
+    <a href="mailto:info@handycheck.at" style="font-size:13px;color:var(--gray);text-decoration:none;">info@handycheck.at</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 dbcc GmbH. Alle Rechte vorbehalten.</div>
+</footer>
+
+<!-- COOKIE OVERLAY + BANNER -->
+<div id="cookie-overlay"></div>
+<div id="cookie-banner" role="dialog" aria-label="Datenschutzeinstellungen">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+    <div class="cookie-title">
+      <img src="/logos/handycheck-logo-clean.png" alt="handycheck.at" style="height:28px;vertical-align:middle;margin-right:10px;" onerror="this.style.display='none'">Datenschutzeinstellungen
+    </div>
+    <div class="cookie-footer-links">
+      <a href="/datenschutz">Datenschutzerkl&auml;rung</a>
+      <a href="/impressum">Impressum</a>
+    </div>
+  </div>
+
+  <div class="cookie-text">
+    Hier finden Sie eine &Uuml;bersicht &uuml;ber alle verwendeten Cookies. Sie k&ouml;nnen Ihre Einwilligung zu ganzen Kategorien geben oder sich weitere Informationen anzeigen lassen und so nur bestimmte Cookies ausw&auml;hlen.
+  </div>
+
+  <div class="cookie-text" style="background:#fff3f3;border-left:3px solid #e74c3c;padding:10px 14px;border-radius:6px;font-size:12px;color:#444;">
+    Einige Services verarbeiten personenbezogene Daten in den USA. Mit Ihrer Einwilligung zur Nutzung dieser Services willigen Sie auch in die Verarbeitung Ihrer Daten in den USA gem&auml;&szlig; Art.&nbsp;49 (1) lit.&nbsp;a DSGVO ein.
+  </div>
+
+  <!-- KATEGORIEN -->
+  <div class="cookie-categories">
+
+    <!-- ESSENZIELL -->
+    <div class="cookie-group" id="cg-essential">
+      <div class="cookie-group-header">
+        <input type="checkbox" id="ck-essential" checked disabled>
+        <div class="cookie-group-info">
+          <div class="cookie-group-name">Essenziell</div>
+          <div class="cookie-group-desc">Essenzielle Cookies erm&ouml;glichen grundlegende Funktionen und sind f&uuml;r die einwandfreie Funktion der Website erforderlich.</div>
+        </div>
+        <button class="cookie-group-toggle" onclick="toggleCookieGroup('cg-essential')">
+          Cookie-Informationen anzeigen
+          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </button>
+      </div>
+      <div class="cookie-group-details">
+        <div class="cookie-service">
+          <div>
+            <div class="cookie-service-name">Cookie-Einstellungen</div>
+            <div class="cookie-service-provider">Anbieter: handycheck.at</div>
+          </div>
+          <div class="cookie-service-right">
+            <label class="cookie-switch"><input type="checkbox" checked disabled><span class="cookie-switch-slider"></span></label>
+            <span class="cookie-service-status">Immer an</span>
+          </div>
+        </div>
+        <div class="cookie-service">
+          <div>
+            <div class="cookie-service-name">Google Tag Manager</div>
+            <div class="cookie-service-provider">Anbieter: Google Ireland Limited</div>
+          </div>
+          <div class="cookie-service-right">
+            <label class="cookie-switch"><input type="checkbox" checked disabled><span class="cookie-switch-slider"></span></label>
+            <span class="cookie-service-status">Immer an</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATISTIKEN -->
+    <div class="cookie-group" id="cg-statistics">
+      <div class="cookie-group-header">
+        <input type="checkbox" id="ck-statistics" onchange="syncCookieGroup('statistics')">
+        <div class="cookie-group-info">
+          <div class="cookie-group-name">Statistiken</div>
+          <div class="cookie-group-desc">Statistik-Cookies erfassen Informationen anonym. Diese Informationen helfen uns zu verstehen, wie unsere Besucher unsere Website nutzen.</div>
+        </div>
+        <button class="cookie-group-toggle" onclick="toggleCookieGroup('cg-statistics')">
+          Cookie-Informationen anzeigen
+          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </button>
+      </div>
+      <div class="cookie-group-details">
+        <div class="cookie-service">
+          <div>
+            <div class="cookie-service-name">Google Analytics</div>
+            <div class="cookie-service-provider">Anbieter: Google Ireland Limited</div>
+          </div>
+          <div class="cookie-service-right">
+            <label class="cookie-switch"><input type="checkbox" id="cs-analytics" onchange="syncServiceToGroup('statistics')"><span class="cookie-switch-slider"></span></label>
+            <span class="cookie-service-status" id="cs-analytics-label">Aus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MARKETING -->
+    <div class="cookie-group" id="cg-marketing">
+      <div class="cookie-group-header">
+        <input type="checkbox" id="ck-marketing" onchange="syncCookieGroup('marketing')">
+        <div class="cookie-group-info">
+          <div class="cookie-group-name">Marketing</div>
+          <div class="cookie-group-desc">Marketing-Cookies werden von Drittanbietern verwendet, um personalisierte Werbung anzuzeigen. Sie helfen uns, die Effektivit&auml;t unserer Werbekampagnen zu messen.</div>
+        </div>
+        <button class="cookie-group-toggle" onclick="toggleCookieGroup('cg-marketing')">
+          Cookie-Informationen anzeigen
+          <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </button>
+      </div>
+      <div class="cookie-group-details">
+        <div class="cookie-service">
+          <div>
+            <div class="cookie-service-name">Meta Pixel (Facebook)</div>
+            <div class="cookie-service-provider">Anbieter: Meta Platforms Ireland Limited</div>
+          </div>
+          <div class="cookie-service-right">
+            <label class="cookie-switch"><input type="checkbox" id="cs-metapixel" onchange="syncServiceToGroup('marketing')"><span class="cookie-switch-slider"></span></label>
+            <span class="cookie-service-status" id="cs-metapixel-label">Aus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cookie-btns">
+    <button class="cookie-btn cookie-btn-save" onclick="cookieSaveChoices()">Speichern</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieAcceptAll()">Alle akzeptieren</button>
+  </div>
+</div>
+
+<!-- Datenschutz-Button links unten (öffnet Cookie-Einstellungen erneut) -->
+<button id="cookie-settings-btn" onclick="openCookieSettings()" title="Datenschutzeinstellungen" aria-label="Datenschutzeinstellungen">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+  <span>Cookie-Einstellungen</span>
+</button>
+
+<script>
+// STATE
+var selectedSegment = 'business'; // fixed — Business-only
+var selectedFile = null;
+var qcSims = '';
+var qcBill = '';
+var qcBillMidpoint = 0;
+var qcProvider = '';
+var lastAnalysisResult = null; // stores last upload analysis for lead form
+
+// COOKIE GROUP TOGGLE
+function toggleCookieGroup(id) {
+  var el = document.getElementById(id);
+  el.classList.toggle('open');
+  var btn = el.querySelector('.cookie-group-toggle');
+  if (el.classList.contains('open')) {
+    btn.innerHTML = 'Cookie-Informationen ausblenden <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>';
+  } else {
+    btn.innerHTML = 'Cookie-Informationen anzeigen <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>';
+  }
+}
+function syncCookieGroup(group) {
+  if (group === 'statistics') {
+    var checked = document.getElementById('ck-statistics').checked;
+    document.getElementById('cs-analytics').checked = checked;
+    document.getElementById('cs-analytics-label').textContent = checked ? 'An' : 'Aus';
+  } else if (group === 'marketing') {
+    var checked = document.getElementById('ck-marketing').checked;
+    document.getElementById('cs-metapixel').checked = checked;
+    document.getElementById('cs-metapixel-label').textContent = checked ? 'An' : 'Aus';
+  }
+}
+function syncServiceToGroup(group) {
+  if (group === 'statistics') {
+    var on = document.getElementById('cs-analytics').checked;
+    document.getElementById('ck-statistics').checked = on;
+    document.getElementById('cs-analytics-label').textContent = on ? 'An' : 'Aus';
+  } else if (group === 'marketing') {
+    var on = document.getElementById('cs-metapixel').checked;
+    document.getElementById('ck-marketing').checked = on;
+    document.getElementById('cs-metapixel-label').textContent = on ? 'An' : 'Aus';
+  }
+}
+
+// FILE
+function onFileSelected(input) {
+  if (input.files && input.files[0]) {
+    selectedFile = input.files[0];
+    var display = document.getElementById('file-name-display');
+    display.textContent = '✅ ' + selectedFile.name;
+    display.classList.add('has-file');
+    document.getElementById('analyze-btn').disabled = !document.getElementById('upload-consent').checked;
+    if (window.innerWidth <= 480) {
+      document.getElementById('analyze-btn').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+}
+
+var dz = document.getElementById('drop-zone');
+if (dz) {
+dz.addEventListener('click', function(e) {
+  if (e.target !== document.getElementById('invoice-file')) {
+    document.getElementById('invoice-file').click();
+  }
+});
+dz.addEventListener('dragover', function(e) { e.preventDefault(); dz.classList.add('dragover'); });
+dz.addEventListener('dragleave', function() { dz.classList.remove('dragover'); });
+dz.addEventListener('drop', function(e) {
+  e.preventDefault();
+  dz.classList.remove('dragover');
+  var f = e.dataTransfer.files[0];
+  if (f) {
+    selectedFile = f;
+    document.getElementById('file-name-display').textContent = f.name;
+    document.getElementById('analyze-btn').disabled = !document.getElementById('upload-consent').checked;
+  }
+});
+} // end if(dz)
+
+// ANALYSIS
+function resetUpload() {
+  selectedFile = null;
+  document.getElementById('file-name-display').textContent = '';
+  document.getElementById('upload-results').style.display = 'none';
+  var fileInput = document.getElementById('invoice-file');
+  if (fileInput) fileInput.value = '';
+  document.getElementById('analyze-btn').disabled = true;
+  document.querySelector('.results-header').style.display = '';
+  document.getElementById('upload-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+async function startAnalysis() {
+  if (!selectedFile) return;
+  var btn = document.getElementById('analyze-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<div class="spinner"></div> Wird analysiert\u2026';
+  try {
+    var formData = new FormData();
+    formData.append('invoice', selectedFile);
+    formData.append('segment', selectedSegment);
+    var response = await fetch('/api/analyze', { method: 'POST', body: formData });
+    var result;
+    try { result = await response.json(); } catch(e) { result = null; }
+    if (!response.ok || !result) {
+      var errorMsg = (result && result.error) || 'Die Analyse konnte nicht abgeschlossen werden.';
+      showAnalysisError(errorMsg);
+    } else {
+      displayResults(result);
+    }
+  } catch(err) {
+    console.error(err);
+    showAnalysisError('Die Verbindung zum Server wurde unterbrochen. Bitte versuchen Sie es in wenigen Minuten erneut.');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = 'Jetzt analysieren';
+  }
+}
+
+function showAnalysisError(msg) {
+  var area = document.getElementById('upload-results');
+  area.style.display = 'block';
+  setTimeout(function() { area.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 120);
+  var providerEl = document.getElementById('provider-name');
+  var periodEl = document.getElementById('invoice-period-display');
+  if (providerEl) providerEl.textContent = '';
+  if (periodEl) periodEl.textContent = '';
+  var header = document.querySelector('.results-header');
+  if (header) header.style.display = 'none';
+  var ctaArea = document.getElementById('after-results-cta');
+  if (ctaArea) ctaArea.style.display = 'none';
+  var savingArea = document.getElementById('total-saving-area');
+  if (savingArea) savingArea.innerHTML = '';
+  var cards = document.getElementById('line-cards');
+  cards.innerHTML = '<div style="text-align:center; padding:48px 24px;">' +
+    '<div style="font-size:48px; margin-bottom:16px;">⏳</div>' +
+    '<div style="font-size:20px; font-weight:700; color:#333; margin-bottom:12px;">Analyse vorübergehend nicht möglich</div>' +
+    '<div style="font-size:15px; color:#86868b; margin-bottom:8px; max-width:440px; margin-left:auto; margin-right:auto;">' + msg + '</div>' +
+    '<div style="font-size:14px; color:#86868b; margin-bottom:24px; max-width:440px; margin-left:auto; margin-right:auto;">Bitte versuchen Sie es in wenigen Minuten erneut oder kontaktieren Sie uns direkt.</div>' +
+    '<div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">' +
+    '<button onclick="resetUpload()" style="padding:12px 28px; background:#0071e3; color:white; border:none; border-radius:12px; font-size:15px; font-weight:600; cursor:pointer; font-family:inherit;">Erneut versuchen</button>' +
+    '<a href="tel:+4377527250" style="padding:12px 28px; background:#34c759; color:white; border:none; border-radius:12px; font-size:15px; font-weight:600; cursor:pointer; font-family:inherit; text-decoration:none; display:inline-block;">Jetzt anrufen</a>' +
+    '</div></div>';
+}
+
+function displayResults(result) {
+  // Reset choice state for new analysis
+  selectedChoice = null;
+  var fChoice = document.getElementById('f-choice');
+  if (fChoice) fChoice.value = '';
+  var fPoolTotal = document.getElementById('f-pool-total');
+  if (fPoolTotal) fPoolTotal.value = '';
+  var fTreuTotal = document.getElementById('f-treubonus-total');
+  if (fTreuTotal) fTreuTotal.value = '';
+
+  // Store for lead form enrichment
+  if (result && result.success) {
+    lastAnalysisResult = {
+      provider: result.provider,
+      invoiceTotal: result.invoiceTotal,
+      totalSaving: result.totalSaving,
+      totalSavingYearly: result.totalSavingYearly,
+      lines: (result.lines || []).map(function(l) {
+        var rec = l.recommendations && l.recommendations[0];
+        return {
+          number: l.number,
+          numberFormatted: l.numberFormatted,
+          userName: l.userName,
+          tariffName: l.tariffName,
+          amountBrutto: l.amountBrutto,
+          amountNetto: l.amountNetto,
+          type: l.type,
+          vvlRenewal: l.vvlRenewal || false,
+          bestRec: rec ? { tariffName: rec.tariff ? rec.tariff.name : null, monthly: rec.tariff ? rec.tariff.monthly : null, monthlySaving: rec.monthlySaving } : null
+        };
+      }),
+      poolSummary: result.poolSummary || null,
+      invoiceFile: result.invoiceFile || null
+    };
+  }
+
+  var area = document.getElementById('upload-results');
+  area.style.display = 'block';
+  // Delay scrollIntoView to avoid Chrome layout/insertBefore conflicts
+  setTimeout(function() {
+    area.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 120);
+
+  var providerEl = document.getElementById('provider-name');
+  var periodEl = document.getElementById('invoice-period-display');
+  var provHidden = document.getElementById('f-provider-hidden');
+  var cards = document.getElementById('line-cards');
+  cards.innerHTML = '';
+  var lines = result.lines || [];
+
+  // Keine Mobilfunkrechnung erkannt
+  if (!result.success || lines.length === 0) {
+    if (providerEl) providerEl.textContent = '';
+    if (periodEl) periodEl.textContent = '';
+    document.querySelector('.results-header').style.display = 'none';
+    var ctaArea = document.getElementById('after-results-cta');
+    if (ctaArea) ctaArea.style.display = 'none';
+    var savingArea = document.getElementById('total-saving-area');
+    if (savingArea) savingArea.innerHTML = '';
+    cards.innerHTML = '<div style="text-align:center; padding:48px 24px;">' +
+      '<div style="font-size:48px; margin-bottom:16px;">\u26a0\ufe0f</div>' +
+      '<div style="font-size:20px; font-weight:700; color:#ff3b30; margin-bottom:8px;">Keine Mobilfunkrechnung erkannt</div>' +
+      '<div style="font-size:15px; color:#86868b; margin-bottom:24px; max-width:440px; margin-left:auto; margin-right:auto;">' +
+      (result.error || 'Das hochgeladene Dokument scheint keine Mobilfunkrechnung zu sein. Bitte laden Sie eine vollst\xe4ndige Mobilfunkrechnung als PDF oder Foto hoch.') +
+      '</div>' +
+      '<button onclick="resetUpload()" style="padding:12px 28px; background:#0071e3; color:white; border:none; border-radius:12px; font-size:15px; font-weight:600; cursor:pointer; font-family:inherit;">Andere Datei hochladen</button>' +
+      '</div>';
+    return;
+  }
+
+  document.querySelector('.results-header').style.display = '';
+  if (providerEl) providerEl.textContent = result.provider || 'Anbieter';
+  if (periodEl && result.invoicePeriod) periodEl.textContent = result.invoicePeriod;
+  if (result.provider && provHidden) provHidden.value = result.provider;
+
+  lines.forEach(function(line) {
+    var recs = line.recommendations || [];
+    var bestRec = recs[0];
+    var hasSaving = bestRec && bestRec.monthlySaving > 0;
+    var hasComparisonOnly = recs.length > 0 && !hasSaving;
+    var isBusiness = selectedSegment === 'business';
+    var card = document.createElement('div');
+    card.className = 'line-card';
+
+    // Grundgebühren-Befreiung + Rechnungshinweise Info-Boxen
+    var waiverHtml = '';
+    if (line.grundgebuehrBefreiung) {
+      var gb = line.grundgebuehrBefreiung;
+      waiverHtml += '<div style="margin:8px 16px;padding:12px 16px;background:#e8f5e9;border-left:4px solid #4caf50;border-radius:8px;">' +
+        '<div style="font-weight:700;color:#2e7d32;font-size:13px;">&#10003; Grundgeb\xfchren-Befreiung aktiv</div>' +
+        '<div style="font-size:12px;color:#1b5e20;margin-top:4px;">' + gb.percent + '% Befreiung f\xfcr ' + gb.months + ' Monate - aktuell € ' + gb.creditBrutto.toFixed(2).replace('.',',') + ' brutto/Monat Ersparnis</div>' +
+        '<div style="font-size:12px;color:#555;margin-top:4px;">Regul\xe4rer Preis ohne Befreiung: <strong>€ ' + gb.regularBrutto.toFixed(2).replace('.',',') + ' brutto</strong></div>' +
+        '</div>';
+    }
+    if (line.kulanzgutschrift) {
+      waiverHtml += '<div style="margin:4px 16px 8px;padding:8px 16px;background:#fff3e0;border-left:4px solid #ff9800;border-radius:8px;">' +
+        '<div style="font-size:12px;color:#e65100;"><strong>Kulanzgutschrift:</strong> &minus;€ ' + line.kulanzgutschrift.brutto.toFixed(2).replace('.',',') + ' brutto/Monat</div>' +
+        '</div>';
+    }
+    if (line.rechnungshinweise) {
+      line.rechnungshinweise.forEach(function(h) {
+        waiverHtml += '<div style="margin:4px 16px;padding:6px 16px;background:#f3e5f5;border-left:4px solid #9c27b0;border-radius:8px;">' +
+          '<div style="font-size:12px;color:#6a1b9a;"><strong>' + escHtml(h.label) + ':</strong> &minus;€ ' + h.brutto.toFixed(2).replace('.',',') + ' brutto/Monat</div>' +
+          '</div>';
+      });
+    }
+
+    // Build recommendation HTML
+    var recsHtml = '';
+    if (recs.length > 0) {
+      var recSectionLabel = line.grundgebuehrBefreiung
+        ? 'Vergleich auf Basis Regul\xe4rpreis (€ ' + line.grundgebuehrBefreiung.regularBrutto.toFixed(2).replace('.',',') + ' brutto) <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#aaa;">\xb7 nach Ablauf der Befreiung</span>'
+        : (hasSaving
+          ? 'KI-Ersteinsch\xe4tzung - m\xf6gliche Optimierung <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#aaa;">\xb7 pers\xf6nliches Angebot im Gespr\xe4ch</span>'
+          : (result.isExistingDrei
+            ? 'Tarif gut aufgestellt <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#aaa;">\xb7 1:1 Verl\xe4ngerung oder Upgrade m\xf6glich</span>'
+            : 'Drei-Alternative <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#aaa;">\xb7 Wechsel zu Drei mit 24 Mon. Bindung</span>'));
+      recsHtml = '<div class="rec-section">' +
+        '<div class="rec-section-label">' + recSectionLabel + '</div>' +
+        '<div class="rec-grid">' + recs.map(function(r, idx) {
+          var noteHtml = '';
+          var priceLabel = '';
+          if (r.tariff.isHandyfreiheit && r.tariff.handyfreiheitDevice) {
+            noteHtml = '<div class="rec-device-note">\uD83D\uDCF1 ' + escHtml(r.tariff.handyfreiheitDevice) + '</div>';
+            priceLabel = '<div class="rec-breakdown">Tarif + Ger\xe4terate gesamt \xb7 Monate 1\u201324</div>';
+          } else if (r.tariff.flexProBreakdown) {
+            noteHtml = '<div class="rec-breakdown">' + escHtml(r.tariff.flexProBreakdown) + '</div>';
+          }
+
+          var priceUnit = isBusiness ? 'netto/Mon.' : 'brutto/Mon.';
+          var badgeHtml = '';
+          if (r.monthlySaving > 0) {
+            badgeHtml = idx === 0 ? '<div class="rec-item-badge" style="background:#2e7d32;color:#fff;">&#10003; Beste Option</div>' : '';
+          } else {
+            badgeHtml = idx === 0 ? '<div class="rec-item-badge" style="background:#2e7d32;color:#fff;">&#10003; Empfohlen</div>' : '';
+          }
+          var savingHtml = '';
+          if (r.monthlySaving > 0) {
+            savingHtml = '<div class="rec-item-saving">~\u20ac ' + r.monthlySaving.toFixed(0).replace('.',',') + ' Potenzial/Monat</div>';
+          } else if (r.monthlySaving < 0) {
+            savingHtml = '<div class="rec-item-saving" style="color:#86868b;">+ \u20ac ' + Math.abs(r.monthlySaving).toFixed(2).replace('.',',') + '/Monat</div>';
+          }
+
+          // Price display with 20% discount if applicable
+          var discPct = r.tariff.discountPercent || 0;
+          var effectivePriceStr = (r.tariff.effectiveMonthly || r.tariff.monthly).toFixed(2).replace('.',',');
+          var origPriceStr = r.tariff.monthly.toFixed(2).replace('.',',');
+          var priceHtml = '';
+          if (discPct > 0 && isBusiness) {
+            priceHtml =
+              '<div class="rec-price-row">' +
+                '<span class="rec-price-orig">\u20ac ' + origPriceStr + '</span>' +
+                '<span class="rec-discount-badge">\u2013' + discPct + '%</span>' +
+              '</div>' +
+              '<div class="rec-item-price">\u20ac ' + effectivePriceStr + '</div>' +
+              '<div class="rec-price-duration">' + priceUnit + ' \u00b7 24 Monate Business-Rabatt</div>';
+          } else {
+            priceHtml =
+              '<div class="rec-item-price">\u20ac ' + effectivePriceStr + '</div>' +
+              '<div class="netto-note">' + priceUnit + '</div>';
+          }
+
+          // Tariff features chips
+          var featChips = '';
+          if (r.tariff.data) {
+            var isUnlimited = r.tariff.data === 'Unlimited' || r.tariff.dataGB >= 9999;
+            featChips += '<span class="rec-feature-chip highlight">' + (isUnlimited ? '&#8734; Daten' : r.tariff.data) + '</span>';
+          }
+          if (r.euRoamingGB) {
+            featChips += '<span class="rec-feature-chip">&#127466;&#127482; ' + r.euRoamingGB + ' GB EU</span>';
+          }
+          if (r.internationalMinutes) {
+            featChips += '<span class="rec-feature-chip">&#127758; ' + r.internationalMinutes + ' Min. Int\'l</span>';
+          }
+          if (r.tariff.speed && r.tariff.speed !== 'n/a') {
+            featChips += '<span class="rec-feature-chip">&#9889; ' + r.tariff.speed + '</span>';
+          }
+          // Aktions-Badge (z.B. "6 Monate GRATIS")
+          if (r.aktionInfo) {
+            featChips += '<span class="rec-feature-chip" style="background:#ff3b30;color:#fff;font-weight:700;">&#127873; ' + escHtml(r.aktionInfo.label) + '</span>';
+          }
+          var featuresHtml = featChips ? '<div class="rec-features">' + featChips + '</div>' : '';
+
+          // Aktions-Ersparnis-Hinweis
+          var aktionHtml = '';
+          if (r.aktionInfo && r.aktionInfo.savingBrutto > 0) {
+            aktionHtml = '<div style="background:#fff3e0;border:1.5px solid #ff9800;border-radius:10px;padding:10px 14px;margin-top:8px;">' +
+              '<span style="font-size:12px;font-weight:700;color:#e65100;">&#127873; AKTION: ' + escHtml(r.aktionInfo.label) + '</span>' +
+              '<span style="font-size:13px;color:#1d1d1f;display:block;margin-top:2px;">Ersparnis: <strong>&euro; ' + r.aktionInfo.savingBrutto.toFixed(2).replace('.', ',') + '</strong> brutto in den ersten ' + r.aktionInfo.gratisMonate + ' Monaten</span>' +
+            '</div>';
+          }
+
+          return '<div class="rec-item">' +
+            badgeHtml +
+            '<div class="rec-item-name">' + escHtml(r.tariff.displayName || r.tariff.name) + '</div>' +
+            noteHtml +
+            priceHtml +
+            priceLabel +
+            savingHtml +
+            featuresHtml +
+            aktionHtml +
+            '</div>';
+        }).join('') + '</div></div>';
+    } else {
+      recsHtml = '<div class="rec-section"><p style="font-size:14px;color:var(--gray);">Tarif bereits optimal oder keine Vergleichsdaten.</p></div>';
+    }
+
+    // Datenkarte label
+    var isDataCard = (line.type === 'datenkarte');
+    var typeLabelHtml = isDataCard
+      ? '<span style="display:inline-block;background:#e8f4ff;color:#0071e3;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;margin-bottom:4px;">DATENKARTE</span><br>'
+      : '';
+
+    // Verbindungsdaten Badges
+    var usageBadges = '';
+    if (line.dataUsedGB) {
+      var gbLabel = line.dataUsedGB >= 1000
+        ? (line.dataUsedGB/1000).toFixed(2).replace('.',',') + ' TB'
+        : line.dataUsedGB.toFixed(1).replace('.',',') + ' GB';
+      // Warn if usage exceeds best recommendation's data allowance
+      var bestRecDataGB = bestRec && bestRec.tariff ? (bestRec.tariff.dataGB || 9999) : 9999;
+      var dataWarn = bestRecDataGB < 9999 && line.dataUsedGB > bestRecDataGB;
+      usageBadges += '<span class="usage-badge"' + (dataWarn ? ' style="color:#ff3b30;font-weight:700;" title="Verbrauch übersteigt Freieinheiten des empfohlenen Tarifs!"' : '') + '>\uD83D\uDCCA ' + gbLabel + ' Daten' + (dataWarn ? ' ⚠' : '') + '</span>';
+    }
+    if (!isDataCard && line.minutesUsed) {
+      usageBadges += '<span class="usage-badge">\uD83D\uDCDE ' + line.minutesUsed + ' Min.</span>';
+    }
+    if (!isDataCard && line.euMinutes) {
+      usageBadges += '<span class="usage-badge">\uD83C\uDDEA\uD83C\uDDFA ' + line.euMinutes + ' Min. EU</span>';
+    }
+    if (!isDataCard && line.roamingMinutes) {
+      usageBadges += '<span class="usage-badge" style="color:#ff6b00;">\uD83C\uDF0D ' + line.roamingMinutes + ' Min. Roaming</span>';
+    }
+    if (line.roamingCostEuro && line.roamingCostEuro > 0) {
+      usageBadges += '<span class="usage-badge" style="color:#ff3b30;">\u26A0 Roaming: \u20ac' + line.roamingCostEuro.toFixed(2).replace('.',',') + '</span>';
+    }
+    // Warnung wenn keine Verbindungsdaten gefunden — je nach Leitungstyp unterschiedlich
+    var isOFN = (line.type === 'ofn');
+    var usageWarnHtml = '';
+    if (isDataCard) {
+      // Datenkarten: Warnung nur wenn KEIN Datenverbrauch gefunden wurde (das ist der relevante Wert)
+      if (!line.dataUsedGB && line.dataUsedGB !== 0) {
+        usageWarnHtml = '<div style="margin-top:6px;padding:5px 10px;background:#fff8e1;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#7c5e00;">\u26A0 Kein Datenverbrauch in der Rechnung gefunden \u2013 Verbrauch bitte im Kundengespr\u00e4ch kl\u00e4ren.</div>';
+      }
+    } else if (!isOFN) {
+      // Mobile Leitungen: Warnung nur wenn WEDER Minuten NOCH Datenverbrauch gefunden wurden
+      // Wenn Daten vorhanden sind (z.B. 43 GB), ist der Verbindungsnachweis offensichtlich da
+      var noCallData = !line.minutesUsed && !line.euMinutes && !line.roamingMinutes;
+      var noDataUsage = !line.dataUsedGB && line.dataUsedGB !== 0;
+      if (noCallData && noDataUsage) {
+        usageWarnHtml = '<div style="margin-top:6px;padding:5px 10px;background:#fff8e1;border-left:3px solid #f59e0b;border-radius:4px;font-size:12px;color:#7c5e00;">\u26A0 Keine Verbindungsdaten in der Rechnung gefunden \u2013 Verbrauch bitte im Kundengespr\u00e4ch kl\u00e4ren.</div>';
+      }
+    }
+
+    var usageHtml = (usageBadges ? '<div class="usage-badges-row">' + usageBadges + '</div>' : '') + usageWarnHtml;
+
+    var hardwareHtml = ''; // Keine Einzelgeräte pro Karte — Gerätepool/TreuBonus wird unten gesammelt angezeigt
+
+    card.innerHTML =
+      '<div class="line-card-header">' +
+        '<div class="line-card-header-left">' +
+          typeLabelHtml +
+          '<div class="line-number">' + escHtml(line.numberFormatted || line.number) + '</div>' +
+          (line.userName ? '<div class="line-user">' + escHtml(line.userName) + '</div>' : '') +
+          (line.tariffName ? '<div class="line-tariff">' + escHtml(line.tariffName) + '</div>' : '') +
+          usageHtml +
+        '</div>' +
+        '<div class="line-card-header-right">' +
+          (function() {
+            if (!line.amountBrutto && !line.grundgebuehrBefreiung) return '';
+            var installAmt = (line.installment && line.installment.amount) ? line.installment.amount : 0;
+            var tariffBrutto;
+            // Bevorzuge amountNetto×1.2 (Claude hat Tarif ohne Rate extrahiert)
+            if (line.amountNetto && isBusiness) {
+              tariffBrutto = Math.round(line.amountNetto * 1.2 * 100) / 100;
+              // installment = Differenz zwischen Gesamtbetrag und Tarifsanteil
+              if (installAmt === 0 && line.amountBrutto > tariffBrutto + 0.5) {
+                installAmt = Math.round((line.amountBrutto - tariffBrutto) * 100) / 100;
+              }
+            } else {
+              tariffBrutto = (line.amountBrutto || 0) - installAmt;
+            }
+            var costHtml = '';
+            if (line.grundgebuehrBefreiung) {
+              costHtml = '<div class="line-current-label">Aktuell (mit Befreiung)</div>' +
+                '<div class="line-current-cost">\u20ac ' + (line.amountBrutto || 0).toFixed(2).replace('.',',') + ' brutto</div>' +
+                '<div style="font-size:11px;color:#2e7d32;margin-top:2px;">Regul\xe4r: \u20ac ' + line.grundgebuehrBefreiung.regularBrutto.toFixed(2).replace('.',',') + '</div>';
+            } else {
+              costHtml = '<div class="line-current-label">Aktuell</div><div class="line-current-cost">\u20ac ' + tariffBrutto.toFixed(2).replace('.',',') + ' brutto</div>';
+            }
+            if (installAmt > 0) {
+              costHtml += '<div style="font-size:11px;color:#86868b;margin-top:2px;">+ \u20ac ' + installAmt.toFixed(2).replace('.',',') + ' Ger\xe4terate</div>';
+            }
+            return costHtml;
+          })() +
+          (line.grundgebuehrBefreiung
+            ? '<div class="saving-pill" style="margin-top:8px;background:#e8f5e9;color:#2e7d32;">&#10003; Befreiung aktiv</div>'
+            : (hasSaving ? '<div class="saving-pill" style="margin-top:8px;">~\u20ac ' + Math.abs(bestRec.monthlySaving).toFixed(0).replace('.',',') + ' Potenzial/mtl.</div>' : (hasComparisonOnly ? (result.isExistingDrei ? '<div class="saving-pill" style="margin-top:8px;background:#e8f5e9;color:#2e7d32;">&#10003; Gut aufgestellt</div>' : '<div class="saving-pill" style="margin-top:8px;background:#fff3cd;color:#856404;">&#8594; Drei-Alternative verf\xfcgbar</div>') : '<div class="saving-pill none" style="margin-top:8px;">Optimal</div>'))) +
+        '</div>' +
+      '</div>' +
+      waiverHtml +
+      recsHtml +
+      hardwareHtml;
+    cards.appendChild(card);
+  });
+
+  var totalArea = document.getElementById('total-saving-area');
+  if (result.totalSaving !== null && result.totalSaving > 0) {
+    var weeklySaving = (result.totalSaving / 4.33).toFixed(2).replace('.',',');
+    totalArea.innerHTML =
+      '<div class="total-saving-box">' +
+        '<div class="total-saving-label">&#129302; KI-Ersteinsch\xe4tzung \u2014 Einsparpotenzial</div>' +
+        '<div class="total-saving-amount">~\u20ac ' + result.totalSaving.toFixed(0).replace('.',',') + '</div>' +
+        '<div class="total-saving-period">pro Monat' + (selectedSegment === 'business' ? ' (brutto, gesch\xe4tzt)' : ' (gesch\xe4tzt)') + '</div>' +
+        (result.totalSavingYearly ? '<div class="total-saving-year">Hochrechnung: ~\u20ac ' + result.totalSavingYearly.toFixed(0).replace('.',',') + ' pro Jahr</div>' : '') +
+        (result.totalAktionSaving ? '<div style="margin:12px auto;max-width:340px;padding:14px 18px;background:#fff;border:2px solid #ffc107;border-radius:10px;text-align:center;"><div style="font-size:22px;font-weight:800;color:#e65100;">\ud83c\udf81 + \u20ac ' + result.totalAktionSaving.toFixed(0).replace('.',',') + ' Aktions-Bonus</div><div style="font-size:13px;color:#555;margin-top:4px;">Ersparnis durch Gratis-Monate \u2014 on top!</div></div>' : '') +
+        '<div class="total-saving-weekly">Jede Woche kostet Sie der aktuelle Tarif ~\u20ac ' + weeklySaving + ' mehr als n\xf6tig.</div>' +
+        '<div class="total-saving-disclaimer">Dies ist eine automatische KI-Sch\xe4tzung. Ihr Experte pr\xfcft die Zahlen und erstellt Ihr pers\xf6nliches Angebot im Gespr\xe4ch.</div>' +
+        (result.hasGrundgebuehrBefreiung ? '<div style="margin-top:8px;font-size:12px;color:#2e7d32;font-style:italic;">Hinweis: Bei Leitungen mit Grundgeb\xfchren-Befreiung bezieht sich das Einsparpotenzial auf den Regul\xe4rpreis nach Ablauf der Befreiung.</div>' : '') +
+      '</div>';
+  } else if (lines.length > 0) {
+    totalArea.innerHTML =
+      '<div class="optimal-box">' +
+        '<div class="optimal-icon">&#10003;</div>' +
+        '<h3>Laut KI-Analyse bereits gut aufgestellt</h3>' +
+        '<p>Die automatische Auswertung zeigt kein offensichtliches Einsparpotenzial. Ein pers\xf6nliches Gespr\xe4ch lohnt sich trotzdem \u2014 oft finden wir im Detail noch M\xf6glichkeiten, die die KI nicht erkennt (VVL, Paketoptionen, neue Ger\xe4te).</p>' +
+      '</div>';
+  }
+
+  // Bindungswarnung bei Fremdanbietern (nicht Drei)
+  var bindingWarningArea = document.getElementById('binding-warning-area');
+  if (bindingWarningArea) bindingWarningArea.innerHTML = '';
+  if (result.provider && result.provider !== 'Drei' && lines.length > 0) {
+    var provName = result.provider || 'Ihrem aktuellen Anbieter';
+    if (bindingWarningArea) {
+      bindingWarningArea.innerHTML =
+        '<div style="background:#fff3cd;border:2px solid #ffc107;border-radius:12px;padding:20px 24px;margin:20px 0;">' +
+          '<div style="font-size:20px;margin-bottom:8px;">\u26a0\ufe0f</div>' +
+          '<h3 style="margin:0 0 10px;font-size:16px;color:#856404;">Wichtiger Hinweis zur Vertragsbindung bei ' + provName + '</h3>' +
+          '<p style="margin:0 0 10px;font-size:14px;color:#856404;line-height:1.6;">Bei Business-Vertr\xe4gen verl\xe4ngert sich Ihr Vertrag bei <strong>' + provName + '</strong> automatisch um <strong>12 Monate</strong>, wenn Sie nicht mindestens <strong>3 Monate vor Bindungsende</strong> k\xfcndigen.</p>' +
+          '<p style="margin:0;font-size:14px;color:#856404;line-height:1.6;"><strong>Unser Tipp:</strong> Pr\xfcfen Sie jetzt Ihre aktuelle Bindungsfrist bei ' + provName + ' \u2014 unser Drei Business Experte hilft Ihnen gerne dabei und k\xfcmmert sich um den gesamten Wechselprozess.</p>' +
+        '</div>';
+    }
+  }
+
+  // MNA-Hinweis: Kunde hat Mobile Nebenstellenanlage (AIC erkannt)
+  var mnaArea = document.getElementById('mna-hint-area');
+  if (mnaArea) mnaArea.innerHTML = '';
+  if (result.hasMNA && mnaArea) {
+    mnaArea.innerHTML =
+      '<div style="background:linear-gradient(135deg,#e8f5e9,#f1f8e9);border:2px solid #43a047;border-radius:12px;padding:20px 24px;margin:20px 0;">' +
+        '<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">' +
+          '<span style="font-size:24px;">&#9742;&#65039;</span>' +
+          '<h3 style="margin:0;font-size:16px;color:#2e7d32;">Mobile Nebenstellenanlage erkannt</h3>' +
+        '</div>' +
+        '<p style="margin:0 0 10px;font-size:14px;color:#333;line-height:1.6;">Ihr Unternehmen nutzt aktuell eine <strong>Mobile Nebenstellenanlage (AIC)</strong>. Drei bietet ebenfalls eine moderne Cloud-Telefonanlage mit Festnetznummer, Durchwahlen und App-Steuerung.</p>' +
+        '<p style="margin:0;font-size:14px;color:#555;line-height:1.6;">Ihr pers\xf6nlicher Drei Business Experte bespricht die M\xf6glichkeiten gerne mit Ihnen im Beratungsgespr\xe4ch.</p>' +
+      '</div>';
+  }
+
+  // Pool / TreuBonus Choice Section (only for business with pool data)
+  var choiceArea = document.getElementById('pool-choice-area');
+  choiceArea.innerHTML = '';
+  var ps = result.poolSummary;
+  if (selectedSegment === 'business' && ps) {
+    var poolTotal = ps.hardwarePoolTotal || 0;
+    var treuBonusTotal = ps.treueBonusTotal || 0;
+    var treuMonthly = ps.treueBonusMonthlyTotal || 0;
+
+    // Build TreuBonus formula string (grouped)
+    var treuFormula = '';
+    if (ps.treueBonusBreakdown && ps.treueBonusBreakdown.length > 0) {
+      var parts = ps.treueBonusBreakdown.map(function(g) {
+        return (g.count > 1 ? g.count + '\u00d7 ' : '') + g.tariffName + ' \u00b7 \u20ac' + g.monthly.toFixed(2).replace('.',',');
+      });
+      treuFormula = parts.join(' + ');
+      if (treuMonthly > 0) treuFormula += ' = \u20ac' + treuMonthly.toFixed(2).replace('.',',') + '/Mo \u00d7 24 Monate';
+    }
+
+    var showPool = poolTotal > 0;
+    var showTreu = treuBonusTotal > 0 && result.isExistingDrei;
+
+    if (showPool || showTreu) {
+      // Store for form submission
+      document.getElementById('f-pool-total').value = poolTotal;
+      document.getElementById('f-treubonus-total').value = treuBonusTotal;
+
+      var html = '<div class="pool-choice-section">';
+
+      // Hero banner — show pool total prominently
+      if (showPool) {
+        html +=
+          '<div class="pool-hero-banner">' +
+            '<div class="pool-hero-label">&#127873; Ihr Ger\xe4tepool bei Abschluss</div>' +
+            '<div class="pool-hero-amount">\u20ac ' + poolTotal.toLocaleString('de-AT') + '</div>' +
+            '<div class="pool-hero-sub">f\xfcr neue Smartphones &amp; Hardware \u00b7 bei 24 Monaten Bindung</div>' +
+          '</div>';
+      }
+
+      if (showPool || showTreu) {
+        html += '<h3 class="choice-heading">Wie m\xf6chten Sie Ihren Vorteil nutzen?</h3>';
+        html += '<p class="choice-sub">W\xe4hlen Sie eine Option \u2014 nicht beide gleichzeitig m\xf6glich.</p>';
+        html += '<div class="choice-cards">';
+
+        if (showPool) {
+          // Build pool breakdown
+          var poolDesc = ps.hardwareBreakdown && ps.hardwareBreakdown.length > 0
+            ? ps.hardwareBreakdown.map(function(g) {
+                return (g.count > 1 ? g.count + '\u00d7 ' : '') + g.tariffName + ' \u00b7 \u20ac' + g.budgetPerLine;
+              }).join(' + ')
+            : 'Einmalig bei Neuabschluss';
+          html +=
+            '<div class="choice-card" id="choice-card-pool" onclick="selectChoice(\'pool\')">' +
+              '<div class="choice-card-icon">&#128241;</div>' +
+              '<div class="choice-card-title">Ger\xe4tepool</div>' +
+              '<div class="choice-card-amount">\u20ac ' + poolTotal.toLocaleString('de-AT') + '</div>' +
+              '<div class="choice-card-desc">' + escHtml(poolDesc) + '</div>' +
+              '<div class="choice-card-btn">Ger\xe4tepool w\xe4hlen</div>' +
+            '</div>';
+        }
+
+        if (showTreu) {
+          html +=
+            '<div class="choice-card" id="choice-card-treubonus" onclick="selectChoice(\'treubonus\')">' +
+              '<div class="choice-card-icon">&#128182;</div>' +
+              '<div class="choice-card-title">TreuBonus</div>' +
+              '<div class="choice-card-amount">\u20ac ' + treuBonusTotal.toFixed(0).replace('.',',') + '</div>' +
+              '<div class="choice-card-desc">' + escHtml(treuFormula || 'Monatlich auf Ihrer Rechnung gutgeschrieben') + '</div>' +
+              '<div class="choice-card-btn">TreuBonus w\xe4hlen</div>' +
+            '</div>';
+        }
+
+        html += '</div>'; // .choice-cards
+        html += '<div class="choice-note">Ihr Experte erkl\xe4rt beide Optionen im Gespr\xe4ch und hilft Ihnen bei der Entscheidung.</div>';
+        html += '<div style="text-align:center;font-size:12px;color:var(--gray);margin-top:12px;">Optional - Ihr Experte erkl\xe4rt Ihnen beide Optionen gerne im Gespr\xe4ch.</div>';
+      }
+
+      html += '</div>'; // .pool-choice-section
+      choiceArea.innerHTML = html;
+    }
+  }
+
+  var afterCta = document.getElementById('after-results-cta');
+  if (afterCta && lines.length > 0) {
+    afterCta.style.display = 'block';
+    var weeklyLine = document.getElementById('weekly-loss-line');
+    if (weeklyLine) weeklyLine.textContent = result.totalSaving > 0 ? 'KI-Analyse abgeschlossen \u2014 Ihr pers\xf6nliches Angebot wartet.' : '';
+  }
+}
+
+function escHtml(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// POOL CHOICE
+var selectedChoice = null;
+
+function selectChoice(type) {
+  selectedChoice = type;
+  document.getElementById('f-choice').value = type;
+
+  var cardPool = document.getElementById('choice-card-pool');
+  var cardTreu = document.getElementById('choice-card-treubonus');
+  if (cardPool) cardPool.className = 'choice-card' + (type === 'pool' ? ' selected' : ' dimmed');
+  if (cardTreu) cardTreu.className = 'choice-card' + (type === 'treubonus' ? ' selected' : ' dimmed');
+
+  var hint = document.getElementById('choice-required-hint');
+  if (hint) hint.style.display = 'none';
+}
+
+// QUICK CHECK
+function selectSims(label, midpoint) {
+  qcSims = label;
+  qcBillMidpoint = midpoint; // temporarily storing for step transition
+  showQcStep(2);
+}
+
+function selectBill(label, midpoint) {
+  qcBill = label;
+  qcBillMidpoint = midpoint;
+  showQcStep(3);
+}
+
+function selectProvider(prov) {
+  qcProvider = prov;
+  computeAndShowResult();
+}
+
+function showQcStep(n) {
+  document.querySelectorAll('.qc-step').forEach(function(s) { s.classList.remove('active'); });
+  var el = document.getElementById('qc-step-' + n);
+  if (el) el.classList.add('active');
+}
+
+function computeAndShowResult() {
+  var simCost = qcBillMidpoint;
+  var minMult, maxMult;
+  if (qcSims === '1')       { minMult = 0.20; maxMult = 0.35; }
+  else if (qcSims === '2\u20135') { minMult = 0.22; maxMult = 0.38; }
+  else if (qcSims === '6\u201315') { minMult = 0.25; maxMult = 0.40; }
+  else                      { minMult = 0.28; maxMult = 0.45; }
+
+  var dreiReduction = (qcProvider === 'Drei') ? 0.70 : 1.0;
+  var savMin = Math.round(simCost * minMult * dreiReduction);
+  var savMax = Math.round(simCost * maxMult * dreiReduction);
+  if (savMin < 5) savMin = 5;
+  if (savMax < savMin + 10) savMax = savMin + 20;
+  var savYear = Math.round(savMax * 12);
+
+  document.getElementById('saving-min').textContent = '\u20ac ' + savMin;
+  document.getElementById('saving-max').textContent = '\u20ac ' + savMax;
+  document.getElementById('saving-year').textContent = '\u20ac ' + savYear;
+
+  // Loss aversion: 12-month loss calculation
+  var loss12m = Math.round(savMax * 12);
+  var lossEl = document.getElementById('qc-loss-12m');
+  if (lossEl) {
+    lossEl.textContent = 'Sie haben in den letzten 12 Monaten etwa \u20ac ' + loss12m + ' zu viel gezahlt.';
+  }
+
+  document.getElementById('f-sims').value = qcSims;
+  document.getElementById('f-bill').value = qcBill;
+  document.getElementById('f-provider-hidden').value = qcProvider;
+
+  document.querySelectorAll('.qc-step').forEach(function(s) { s.classList.remove('active'); });
+  var resultEl = document.getElementById('qc-result');
+  resultEl.style.display = 'block';
+  resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// LEAD FORM
+async function submitLeadForm(e) {
+  e.preventDefault();
+
+  // Pool/TreuBonus choice is optional — no validation needed
+
+  var btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'Wird gesendet\u2026';
+  var data = {
+    anrede: document.getElementById('f-anrede').value,
+    name: document.getElementById('f-name').value.trim(),
+    company: document.getElementById('f-company').value.trim(),
+    phone: document.getElementById('f-phone').value.trim(),
+    email: document.getElementById('f-email').value.trim(),
+    message: document.getElementById('f-message').value.trim(),
+    simCount: document.getElementById('f-sims').value,
+    monthlyBill: document.getElementById('f-bill').value,
+    provider: document.getElementById('f-provider-hidden').value,
+    source: document.getElementById('f-source').value,
+    consent: document.getElementById('f-consent').checked,
+    vorteilChoice: document.getElementById('f-choice').value || null,
+    poolTotal: document.getElementById('f-pool-total').value || null,
+    treuBonusTotal: document.getElementById('f-treubonus-total').value || null,
+    plz: document.getElementById('f-plz').value.trim(),
+    analysisData: lastAnalysisResult ? JSON.stringify(lastAnalysisResult) : null,
+    invoiceFile: lastAnalysisResult ? lastAnalysisResult.invoiceFile : null,
+    gewinnspiel: document.getElementById('f-gewinnspiel') ? document.getElementById('f-gewinnspiel').checked : false,
+  };
+  try {
+    var response = await fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
+      body: JSON.stringify(data),
+    });
+    var result = await response.json();
+    if (result.success) {
+      document.getElementById('lead-form-inner').style.display = 'none';
+      var succ = document.getElementById('form-success');
+      succ.style.display = 'block';
+      // Show email confirmation note if email was provided
+      var emailVal = data.email;
+      if (emailVal) {
+        var emailNote = document.getElementById('form-success-email-note');
+        if (emailNote) emailNote.style.display = 'block';
+      }
+      succ.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      alert(result.error || 'Fehler beim Senden. Bitte versuche es erneut.');
+      btn.disabled = false;
+      btn.textContent = 'Kostenlosen Check anfragen \u2192';
+    }
+  } catch(err) {
+    alert('Verbindungsfehler. Bitte versuche es erneut.');
+    btn.disabled = false;
+    btn.textContent = 'Kostenlosen Check anfragen \u2192';
+  }
+}
+
+// FAQ ACCORDION
+function toggleFaq(btn) {
+  var item = btn.parentElement;
+  var isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-item.open').forEach(function(el) { el.classList.remove('open'); });
+  // Open clicked if it was closed
+  if (!isOpen) item.classList.add('open');
+}
+
+// COOKIE CONSENT + GTM Consent Mode v2
+function cookieShowBanner() {
+  document.body.classList.add('cookie-pending');
+  document.getElementById('cookie-overlay').style.display = 'block';
+  document.getElementById('cookie-banner').style.display = 'flex';
+  document.getElementById('cookie-settings-btn').style.display = 'none';
+}
+function cookieHideBanner() {
+  document.body.classList.remove('cookie-pending');
+  document.getElementById('cookie-overlay').style.display = 'none';
+  document.getElementById('cookie-banner').style.display = 'none';
+  document.getElementById('cookie-settings-btn').style.display = 'flex';
+}
+function openCookieSettings() {
+  try {
+    var c = JSON.parse(localStorage.getItem('cookie_consent'));
+    if (c) {
+      document.getElementById('ck-statistics').checked = (c.statistics === 'granted');
+      document.getElementById('ck-marketing').checked = (c.marketing === 'granted');
+      syncCookieGroup('statistics');
+      syncCookieGroup('marketing');
+    }
+  } catch(e) {}
+  cookieShowBanner();
+}
+function cookieApplyConsent(stats, marketing) {
+  var consentObj = {
+    statistics: stats ? 'granted' : 'denied',
+    marketing: marketing ? 'granted' : 'denied'
+  };
+  localStorage.setItem('cookie_consent', JSON.stringify(consentObj));
+  if (stats || marketing) {
+    gtag('consent', 'update', {
+      'analytics_storage': stats ? 'granted' : 'denied',
+      'ad_storage': marketing ? 'granted' : 'denied',
+      'ad_user_data': marketing ? 'granted' : 'denied',
+      'ad_personalization': marketing ? 'granted' : 'denied'
+    });
+    loadGTM();
+    cookieHideBanner();
+  } else {
+    cookieHideBanner();
+    window.location.reload();
+  }
+}
+function cookieAcceptAll() {
+  document.getElementById('ck-statistics').checked = true;
+  document.getElementById('ck-marketing').checked = true;
+  syncCookieGroup('statistics');
+  syncCookieGroup('marketing');
+  cookieApplyConsent(true, true);
+}
+function cookieDenyAll() {
+  document.getElementById('ck-statistics').checked = false;
+  document.getElementById('ck-marketing').checked = false;
+  syncCookieGroup('statistics');
+  syncCookieGroup('marketing');
+  cookieApplyConsent(false, false);
+}
+function cookieSaveChoices() {
+  var stats = document.getElementById('ck-statistics').checked;
+  var mkt = document.getElementById('ck-marketing').checked;
+  cookieApplyConsent(stats, mkt);
+}
+(function() {
+  var stored = localStorage.getItem('cookie_consent');
+  if (!stored) {
+    cookieShowBanner();
+  }
+})();
+
+// FADE IN
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+setTimeout(function() {
+  document.querySelectorAll('.hero .fade-in').forEach(function(el) { el.classList.add('visible'); });
+}, 80);
+setTimeout(function() {
+  var seal = document.getElementById('hero-seal-img');
+  var wrap = document.getElementById('hero-seal-wrap');
+  if (seal) {
+    seal.classList.add('stamped');
+    setTimeout(function() {
+      seal.style.opacity = '1';
+      seal.style.transform = 'scale(1) rotate(0deg)';
+      seal.style.filter = 'blur(0) drop-shadow(0 6px 20px rgba(0,0,0,0.12))';
+    }, 700);
+  }
+  if (wrap) setTimeout(function() { wrap.classList.add('shimmer'); }, 300);
+}, 600);
+
+// GEWINNSPIEL COUNTER
+(function() {
+  fetch('/api/gewinnspiel-status')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      var remaining = d.remaining;
+      var el = document.getElementById('gs-remaining');
+      var wrap = document.getElementById('gs-checkbox-wrap');
+      if (remaining <= 0) {
+        document.getElementById('gs-counter').style.display = 'none';
+        document.getElementById('gs-ausgelost').style.display = 'inline-flex';
+        if (wrap) wrap.style.display = 'none';
+      } else {
+        if (el) el.textContent = remaining;
+      }
+    })
+    .catch(function() {});
+})();
+
+// LIVE COUNTER
+(function() {
+  function showCounter(today, week, lastTxt) {
+    document.getElementById('lc-today').textContent = today;
+    document.getElementById('lc-week').textContent = week;
+    document.getElementById('lc-last').textContent = lastTxt;
+    document.getElementById('live-counter').style.display = '';
+  }
+  function fmtTime(diff) {
+    if (diff >= 86400) { var t = Math.floor(diff / 86400); return 'vor ' + t + (t === 1 ? ' Tag' : ' Tagen'); }
+    if (diff >= 3600) { var t = Math.floor(diff / 3600); return 'vor ' + t + (t === 1 ? ' Stunde' : ' Stunden'); }
+    if (diff >= 60) { var t = Math.floor(diff / 60); return 'vor ' + t + ' Min.'; }
+    return 'gerade eben';
+  }
+  function seedRand() {
+    var d = new Date(); var hour = d.getHours(); var min = d.getMinutes();
+    var dayKey = d.getFullYear() * 400 + d.getMonth() * 32 + d.getDate();
+    var slot = Math.floor(min / 20);
+    var base = 1 + (dayKey % 4);
+    var today = base + Math.floor(hour * 0.4) + slot;
+    if (hour < 7) today = Math.max(1, Math.floor(today / 3));
+    var week = 9 + (dayKey % 9) + Math.floor(hour / 4);
+    var minAgo = 3 + ((dayKey * 7 + slot * 13 + hour) % 25);
+    if (hour < 7) minAgo = 30 + ((dayKey + hour) % 90);
+    return { today: today, week: Math.max(week, today + 3), last: fmtTime(minAgo * 60) };
+  }
+  fetch('/api/public-stats').then(function(r) { return r.json(); }).then(function(d) {
+    if (d && (d.today > 0 || d.week > 0)) {
+      var lastTxt = 'gerade eben';
+      if (d.lastAnalysis) lastTxt = fmtTime(Math.floor((Date.now() - new Date(d.lastAnalysis).getTime()) / 1000));
+      showCounter(d.today, d.week, lastTxt);
+    } else {
+      var f = seedRand();
+      showCounter(f.today, f.week, f.last);
+    }
+  }).catch(function() {
+    var f = seedRand();
+    showCounter(f.today, f.week, f.last);
+  });
+})();
+</script>
+
+<!-- EXIT-INTENT POPUP -->
+<style>
+  .exit-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.45); backdrop-filter:blur(6px); z-index:9999; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.3s; }
+  .exit-overlay.visible { opacity:1; pointer-events:auto; }
+  .exit-popup { background:var(--white); border-radius:20px; max-width:480px; width:92%; padding:40px 32px 32px; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.15); animation:exitSlideUp 0.4s ease; }
+  @keyframes exitSlideUp { from { transform:translateY(30px); opacity:0; } to { transform:translateY(0); opacity:1; } }
+  .exit-close { position:absolute; top:16px; right:16px; width:32px; height:32px; border-radius:50%; border:none; background:var(--light-gray); color:var(--gray); font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background 0.2s; }
+  .exit-close:hover { background:var(--mid-gray); }
+  .exit-title { font-size:24px; font-weight:700; color:var(--black); text-align:center; margin-bottom:6px; letter-spacing:-0.5px; }
+  .exit-subtitle { font-size:15px; color:var(--gray); text-align:center; margin-bottom:28px; line-height:1.5; }
+  .exit-tabs { display:flex; gap:8px; margin-bottom:24px; }
+  .exit-tab { flex:1; padding:12px 8px; border-radius:12px; border:1.5px solid var(--mid-gray); background:var(--white); font-size:14px; font-weight:600; color:var(--gray); cursor:pointer; text-align:center; transition:all 0.2s; font-family:var(--font); }
+  .exit-tab.active { border-color:var(--blue); color:var(--blue); background:rgba(0,113,227,0.06); }
+  .exit-tab:hover:not(.active) { border-color:var(--gray); }
+  .exit-tab-icon { font-size:20px; display:block; margin-bottom:4px; }
+  .exit-form-group { margin-bottom:14px; }
+  .exit-form-group label { font-size:13px; font-weight:500; color:var(--black); display:block; margin-bottom:6px; }
+  .exit-form-group input, .exit-form-group select { width:100%; padding:12px 14px; border:1.5px solid var(--mid-gray); border-radius:10px; font-size:15px; font-family:var(--font); color:var(--black); background:var(--white); outline:none; transition:border-color 0.2s; box-sizing:border-box; }
+  .exit-form-group input:focus, .exit-form-group select:focus { border-color:var(--blue); }
+  .exit-dsgvo { display:flex; align-items:flex-start; gap:10px; margin:16px 0 20px; }
+  .exit-dsgvo input[type="checkbox"] { width:18px; height:18px; margin-top:2px; accent-color:var(--blue); flex-shrink:0; cursor:pointer; }
+  .exit-dsgvo label { font-size:11px; color:var(--gray); line-height:1.5; cursor:pointer; }
+  .exit-dsgvo a { color:var(--blue); text-decoration:none; }
+  .exit-submit { width:100%; padding:16px; background:var(--blue); color:var(--white); border:none; border-radius:14px; font-size:16px; font-weight:600; cursor:pointer; font-family:var(--font); transition:background 0.2s; }
+  .exit-submit:hover { background:var(--blue-dark); }
+  .exit-submit:disabled { background:var(--mid-gray); cursor:not-allowed; }
+  .exit-success { display:none; text-align:center; padding:20px 0; }
+  .exit-success-icon { font-size:48px; margin-bottom:12px; }
+  .exit-success h3 { font-size:20px; font-weight:700; color:var(--black); margin-bottom:8px; }
+  .exit-success p { font-size:15px; color:var(--gray); line-height:1.5; }
+  .exit-panel { display:none; }
+  .exit-panel.active { display:block; }
+  @media (max-width:640px) {
+    .exit-popup { padding:32px 20px 24px; }
+    .exit-title { font-size:20px; }
+    .exit-subtitle { font-size:14px; margin-bottom:20px; }
+    .exit-tabs { gap:6px; }
+    .exit-tab { font-size:13px; padding:10px 6px; }
+  }
+</style>
+
+<div class="exit-overlay" id="exit-overlay" role="dialog" aria-label="Kontaktformular" aria-modal="true">
+  <div class="exit-popup">
+    <button class="exit-close" id="exit-close" aria-label="Dialog schlie&szlig;en">&times;</button>
+    <div class="exit-title">Noch nicht bereit f&uuml;r den Upload?</div>
+    <div class="exit-subtitle">Kein Problem - dein Drei Business Experte meldet sich und geht deine Situation pers&ouml;nlich mit dir durch.</div>
+
+    <div class="exit-tabs">
+      <button class="exit-tab active" data-tab="email" type="button">
+        <span class="exit-tab-icon">&#9993;</span>Per E-Mail kontaktieren
+      </button>
+      <button class="exit-tab" data-tab="phone" type="button">
+        <span class="exit-tab-icon">&#9742;</span>Lieber pers&ouml;nlich
+      </button>
+    </div>
+
+    <form id="exit-form">
+      <!-- Email Panel -->
+      <div class="exit-panel active" id="exit-panel-email">
+        <div class="exit-form-group">
+          <label for="exit-email">E-Mail-Adresse <span style="color:var(--blue);">*</span></label>
+          <input type="email" id="exit-email" placeholder="name@firma.at" required>
+        </div>
+        <div class="exit-form-group">
+          <label for="exit-company-email">Firmenname <span style="color:var(--blue);">*</span></label>
+          <input type="text" id="exit-company-email" placeholder="Meine Firma GmbH" required>
+        </div>
+        <div style="display:flex;gap:12px;">
+          <div class="exit-form-group" style="flex:1;">
+            <label for="exit-plz-email">PLZ <span style="color:var(--blue);">*</span></label>
+            <input type="text" id="exit-plz-email" placeholder="4020" maxlength="4" pattern="\d{4}" required>
+          </div>
+          <div class="exit-form-group" style="flex:2;">
+            <label for="exit-sims-email">Wie viele SIM-Karten?</label>
+            <select id="exit-sims-email">
+              <option value="">Bitte w&auml;hlen</option>
+              <option value="1-5">1 &ndash; 5 SIMs</option>
+              <option value="6-20">6 &ndash; 20 SIMs</option>
+              <option value="21-50">21 &ndash; 50 SIMs</option>
+              <option value="50+">Mehr als 50 SIMs</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Panel -->
+      <div class="exit-panel" id="exit-panel-phone">
+        <div class="exit-form-group">
+          <label for="exit-phone">Telefonnummer <span style="color:var(--blue);">*</span></label>
+          <input type="tel" id="exit-phone" placeholder="+43 660 1234567">
+        </div>
+        <div style="display:flex;gap:12px;">
+          <div class="exit-form-group" style="flex:1;">
+            <label for="exit-company-phone">Firmenname <span style="color:var(--blue);">*</span></label>
+            <input type="text" id="exit-company-phone" placeholder="Meine Firma GmbH">
+          </div>
+          <div class="exit-form-group" style="flex:0 0 100px;">
+            <label for="exit-plz-phone">PLZ <span style="color:var(--blue);">*</span></label>
+            <input type="text" id="exit-plz-phone" placeholder="4020" maxlength="4" pattern="\d{4}">
+          </div>
+        </div>
+        <div class="exit-form-group">
+          <label for="exit-callback">Bevorzugte R&uuml;ckrufzeit</label>
+          <select id="exit-callback">
+            <option value="">Egal / Jederzeit</option>
+            <option value="vormittag">Vormittag (8 &ndash; 12 Uhr)</option>
+            <option value="nachmittag">Nachmittag (12 &ndash; 17 Uhr)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="exit-dsgvo">
+        <input type="checkbox" id="exit-consent" required>
+        <label for="exit-consent">Ich stimme zu, dass meine Daten von der dbcc GmbH zur Kontaktaufnahme und Beratung gespeichert und an den zust&auml;ndigen zertifizierten Drei Business Partner weitergeleitet werden. <a href="/datenschutz" style="color:#0071e3;text-decoration:underline;">Datenschutzerkl&auml;rung</a></label>
+      </div>
+      <button type="submit" class="exit-submit" id="exit-submit-btn">Kostenlosen R&uuml;ckruf / Kontakt anfordern &rarr;</button>
+    </form>
+
+    <div class="exit-success" id="exit-success">
+      <div class="exit-success-icon">&#10003;</div>
+      <h3>Anfrage erhalten!</h3>
+      <p>Ihr zertifizierter Drei Business Experte aus Ihrer Region meldet sich pers&ouml;nlich bei Ihnen - in der Regel innerhalb weniger Stunden.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var overlay = document.getElementById('exit-overlay');
+  var shown = false;
+  var uploadStarted = false;
+
+  // Track if user started upload flow
+  var uploadArea = document.getElementById('drop-zone') || document.querySelector('.upload-area');
+  if (uploadArea) uploadArea.addEventListener('click', function() { uploadStarted = true; });
+  var fileInput = document.querySelector('input[type="file"]');
+  if (fileInput) fileInput.addEventListener('change', function() { if (this.value) uploadStarted = true; });
+
+  // Exit-Intent: Desktop = mouse leaves viewport top, Mobile = 60s inactivity
+  // Mindestens 15 Sekunden auf der Seite bevor Popup erscheinen darf
+  var isMobile = window.innerWidth <= 768;
+  var minTimeReached = false;
+  setTimeout(function() { minTimeReached = true; }, 15000);
+
+  if (!isMobile) {
+    document.addEventListener('mouseout', function(e) {
+      if (e.clientY <= 0 && minTimeReached && !shown && !uploadStarted && !sessionStorage.getItem('exitShown')) {
+        showExitPopup();
+      }
+    });
+  } else {
+    var inactivityTimer;
+    function resetInactivity() {
+      clearTimeout(inactivityTimer);
+      inactivityTimer = setTimeout(function() {
+        if (minTimeReached && !shown && !uploadStarted && !sessionStorage.getItem('exitShown')) {
+          showExitPopup();
+        }
+      }, 60000);
+    }
+    ['touchstart','scroll','click'].forEach(function(evt) {
+      document.addEventListener(evt, resetInactivity, { passive: true });
+    });
+    resetInactivity();
+  }
+
+  var lastFocusedElement = null;
+
+  function showExitPopup() {
+    shown = true;
+    sessionStorage.setItem('exitShown', '1');
+    lastFocusedElement = document.activeElement;
+    overlay.classList.add('visible');
+    var closeBtn = document.getElementById('exit-close');
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closePopup() {
+    overlay.classList.remove('visible');
+    if (lastFocusedElement) lastFocusedElement.focus();
+  }
+
+  document.getElementById('exit-close').addEventListener('click', closePopup);
+  overlay.addEventListener('click', function(e) { if (e.target === overlay) closePopup(); });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('visible')) closePopup();
+  });
+
+  // Tab switching
+  document.querySelectorAll('.exit-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.exit-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.querySelectorAll('.exit-panel').forEach(function(p) { p.classList.remove('active'); });
+      tab.classList.add('active');
+      document.getElementById('exit-panel-' + tab.dataset.tab).classList.add('active');
+    });
+  });
+
+  // Form submit
+  document.getElementById('exit-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var activeTab = document.querySelector('.exit-tab.active').dataset.tab;
+    var btn = document.getElementById('exit-submit-btn');
+    var consent = document.getElementById('exit-consent').checked;
+    if (!consent) { alert('Bitte stimmen Sie der Datenschutzerklärung zu.'); return; }
+
+    var data = { consent: true, source: 'exit-intent-popup' };
+
+    if (activeTab === 'email') {
+      var email = document.getElementById('exit-email').value.trim();
+      var company = document.getElementById('exit-company-email').value.trim();
+      var plz = document.getElementById('exit-plz-email').value.trim();
+      var sims = document.getElementById('exit-sims-email').value;
+      if (!email || !company || !plz) { alert('Bitte E-Mail, Firmenname und PLZ ausfüllen.'); return; }
+      if (!/^\d{4}$/.test(plz)) { alert('PLZ muss 4-stellig sein (z.B. 4020).'); return; }
+      data.email = email;
+      data.company = company;
+      data.name = company;
+      data.phone = 'Nicht angegeben';
+      data.plz = plz;
+      data.simCount = sims;
+      data.message = 'Kontaktanfrage per E-Mail (Exit-Intent) | SIM-Karten: ' + (sims || 'k.A.');
+    } else {
+      var phone = document.getElementById('exit-phone').value.trim();
+      var company = document.getElementById('exit-company-phone').value.trim();
+      var plz = document.getElementById('exit-plz-phone').value.trim();
+      var callback = document.getElementById('exit-callback').value;
+      if (!phone || !company || !plz) { alert('Bitte Telefonnummer, Firmenname und PLZ ausfüllen.'); return; }
+      if (!/^\d{4}$/.test(plz)) { alert('PLZ muss 4-stellig sein (z.B. 4020).'); return; }
+      data.phone = phone;
+      data.company = company;
+      data.name = company;
+      data.plz = plz;
+      data.message = 'Rückruf gewünscht (Exit-Intent) | Zeitfenster: ' + (callback || 'Jederzeit');
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Wird gesendet…';
+
+    try {
+      var resp = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(data)
+      });
+      var result = await resp.json();
+      if (result.success) {
+        document.getElementById('exit-form').style.display = 'none';
+        document.querySelectorAll('.exit-tabs').forEach(function(t) { t.style.display = 'none'; });
+        document.getElementById('exit-success').style.display = 'block';
+      } else {
+        alert(result.error || 'Fehler beim Senden.');
+        btn.disabled = false;
+        btn.textContent = 'Kostenlose Ersteinschätzung anfordern →';
+      }
+    } catch(err) {
+      alert('Verbindungsfehler. Bitte erneut versuchen.');
+      btn.disabled = false;
+      btn.textContent = 'Kostenlose Ersteinschätzung anfordern →';
+    }
+  });
+})();
+</script>
+
+<script>fetch('/api/visit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({page:location.pathname})}).catch(function(){});</script>
+<script>
+(function(){
+  var nav = document.querySelector('nav');
+  function onScroll() {
+    if (window.scrollY > 40) { nav.classList.add('scrolled'); }
+    else { nav.classList.remove('scrolled'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
