@@ -243,10 +243,14 @@
         }
         .hero-bg {
             position: absolute; inset: 0;
-            background: url('20211217_124809487_iOS.jpg') center/cover no-repeat;
             transform: scale(1.05); transition: transform 10s ease-out;
             filter: saturate(1.2) contrast(1.1);
         }
+        .hero-bg img {
+            position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+            opacity: 0; transition: opacity 1.5s ease;
+        }
+        .hero-bg img.active { opacity: 1; }
         .hero.loaded .hero-bg { transform: scale(1); }
         .hero-warmth {
             position: absolute; inset: 0;
@@ -456,7 +460,7 @@
         /* ========== EVENTS ========== */
         .events { background: var(--off-white); }
         .events-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-        .events-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; border-radius: var(--radius); overflow: hidden; height: 100%; }
+        .events-gallery { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 8px; border-radius: var(--radius); overflow: hidden; }
         .events-gallery img, .events-gallery video { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
         .events-gallery img:hover, .events-gallery video:hover { transform: scale(1.05); }
         .event-highlights { display: grid; gap: 16px; margin-top: 32px; }
@@ -662,7 +666,7 @@
             .team-grid, .team-grid.team-grid-4 { grid-template-columns: 1fr; }
             .toptracer-features { grid-template-columns: 1fr 1fr; }
             .price-grid { grid-template-columns: 1fr; }
-            .events-gallery { grid-template-columns: 1fr 1fr; }
+            .events-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
             .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
             .contact-strip .btn-group { flex-direction: column; align-items: center; }
@@ -700,7 +704,12 @@
 
 <!-- ==================== HERO ==================== -->
 <section class="hero" id="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg" id="heroSlider">
+        <img src="20211217_124809487_iOS.jpg" alt="Gemma Golfn Gebäude bei Sonnenuntergang" class="active">
+        <img src="20211217_123825892_iOS.jpg" alt="Toptracer Boxen – Gemma Golfn Driving Range frontal" loading="lazy">
+        <img src="20211217_123825920_iOS.jpg" alt="Panoramablick über den Golfpark Metzenhof aus der BAR71" loading="lazy">
+        <img src="20211217_125024235_iOS.jpg" alt="Gemma Golfn Gebäude mit Sprinklern bei Abenddämmerung" loading="lazy">
+    </div>
     <div class="hero-warmth"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content fade-up">
@@ -913,8 +922,10 @@
             <div class="events-gallery fade-up">
                 <video src="Video BAR71 Location.mp4" autoplay muted loop playsinline></video>
                 <video src="Abschlag aus der Box Video.mp4" autoplay muted loop playsinline></video>
+                <img src="gemma-golfn_eventlocation-dekorierte-bar-1.jpg" alt="BAR71 dekoriert für Feier – Sektgläser und Luftballons" loading="lazy" decoding="async">
+                <img src="gemma-golfn-event-galerie-–-7.jpg" alt="Fingerfood-Platte mit Blick über die Driving Range" loading="lazy" decoding="async">
+                <img src="gemma-golfn_eventlocation-buffet.jpg" alt="Eventlocation – Buffet in der Toptracer Box mit Panoramablick" loading="lazy" decoding="async">
                 <img src="https://gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-–-3.jpg" alt="Event – Feier mit Sprühkerzen" loading="lazy">
-                <img src="https://gemma-golfn.at/wp-content/uploads/2024/01/gemma-golfn-event-galerie-–-4.jpg" alt="Event – Gruppenfoto mit 30er-Feier" loading="lazy">
             </div>
         </div>
     </div>
@@ -1293,6 +1304,17 @@
             current = (current + 1) % imgs.length;
             imgs[current].classList.add('active');
         }, 5000);
+    })();
+
+    // Hero image slider
+    (function() {
+        const imgs = document.querySelectorAll('#heroSlider img');
+        let current = 0;
+        setInterval(() => {
+            imgs[current].classList.remove('active');
+            current = (current + 1) % imgs.length;
+            imgs[current].classList.add('active');
+        }, 7000);
     })();
 </script>
 
