@@ -1,0 +1,82 @@
+# Gemma Golfn - Statische Seite
+# Erstellt beim Switch von WordPress auf statisch
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# HTTPS erzwingen
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# www auf non-www
+RewriteCond %{HTTP_HOST} ^www\.gemma-golfn\.at [NC]
+RewriteRule ^(.*)$ https://gemma-golfn.at/$1 [R=301,L]
+
+# 301-Redirects: Alte WordPress-URLs auf neue Seite
+# Seiten die als Anker-Sektionen existieren
+RewriteRule ^home/?$ / [R=301,L]
+RewriteRule ^toptracer/?$ /#toptracer [R=301,NE,L]
+RewriteRule ^toptracer-buchung/?$ https://book.sweetspot.io/clubs/gemma-golfn/2090/tee-sheet [R=301,L]
+RewriteRule ^golfschule/?$ /#golfschule [R=301,L]
+RewriteRule ^workshops/?$ /#golfschule [R=301,L]
+RewriteRule ^der-erste-schritt-zur-oegv-platzreife-ab-e-99/?$ /#golfschule [R=301,L]
+RewriteRule ^proshop-und-fitting/?$ /#shop [R=301,L]
+RewriteRule ^events/?$ /#events [R=301,L]
+RewriteRule ^firmenevents/?$ /#events [R=301,L]
+RewriteRule ^eventlocation/?$ /#events [R=301,L]
+RewriteRule ^sponsoren/?$ /#sponsoren [R=301,L]
+
+# Rechtliche Seiten (existieren als HTML)
+RewriteRule ^datenschutz/?$ /datenschutz.html [R=301,L]
+RewriteRule ^agb/?$ /agb.html [R=301,L]
+RewriteRule ^driving-range-ordnung/?$ /range-ordnung.html [R=301,L]
+
+# Sonstige alte Seiten auf Startseite
+RewriteRule ^sekretariat/?$ / [R=301,L]
+RewriteRule ^was-bietet-gemma-golfn/?$ / [R=301,L]
+RewriteRule ^hotelpackages/?$ / [R=301,L]
+RewriteRule ^golfreisen/?$ / [R=301,L]
+RewriteRule ^webshop/?$ /#shop [R=301,L]
+RewriteRule ^text/?$ / [R=301,L]
+RewriteRule ^beispiel-seite/?$ / [R=301,L]
+RewriteRule ^mein-konto/?$ / [R=301,L]
+RewriteRule ^kasse/?$ / [R=301,L]
+RewriteRule ^warenkorb/?$ / [R=301,L]
+
+# Danke-Seiten
+RewriteRule ^erfolgreiche-anfrage-eventlocation/?$ / [R=301,L]
+RewriteRule ^firmenevents-vielen-dank-fuer-ihre-anfrage/?$ / [R=301,L]
+
+# WordPress-Dateien blockieren (404 statt Zugriff)
+RewriteRule ^wp-login\.php$ - [R=404,L]
+RewriteRule ^wp-admin/?$ - [R=404,L]
+RewriteRule ^xmlrpc\.php$ - [R=404,L]
+</IfModule>
+
+# Caching fuer statische Assets
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType video/mp4 "access plus 1 month"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Komprimierung
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Sicherheitsheader
+<IfModule mod_headers.c>
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Fehlerseite
+ErrorDocument 404 /index.html
