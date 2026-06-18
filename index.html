@@ -29,6 +29,49 @@
     <meta name="twitter:image" content="https://gemma-golfn.at/wp-content/uploads/2021/03/slider1.jpg">
     <meta name="theme-color" content="#1a693b">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Google Consent Mode v2 + GTM (wird NUR geladen wenn User zustimmt) -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500
+    });
+    var _gtmLoaded = false;
+    function loadGTM() {
+      if (_gtmLoaded) return;
+      _gtmLoaded = true;
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-XXXXXXX');
+    }
+    var _metaPixelLoaded = false;
+    function loadMetaPixel() {
+      if (_metaPixelLoaded) return;
+      _metaPixelLoaded = true;
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '144073177874151');
+      fbq('track', 'PageView');
+    }
+    (function(){
+      try {
+        var c = JSON.parse(localStorage.getItem('cookie_consent'));
+        if (c && (c.statistics === 'granted' || c.marketing === 'granted')) { loadGTM(); }
+        if (c && c.marketing === 'granted') { loadMetaPixel(); }
+      } catch(e) {}
+    })();
+    </script>
+
     <link rel="icon" href="https://gemma-golfn.at/wp-content/uploads/2021/03/favicon.png">
     <link rel="apple-touch-icon" href="https://gemma-golfn.at/wp-content/uploads/2021/03/favicon.png">
     <title>GEMMA GOLFN – Österreichs coolste Golf- & Event-Driving-Range | Toptracer, Golfschule, Events in Kronstorf</title>
@@ -308,6 +351,12 @@
         .btn-outline-dark:hover { background: var(--green-dark); color: var(--white); transform: translateY(-1px); }
         .btn-green { background: var(--green-dark); color: var(--white); }
         .btn-green:hover { background: #15572f; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(26,105,59,0.3); }
+        .btn-light { background-color: #c9a84c !important; color: #ffffff !important; border: 2px solid #c9a84c !important; }
+        .btn-light:hover { background-color: #b8963f !important; border-color: #b8963f !important; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+        .btn-subtle { background-color: rgba(255,255,255,0.15) !important; color: #ffffff !important; border: 2px solid rgba(255,255,255,0.5) !important; }
+        .btn-subtle:hover { background-color: rgba(255,255,255,0.25) !important; border-color: #ffffff !important; transform: translateY(-1px); }
+        .toptracer-buttons { display: flex; flex-direction: column; gap: 10px; }
+        .toptracer-buttons .btn { padding: 12px 22px; font-size: 0.88rem; }
         .btn-dark { background: var(--black); color: var(--white); }
         .btn-dark:hover { background: #333; transform: translateY(-2px); }
         .btn-gold { background: var(--gold-wirtshaus); color: var(--black); }
@@ -700,7 +749,7 @@
             .toptracer-features { grid-template-columns: 1fr 1fr; gap: 10px; }
             .toptracer-feat { padding: 14px 10px; }
             .toptracer-feat strong { font-size: 1.3rem; }
-            .price-grid { grid-template-columns: 1fr; }
+            .price-grid { grid-template-columns: 1fr 1fr; }
             .events-gallery { grid-template-columns: 1fr; }
             .event-photo-slot { aspect-ratio: 16/9; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -720,7 +769,9 @@
             .toptracer-feat { padding: 12px 8px; }
             .toptracer-feat strong { font-size: 1.2rem; }
             .toptracer-feat span { font-size: 0.75rem; }
-            .price-grid { grid-template-columns: 1fr; }
+            .toptracer-buttons { flex-direction: column; }
+            .toptracer-buttons .btn { width: 100%; text-align: center; justify-content: center; }
+            .price-grid { grid-template-columns: 1fr 1fr; }
             .events-gallery { grid-template-columns: 1fr; }
             .event-photo-slot { aspect-ratio: 16/9; }
             .toptracer-slider { aspect-ratio: 16/9; }
@@ -769,6 +820,96 @@
         .fade-up.visible { opacity: 1; transform: translateY(0); }
         .fade-up:nth-child(2) { transition-delay: 0.1s; }
         .fade-up:nth-child(3) { transition-delay: 0.2s; }
+
+        /* ========== COOKIE CONSENT ========== */
+        #cookie-overlay {
+            display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+            z-index: 99998; backdrop-filter: blur(3px); cursor: not-allowed;
+            touch-action: none; overscroll-behavior: none;
+        }
+        body.cookie-pending {
+            overflow: hidden !important; position: fixed !important;
+            width: 100% !important; height: 100% !important;
+            touch-action: none; overscroll-behavior: none;
+        }
+        #cookie-banner {
+            display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 99999;
+            background: white; border-radius: 20px 20px 0 0;
+            box-shadow: 0 -4px 40px rgba(0,0,0,0.15);
+            padding: 24px 24px 20px; flex-direction: column; gap: 14px;
+            max-height: 85vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
+            overscroll-behavior: contain;
+            font-family: 'Barlow', sans-serif;
+        }
+        .cookie-title { font-size: 18px; font-weight: 700; margin-bottom: 4px; color: var(--green-dark); }
+        .cookie-text { color: var(--gray-text); line-height: 1.6; font-size: 13px; }
+        .cookie-text a { color: var(--green-primary); text-decoration: underline; }
+        .cookie-categories { display: flex; flex-direction: column; gap: 0; }
+        .cookie-group { background: var(--off-white); border-radius: 10px; overflow: hidden; }
+        .cookie-group + .cookie-group { margin-top: 10px; }
+        .cookie-group-header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; cursor: default; }
+        .cookie-group-header input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--green-primary); cursor: pointer; flex-shrink: 0; }
+        .cookie-group-header input[disabled] { opacity: 0.5; cursor: default; }
+        .cookie-group-info { flex: 1; }
+        .cookie-group-name { font-size: 15px; font-weight: 600; color: var(--green-dark); }
+        .cookie-group-desc { font-size: 12px; color: var(--gray-text); line-height: 1.5; margin-top: 2px; }
+        .cookie-group-toggle { color: var(--green-primary); font-size: 12px; font-weight: 500; cursor: pointer; white-space: nowrap; display: flex; align-items: center; gap: 4px; background: none; border: none; font-family: 'Barlow', sans-serif; padding: 0; }
+        .cookie-group-toggle:hover { text-decoration: underline; }
+        .cookie-group-toggle svg { width: 14px; height: 14px; fill: var(--green-primary); transition: transform 0.2s; }
+        .cookie-group.open .cookie-group-toggle svg { transform: rotate(180deg); }
+        .cookie-group-details { display: none; border-top: 1px solid #e0e0e0; padding: 0 16px; }
+        .cookie-group.open .cookie-group-details { display: block; }
+        .cookie-service { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+        .cookie-service:last-child { border-bottom: none; }
+        .cookie-service-name { font-size: 13px; font-weight: 500; }
+        .cookie-service-provider { font-size: 11px; color: var(--gray-text); }
+        .cookie-service-right { display: flex; align-items: center; gap: 10px; }
+        .cookie-service-status { font-size: 11px; color: var(--gray-text); }
+        .cookie-switch { position: relative; width: 42px; height: 24px; flex-shrink: 0; }
+        .cookie-switch input { opacity: 0; width: 0; height: 0; }
+        .cookie-switch-slider { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #ccc; border-radius: 24px; cursor: pointer; transition: 0.2s; }
+        .cookie-switch-slider::before { content: ''; position: absolute; height: 18px; width: 18px; left: 3px; bottom: 3px; background: white; border-radius: 50%; transition: 0.2s; }
+        .cookie-switch input:checked + .cookie-switch-slider { background: var(--green-primary); }
+        .cookie-switch input:checked + .cookie-switch-slider::before { transform: translateX(18px); }
+        .cookie-switch input:disabled + .cookie-switch-slider { opacity: 0.5; cursor: default; }
+        .cookie-btns { display: flex; gap: 10px; }
+        .cookie-btns-top { margin-bottom: 0; }
+        .cookie-details { border: none; }
+        .cookie-details-toggle {
+            font-size: 13px; color: var(--green-primary); cursor: pointer; font-weight: 500;
+            list-style: none; display: inline-flex; align-items: center; gap: 4px;
+        }
+        .cookie-details-toggle::-webkit-details-marker { display: none; }
+        .cookie-details-toggle::after { content: '\25BC'; font-size: 10px; transition: transform 0.2s; }
+        .cookie-details[open] .cookie-details-toggle::after { transform: rotate(180deg); }
+        .cookie-btn { border: none; border-radius: 8px; padding: 12px 24px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: 'Barlow', sans-serif; transition: all 0.2s; flex: 1; text-align: center; }
+        .cookie-btn-accept { background: #1a693b; color: white; }
+        .cookie-btn-accept:hover { background: #1a3c2b; }
+        .cookie-btn-save { background: #f0f0ee; color: #1a3c2b; }
+        .cookie-btn-save:hover { background: #e0e0e0; }
+        .cookie-btn-decline { background: #f0f0ee; color: #1a3c2b; }
+        .cookie-btn-decline:hover { background: #e0e0e0; }
+        .cookie-footer-links { display: flex; gap: 16px; font-size: 12px; }
+        .cookie-footer-links a { color: var(--gray-text); text-decoration: underline; }
+        #cookie-settings-btn {
+            display: none; position: fixed; bottom: 20px; left: 20px; z-index: 9999;
+            background: var(--green-dark); color: white; border: none; border-radius: 50px;
+            padding: 10px 18px; font-size: 13px; font-weight: 600; cursor: pointer;
+            font-family: 'Barlow', sans-serif;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.2); opacity: 0.85; transition: all 0.2s;
+            display: none; align-items: center; gap: 8px;
+        }
+        #cookie-settings-btn:hover { opacity: 1; box-shadow: 0 4px 24px rgba(0,0,0,0.25); transform: translateY(-1px); }
+        #cookie-settings-btn svg { width: 16px; height: 16px; fill: white; flex-shrink: 0; }
+
+        @media (max-width: 600px) {
+            #cookie-banner { padding: 20px 16px 18px; }
+            .cookie-group-header { flex-wrap: wrap; }
+            .cookie-group-toggle { margin-top: 6px; }
+            .cookie-btns { flex-direction: column; }
+            .cookie-btn { width: 100%; text-align: center; }
+            .cookie-service { flex-wrap: wrap; gap: 8px; }
+        }
     </style>
 </head>
 <body>
@@ -862,7 +1003,13 @@
                     <span style="background:var(--off-white);padding:6px 14px;border-radius:50px;font-size:0.8rem;font-weight:600;">Toptracer30</span>
                     <span style="background:var(--off-white);padding:6px 14px;border-radius:50px;font-size:0.8rem;font-weight:600;">Angry Birds</span>
                 </div>
-                <a href="https://book.sweetspot.io/clubs/gemma-golfn/2090/tee-sheet" target="_blank" class="btn btn-green" style="margin-top:24px;">Jetzt Box buchen</a>
+                <div class="toptracer-buttons" style="margin-top:24px;">
+                    <a href="https://book.sweetspot.io/clubs/gemma-golfn/memberships/bda7da50-f2ac-4d6c-8b89-ff40ae06cbe5" target="_blank" class="btn btn-light" style="width:100%;text-align:center;justify-content:center;">Sommerflat &euro; 299,- &nbsp;|&nbsp; Spare bis zu &euro; 3.600,-</a>
+                    <div style="display:flex;gap:10px;width:100%;">
+                        <a href="https://book.sweetspot.io/clubs/gemma-golfn/2090/tee-sheet" target="_blank" class="btn btn-green" style="flex:1;text-align:center;justify-content:center;">Einzelbuchung</a>
+                        <a href="https://book.sweetspot.io/clubs/gemma-golfn/passes/e13717d3-e146-4837-aa4a-099b96bc7e9d" target="_blank" class="btn btn-dark" style="flex:1;text-align:center;justify-content:center;">Monatsflat &euro; 99,-</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -939,6 +1086,57 @@
                 </div>
             </div>
         </div>
+
+        <!-- Platzreife-Weg -->
+        <div class="pro-section" style="margin-top:40px;">
+            <h3 class="section-title fade-up" style="font-size:1.8rem;margin-bottom:24px;">Dein Weg zur Platzreife</h3>
+            <p class="section-subtitle fade-up" style="margin-bottom:20px;">Starte mit dem Platzerlaubnis-Kurs und erweitere dein K&ouml;nnen Schritt f&uuml;r Schritt – in deinem Tempo.</p>
+
+            <div class="pro-card fade-up" onclick="this.classList.toggle('open')">
+                <div class="pro-header">
+                    <div class="pro-header-info" style="flex:1;">
+                        <h3>1. Platzerlaubnis-Kurs &ndash; ab &euro; 99,-</h3>
+                        <p>5 Stunden Training inkl. Spielberechtigung am Golfpark Metzenhof</p>
+                    </div>
+                    <div class="pro-toggle"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="pro-body">
+                    <div class="pro-body-inner">
+                        <p class="pro-bio">Kompakt, praxisnah und mit Spa&szlig; am Spiel &ndash; der perfekte Einstieg f&uuml;r alle, die offiziell golfen und bei Turnieren mitspielen wollen. Nach Abschluss erh&auml;ltst du deine Spielberechtigung am Golfpark Metzenhof.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card fade-up" onclick="this.classList.toggle('open')">
+                <div class="pro-header">
+                    <div class="pro-header-info" style="flex:1;">
+                        <h3>2. Workshops &amp; Trainingsmodule</h3>
+                        <p>Frei kombinierbare Kurse &ndash; einzeln oder als All-in-Paket</p>
+                    </div>
+                    <div class="pro-toggle"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="pro-body">
+                    <div class="pro-body-inner">
+                        <p class="pro-bio" style="margin-bottom:12px;">Ab 2 Teilnehmern individuell vereinbar &ndash; trainiere flexibel, wann es dir passt.</p>
+                        <table class="price-table">
+                            <tr><th style="text-align:left;">Workshop</th><th>Preis</th><th>Dauer</th></tr>
+                            <tr><td>Langes Spiel (inkl. Toptracer)</td><td>&euro; 50,-</td><td>2h</td></tr>
+                            <tr><td>Pitchen &amp; Bunker</td><td>&euro; 50,-</td><td>2h</td></tr>
+                            <tr><td>Putten &amp; Chippen</td><td>&euro; 50,-</td><td>2h</td></tr>
+                            <tr><td>Driver</td><td>&euro; 50,-</td><td>2h</td></tr>
+                            <tr><td>Spielen am Platz (9 Loch mit Pro)</td><td>ab &euro; 59,- p.P.</td><td>2h</td></tr>
+                        </table>
+                        <p style="font-size:0.8rem;color:var(--gray-text);margin-top:8px;">Workshops: 2&ndash;4 Teilnehmer &middot; Spielen am Platz: Einzel &euro; 99,- | Zu zweit &euro; 69,- | Zu dritt &euro; 59,- p.P.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;" class="fade-up">
+                <a href="https://platzreife.metzenhof.at/" target="_blank" class="btn btn-green">Platzreife starten</a>
+                <a href="https://workshop.metzenhof.at/" target="_blank" class="btn btn-dark">Workshop buchen</a>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -1454,6 +1652,221 @@
             imgs[current].classList.add('active');
         }, 7000);
     })();
+</script>
+
+<!-- COOKIE OVERLAY + BANNER -->
+<div id="cookie-overlay"></div>
+<div id="cookie-banner" role="dialog" aria-label="Datenschutzeinstellungen">
+  <div>
+    <div class="cookie-title">Wir respektieren deine Privatsph&auml;re</div>
+    <div class="cookie-text" style="margin-top:4px;">
+      Wir verwenden Cookies f&uuml;r Statistiken und Marketing. Du kannst selbst w&auml;hlen, welche du zul&auml;sst.
+      <span class="cookie-footer-links" style="margin-left:6px;"><a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a></span>
+    </div>
+  </div>
+
+  <div class="cookie-btns cookie-btns-top">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieAcceptAll()">Alle akzeptieren</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieDenyAll()">Nur essenzielle</button>
+  </div>
+
+  <details class="cookie-details">
+    <summary class="cookie-details-toggle">Erweiterte Einstellungen anzeigen</summary>
+
+  <div class="cookie-categories" style="margin-top:12px;">
+
+    <div class="cookie-group" id="cg-essential">
+      <div class="cookie-group-header">
+        <input type="checkbox" checked disabled>
+        <div class="cookie-group-info">
+          <div class="cookie-group-name">Essenziell</div>
+          <div class="cookie-group-desc">Essenzielle Cookies erm&ouml;glichen grundlegende Funktionen und sind f&uuml;r die einwandfreie Funktion der Website erforderlich.</div>
+        </div>
+        <button class="cookie-group-toggle" onclick="toggleCookieGroup('cg-essential')">
+          Cookie-Informationen anzeigen <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </button>
+      </div>
+      <div class="cookie-group-details">
+        <div class="cookie-service">
+          <div><div class="cookie-service-name">Cookie-Einstellungen</div><div class="cookie-service-provider">Anbieter: gemma-golfn.at</div></div>
+          <div class="cookie-service-right">
+            <label class="cookie-switch"><input type="checkbox" checked disabled><span class="cookie-switch-slider"></span></label>
+            <span class="cookie-service-status">Immer an</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cookie-group" id="cg-statistics">
+      <div class="cookie-group-header">
+        <input type="checkbox" id="ck-statistics" onchange="syncCookieGroup('statistics')">
+        <div class="cookie-group-info">
+          <div class="cookie-group-name">Statistiken</div>
+          <div class="cookie-group-desc">Statistik-Cookies erfassen Informationen anonym. Diese Informationen helfen uns zu verstehen, wie unsere Besucher unsere Website nutzen.</div>
+        </div>
+        <button class="cookie-group-toggle" onclick="toggleCookieGroup('cg-statistics')">
+          Cookie-Informationen anzeigen <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </button>
+      </div>
+      <div class="cookie-group-details">
+        <div class="cookie-service">
+          <div><div class="cookie-service-name">Google Analytics</div><div class="cookie-service-provider">Anbieter: Google Ireland Limited</div></div>
+          <div class="cookie-service-right">
+            <label class="cookie-switch"><input type="checkbox" id="cs-analytics" onchange="syncServiceToGroup('statistics')"><span class="cookie-switch-slider"></span></label>
+            <span class="cookie-service-status" id="cs-analytics-label">Aus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cookie-group" id="cg-marketing">
+      <div class="cookie-group-header">
+        <input type="checkbox" id="ck-marketing" onchange="syncCookieGroup('marketing')">
+        <div class="cookie-group-info">
+          <div class="cookie-group-name">Marketing</div>
+          <div class="cookie-group-desc">Marketing-Cookies werden von Drittanbietern verwendet, um personalisierte Werbung anzuzeigen. Sie helfen uns, die Effektivit&auml;t unserer Werbekampagnen zu messen.</div>
+        </div>
+        <button class="cookie-group-toggle" onclick="toggleCookieGroup('cg-marketing')">
+          Cookie-Informationen anzeigen <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </button>
+      </div>
+      <div class="cookie-group-details">
+        <div class="cookie-service">
+          <div><div class="cookie-service-name">Meta Pixel (Facebook)</div><div class="cookie-service-provider">Anbieter: Meta Platforms Ireland Limited</div></div>
+          <div class="cookie-service-right">
+            <label class="cookie-switch"><input type="checkbox" id="cs-metapixel" onchange="syncServiceToGroup('marketing')"><span class="cookie-switch-slider"></span></label>
+            <span class="cookie-service-status" id="cs-metapixel-label">Aus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="cookie-btns">
+    <button class="cookie-btn cookie-btn-save" onclick="cookieSaveChoices()">Auswahl speichern</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieAcceptAll()">Alle akzeptieren</button>
+  </div>
+
+  </details>
+</div>
+
+<!-- Datenschutz-Button links unten -->
+<button id="cookie-settings-btn" onclick="openCookieSettings()" title="Datenschutzeinstellungen" aria-label="Datenschutzeinstellungen">
+  <svg viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 018.5 12 3.5 3.5 0 0112 8.5a3.5 3.5 0 013.5 3.5 3.5 3.5 0 01-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0014 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.58 1.69-.98l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.66z"/></svg>
+  <span>Cookie-Einstellungen</span>
+</button>
+
+<script>
+// COOKIE CONSENT LOGIC
+function toggleCookieGroup(id) {
+  var el = document.getElementById(id);
+  el.classList.toggle('open');
+  var btn = el.querySelector('.cookie-group-toggle');
+  if (el.classList.contains('open')) {
+    btn.innerHTML = 'Cookie-Informationen ausblenden <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>';
+  } else {
+    btn.innerHTML = 'Cookie-Informationen anzeigen <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>';
+  }
+}
+function syncCookieGroup(group) {
+  var checked = document.getElementById('ck-' + group).checked;
+  if (group === 'statistics') {
+    document.getElementById('cs-analytics').checked = checked;
+    document.getElementById('cs-analytics-label').textContent = checked ? 'An' : 'Aus';
+  }
+  if (group === 'marketing') {
+    document.getElementById('cs-metapixel').checked = checked;
+    document.getElementById('cs-metapixel-label').textContent = checked ? 'An' : 'Aus';
+  }
+}
+function syncServiceToGroup(group) {
+  if (group === 'statistics') {
+    var on = document.getElementById('cs-analytics').checked;
+    document.getElementById('ck-statistics').checked = on;
+    document.getElementById('cs-analytics-label').textContent = on ? 'An' : 'Aus';
+  }
+  if (group === 'marketing') {
+    var on = document.getElementById('cs-metapixel').checked;
+    document.getElementById('ck-marketing').checked = on;
+    document.getElementById('cs-metapixel-label').textContent = on ? 'An' : 'Aus';
+  }
+}
+
+var _cookieScrollY = 0;
+function cookieShowBanner() {
+  _cookieScrollY = window.scrollY;
+  document.body.style.top = '-' + _cookieScrollY + 'px';
+  document.body.classList.add('cookie-pending');
+  document.getElementById('cookie-overlay').style.display = 'block';
+  document.getElementById('cookie-banner').style.display = 'flex';
+  document.getElementById('cookie-settings-btn').style.display = 'none';
+}
+function cookieHideBanner() {
+  document.body.classList.remove('cookie-pending');
+  document.body.style.top = '';
+  window.scrollTo(0, _cookieScrollY);
+  document.getElementById('cookie-overlay').style.display = 'none';
+  document.getElementById('cookie-banner').style.display = 'none';
+  document.getElementById('cookie-settings-btn').style.display = 'flex';
+}
+function openCookieSettings() {
+  try {
+    var c = JSON.parse(localStorage.getItem('cookie_consent'));
+    if (c) {
+      document.getElementById('ck-statistics').checked = c.statistics === 'granted';
+      document.getElementById('ck-marketing').checked = c.marketing === 'granted';
+      syncCookieGroup('statistics');
+      syncCookieGroup('marketing');
+    }
+  } catch(e) {}
+  cookieShowBanner();
+}
+function cookieApplyConsent(stats, marketing) {
+  var consentObj = {
+    statistics: stats ? 'granted' : 'denied',
+    marketing: marketing ? 'granted' : 'denied'
+  };
+  localStorage.setItem('cookie_consent', JSON.stringify(consentObj));
+  if (typeof gtag === 'function') {
+    gtag('consent', 'update', {
+      'analytics_storage': consentObj.statistics,
+      'ad_storage': consentObj.marketing,
+      'ad_user_data': consentObj.marketing,
+      'ad_personalization': consentObj.marketing
+    });
+  }
+  if (stats || marketing) { loadGTM(); }
+  if (marketing) { loadMetaPixel(); }
+  cookieHideBanner();
+}
+function cookieAcceptAll() {
+  document.getElementById('ck-statistics').checked = true;
+  document.getElementById('ck-marketing').checked = true;
+  syncCookieGroup('statistics');
+  syncCookieGroup('marketing');
+  cookieApplyConsent(true, true);
+}
+function cookieDenyAll() {
+  document.getElementById('ck-statistics').checked = false;
+  document.getElementById('ck-marketing').checked = false;
+  syncCookieGroup('statistics');
+  syncCookieGroup('marketing');
+  cookieApplyConsent(false, false);
+}
+function cookieSaveChoices() {
+  var stats = document.getElementById('ck-statistics').checked;
+  var mkt = document.getElementById('ck-marketing').checked;
+  cookieApplyConsent(stats, mkt);
+}
+
+// Show banner on first visit, settings button if already decided
+var stored = localStorage.getItem('cookie_consent');
+if (!stored) {
+  cookieShowBanner();
+} else {
+  document.getElementById('cookie-settings-btn').style.display = 'flex';
+}
 </script>
 
 </body>
