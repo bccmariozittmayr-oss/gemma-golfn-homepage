@@ -1571,7 +1571,7 @@
     (function() {
         const slider = document.getElementById('aktionenSlider');
         const today = new Date().toISOString().split('T')[0];
-        fetch('Aktuelle Aktionen/aktionen.json')
+        fetch('Aktuelle Aktionen/aktionen.json?v=' + Date.now())
             .then(r => r.json())
             .then(aktionen => {
                 const aktive = aktionen.filter(a => a.expires >= today);
