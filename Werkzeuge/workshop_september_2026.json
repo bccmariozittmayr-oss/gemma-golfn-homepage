@@ -1,0 +1,11 @@
+{
+  "monat": "September",
+  "jahr": "2026",
+  "termine": [
+    {"datum": "03.09.2026", "thema": "Langes Spiel", "zeit": "16:00 – 18:00 Uhr"},
+    {"datum": "04.09.2026", "thema": "Pitchen / Bunker", "zeit": "13:00 – 15:00 Uhr"},
+    {"datum": "10.09.2026", "thema": "Driver", "zeit": "16:00 – 18:00 Uhr"},
+    {"datum": "23.09.2026", "thema": "Langes Spiel", "zeit": "16:00 – 18:00 Uhr"},
+    {"datum": "29.09.2026", "thema": "Chippen / Putten", "zeit": "16:00 – 18:00 Uhr"}
+  ]
+}

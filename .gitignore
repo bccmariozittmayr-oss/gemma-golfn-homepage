@@ -19,3 +19,4 @@ hero-building.png
 # Python
 __pycache__/
 *.pyc
+Werkzeuge/output/
