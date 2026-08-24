@@ -15,7 +15,10 @@ SCRIPT_DIR = Path(__file__).parent
 GG = Path(__file__).resolve().parents[4]  # .../01_Kunden/gemma-golfn
 PROTO = GG / "projekte" / "Gemma Golfn Homepage" / "prototype"
 SUJET = GG / "marketing" / "grafiken" / "Workshops" / "WORKSHOP LANGES SPIEL OHNE DATUM 1080 1080 .png"
-HERO = PROTO / "hero-building-golden.jpg"
+# Original-Assets (Vorgabe Mario 24.08.2026): echtes Gebaeudefoto + Original-Logo,
+# NICHT die KI-Golden-Hour-Version (verschwommene Schriftzuege am Gebaeude).
+ORIG = GG / "marketing" / "grafiken" / "Workshops" / "_originale"
+HERO = ORIG / "GG Gebäude.png"
 
 ASSETS = SCRIPT_DIR / "assets"
 ASSETS.mkdir(exist_ok=True)
@@ -23,9 +26,7 @@ OUT = SCRIPT_DIR / "output"
 OUT.mkdir(exist_ok=True)
 
 # ---- Assets vorbereiten ----
-logo_png = ASSETS / "gemma-golfn-logo.png"
-if not logo_png.exists():
-    Image.open(SUJET).crop((50, 36, 424, 154)).save(logo_png)
+logo_png = ORIG / "Logo_Liegend.JPG"
 
 qr_png = ASSETS / "qr-workshop.png"
 if not qr_png.exists():
@@ -88,7 +89,7 @@ def build_html(data, variant):
   .canvas {{ width:var(--W); height:var(--H); display:flex; flex-direction:column; position:relative; }}
 
   /* ---- HERO ---- */
-  .hero {{ position:relative; flex:0 0 var(--heroH); background:url("{HERO.as_uri()}") center 62%/cover no-repeat; }}
+  .hero {{ position:relative; flex:0 0 var(--heroH); background:url("{HERO.as_uri()}") center 30%/cover no-repeat; }}
   .hero::after {{ content:""; position:absolute; inset:0;
      background:linear-gradient(180deg, rgba(255,252,240,.18) 0%, rgba(255,252,240,0) 40%, rgba(245,244,238,0) 78%, var(--paper) 100%); }}
   .logo {{ position:absolute; top:var(--logoTop); left:50%; transform:translateX(-50%); z-index:3; }}
@@ -205,20 +206,23 @@ def build_html(data, variant):
 def render_all():
     from playwright.sync_api import sync_playwright
     stem = f"Workshops_{DATA['monat']}_{DATA['jahr']}"
-    jobs = [
-        ("sq",   1080, 1080, 1, f"{stem}_1080x1080.png"),
-        ("wide", 1920, 1080, 1, f"{stem}_1920x1080.png"),
-        ("a4",   1240, 1754, 2, f"{stem}_A4_Druck.png"),
+    jobs = [  # 2x rendern + herunterrechnen = scharfe Kanten (24.08.2026)
+        ("sq",   1080, 1080, 2, (1080, 1080), f"{stem}_1080x1080.png"),
+        ("wide", 1920, 1080, 2, (1920, 1080), f"{stem}_1920x1080.png"),
+        ("a4",   1240, 1754, 2, None,         f"{stem}_A4_Druck.png"),
     ]
     with sync_playwright() as p:
         browser = p.chromium.launch()
-        for variant, w, h, scale, fname in jobs:
+        for variant, w, h, scale, final, fname in jobs:
             html_file = OUT / f"flyer_{variant}.html"
             html_file.write_text(build_html(DATA, variant), encoding="utf-8")
             page = browser.new_page(viewport={"width": w, "height": h}, device_scale_factor=scale)
             page.goto(html_file.as_uri())
             page.wait_for_timeout(1200)  # Fonts/Bilder laden
             page.screenshot(path=str(OUT / fname), full_page=False)
+            if final:
+                img = Image.open(OUT / fname)
+                img.resize(final, Image.LANCZOS).save(OUT / fname, optimize=True)
             print("OK", fname)
             if variant == "a4":
                 page.pdf(path=str(OUT / f"{stem}_A4_Druck.pdf"),
