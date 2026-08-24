@@ -1581,7 +1581,7 @@
                 }
                 slider.innerHTML = aktive.map(a => `
                     <a href="${a.link}" ${a.link.startsWith('http') ? 'target="_blank"' : ''} class="aktion-card fade-up">
-                        <img src="Aktuelle Aktionen/${a.bild}" alt="${a.titel}" loading="lazy" decoding="async">
+                        <img src="Aktuelle Aktionen/${encodeURIComponent(a.bild)}?v=${Date.now()}" alt="${a.titel}" loading="lazy" decoding="async">
                         <div class="aktion-card-body">
                             <h3>${a.titel}</h3>
                             <p>${a.text}</p>
