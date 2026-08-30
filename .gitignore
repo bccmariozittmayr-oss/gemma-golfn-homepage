@@ -1,6 +1,14 @@
-# Secrets
+# Secrets — niemals ins Git
 .env
-Werkzeuge/.env
+prototype/Werkzeuge/.env
+
+# CI-Material und alte WordPress-Sicherung liegen auf OneDrive, nicht im Git
+# (Entscheidung Mario 30.08.2026: grosse Dateien gehoeren nicht ins Repo).
+# Sicherung: 13 Claude Sicherung/Claude Code/gemma-golfn/Gemma Golfn Homepage/
+Gemma Golfn BAR71 und Metzenhof Logos und Schriftarten/
+backup-alte-homepage/
+backup_impressum_id577.txt
+backup_ueber-uns_id48.txt
 
 # System files
 .DS_Store
@@ -19,4 +27,4 @@ hero-building.png
 # Python
 __pycache__/
 *.pyc
-Werkzeuge/output/
+prototype/Werkzeuge/output/
