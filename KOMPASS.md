@@ -16,7 +16,7 @@ Verzeichnistiefe.
 
 | Datei / Ordner | Inhalt |
 |---|---|
-| `prototype/` | die aktuelle Website — eigenes Git-Repo, hier wird gearbeitet |
+| `prototype/` | die aktuelle Website — hier wird gearbeitet (kein eigenes Repo mehr) |
 | `prototype/index.html` | Startseite |
 | `prototype/impressum.html`, `datenschutz.html`, `agb.html`, `barrierefreiheit.html` | Rechtstexte |
 | `prototype/range-ordnung.html` | Platz-/Range-Ordnung |
