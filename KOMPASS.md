@@ -5,11 +5,12 @@
 Website gemma-golfn.at (Golfschule, Toptracer, Pro Shop, BAR71, Golfpark
 Metzenhof). Die neue Seite ist ein statischer Eigenbau im Unterordner
 `prototype/` und **LIVE**; die alte WordPress-Seite liegt nur noch als Sicherung
-bei. Zuletzt aktiv im August 2026: Aktionsgrafiken und Workshop-Flyer
-(September-Sujets ausgerollt, Flyer-Werkzeug auf Originalfoto und Originallogo
-umgestellt). Kein STATUS.md und kein CHANGELOG — der Stand steht nur in der
-Git-Historie von `prototype/`.
-**Wichtig:** Nur `prototype/` ist ein eigenes Repo, der uebergeordnete Ordner nicht.
+bei. Zuletzt inhaltlich aktiv am 24.08.2026: September-Sujets ausgerollt,
+Flyer-Werkzeug auf Originalfoto und Originallogo umgestellt.
+**Struktur seit 30.08.2026 auf Hausstandard:** Das Git-Repo liegt auf
+Projektordner-Ebene, die Website im Unterordner `prototype/`. `prototype/`
+darf nicht aufgeloest werden — die Deploy-Skripte haengen an der
+Verzeichnistiefe.
 
 ## Welche Datei kann was
 
@@ -24,9 +25,13 @@ Git-Historie von `prototype/`.
 | `prototype/Aktuelle Aktionen/`, `social/` | ausgespielte Grafiken |
 | `prototype/Shop Fotos/`, `Sponsoren/`, `*.jpg`, `*.mp4` | Bild- und Videomaterial |
 | `referenz-alte-seite.md` | Inhalte der alten Seite (Navigation, Kontakt, Oeffnungszeiten) |
-| `backup-alte-homepage/` | vollstaendige Sicherung der alten WordPress-Seite |
-| `backup_*.txt` | Einzelseiten-Sicherungen (Impressum, Ueber uns) |
-| `Gemma Golfn BAR71 … Logos und Schriftarten` | CI-Material |
+| `CLAUDE.md` | Regeln fuer dieses Projekt, vor allem zum Ausrollen |
+| `AGENTS.md` | Dasselbe fuer Codex (liest, aendert nie) |
+| `STATUS.md` | Aktueller Stand und offene Punkte |
+| `CHANGELOG.md` | Was fachlich wann passiert ist |
+| `backup-alte-homepage/` | Sicherung der alten WordPress-Seite — **nicht im Git** |
+| `backup_*.txt` | Einzelseiten-Sicherungen — **nicht im Git** |
+| `Gemma Golfn BAR71 … Logos und Schriftarten` | CI-Material — **nicht im Git** |
 
 ## Wo schlage ich was nach
 
@@ -37,9 +42,22 @@ Git-Historie von `prototype/`.
 - Alter WordPress-Inhalt einer Seite → `backup-alte-homepage/`
 - Logos und Schriften → CI-Ordner im Projekt bzw. `../../ci-branding/`
 
+## Ausrollen (LIVE-Seite)
+
+Per FTPS-Skript `prototype/Werkzeuge/deploy_workshops_september_2026.py` auf
+den Hetzner-Server. **Kein automatisches Deployment** — ein Push auf GitHub
+aendert an der Live-Seite nichts. Jeder Ausrollvorgang braucht eine eigene
+Freigabe von Mario.
+
 ## Sicherung
 
-Das Git-Repo liegt **eine Ebene tiefer** in `prototype/`, Remote `origin` →
-`bccmariozittmayr-oss/gemma-golfn-homepage`. Alles ausserhalb von `prototype/`
-(Sicherungen der alten Seite, CI-Material) haengt am BCC-Zentrale-Repo bzw.
-gehoert bei grossen Dateien auf OneDrive. Keine `.env` im Projekt.
+Git-Repo auf **Projektordner-Ebene**, Remote `origin` →
+`bccmariozittmayr-oss/gemma-golfn-homepage` (Branch `master`).
+CI-Material, alte WordPress-Sicherung, Videos und generierte Bilder liegen in
+**keinem** Repo, sondern auf der Platte und in
+`13 Claude Sicherung/Claude Code/gemma-golfn/` (Stand 30.08.2026).
+
+**Es gibt ZWEI `.env`-Dateien** (frueher stand hier faelschlich, es gebe keine):
+`.env` im Projektordner (Hetzner-FTPS fuers Ausrollen) und
+`prototype/Werkzeuge/.env` (Gemini-API). Beide doppelt ueber `.gitignore`
+ausgeschlossen. Inhalte nie anzeigen, nie ins Git, nie nach OneDrive.
