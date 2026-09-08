@@ -24,12 +24,12 @@ QUELLE = PROTO.parent.parent.parent / "marketing" / "Hot Shots Winter Abo 2026-2
 ZIEL = "2026-09-hotshots"
 echt = "--echt" in sys.argv
 
-dateien = sorted(list((QUELLE / "1080x1080").glob("*.png")) + list((QUELLE / "1080x1920").glob("*.png"))
-                 + list((QUELLE / "reels").glob("*.mp4")))
+dateien = sorted(list((QUELLE / "jpg" / "1080x1080").glob("*.jpg")) + list((QUELLE / "jpg" / "1080x1920").glob("*.jpg"))
+                 + list((QUELLE / "jpg").glob("*.jpg")) + list((QUELLE / "reels").glob("*.mp4")))
 namen = []
 for p in dateien:
     ordner = p.parent.name
-    name = p.name if ordner == "reels" else f"{p.stem}_{ordner}{p.suffix}"
+    name = p.name if ordner in ("reels", "jpg") else f"{p.stem}_{ordner}{p.suffix}"
     namen.append((p, name))
     print(("  " if echt else "  [trocken] ") + name, round(p.stat().st_size / 1e6, 1), "MB")
 
