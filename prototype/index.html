@@ -1574,7 +1574,7 @@
         fetch('Aktuelle Aktionen/aktionen.json?v=' + Date.now())
             .then(r => r.json())
             .then(aktionen => {
-                const aktive = aktionen.filter(a => a.expires >= today);
+                const aktive = aktionen.filter(a => a.expires >= today && (!a.start || a.start <= today));
                 if (aktive.length === 0) {
                     document.getElementById('aktionen').style.display = 'none';
                     return;
