@@ -16,6 +16,13 @@ wurde angefasst, der Ausrollweg ist unverändert.
 
 ## Offene Punkte
 
+- [ ] **Winter-Aktionen 2026/27 eingeplant, NICHT ausgerollt** (Zweig `winter-aktionen-2026`, 28.09.2026):
+      7 neue Kacheln in `aktionen.json` mit `start`/`expires` (Super Sale B 01.–13.10., A 14.10.–10.11.,
+      Stundenflat 02.10.–31.01., FLO(H)MARKT 12.–26.10., Winterleague bis 13.11., Touchkey 01.11.–28.02.,
+      Griffwechsel 15.10.–28.02.; Gültigkeiten von Mario bestätigt). Bilder aus
+      `marketing/winter-aktionen-2026/bau/build_homepage_kacheln.py`. Ausrollen mit
+      `deploy_aktionen.py --echt` **erst nach Freigabe Mario**, spätestens 30.09. (Super Sale ab 01.10.).
+
 - [x] **Team-Fotos LIVE seit 28.09.2026** (Go Mario): `index.html` + `team/` (10 Dateien),
       Hermann „Allround-Pro", Spike „Maskottchen & Caddie auf vier Pfoten". Melanie Leitner
       entfernt, ihre 20 Bildgrößen in `wp-content/uploads/2021/03/` gelöscht (Original lokal
