@@ -16,10 +16,13 @@ wurde angefasst, der Ausrollweg ist unverändert.
 
 ## Offene Punkte
 
-- [ ] **Team-Fotos ausrollen** (Zweig `team-fotos-2026-09`, Stand 28.09.2026):
-      Freigabe Mario fehlt. Hochzuladen: `index.html` + Ordner `team/`
-      (10 Dateien). Vorher Titel für Hermann und Spike bestätigen lassen.
-      Danach Zweig nach `master` zusammenführen.
+- [x] **Team-Fotos LIVE seit 28.09.2026** (Go Mario): `index.html` + `team/` (10 Dateien),
+      Hermann „Allround-Pro", Spike „Maskottchen & Caddie auf vier Pfoten". Melanie Leitner
+      entfernt, ihre 20 Bildgrößen in `wp-content/uploads/2021/03/` gelöscht (Original lokal
+      unter `marketing/fotos/Mitarbeiter Fotos/ehemalig/`). Live-Seite davor als Sicherung
+      heruntergeladen (identisch mit Git `hotshots-winter-2026:prototype/index.html` = Rückweg).
+- [ ] **Zweige zusammenführen:** `hotshots-winter-2026` und darauf `team-fotos-2026-09` sind
+      live, aber noch nicht in `master`. Wartet auf Freigabe Mario.
 
 - [ ] **Abgleich Repo gegen Live-Server.** Weil einzelne Dateien manuell per
       FTPS hochgeladen werden, kann der Server vom Repo abweichen. Vor der
