@@ -3,6 +3,21 @@
 Neueste Einträge oben. Details stehen in der Git-Historie (`git log`);
 hier steht nur, was fachlich wichtig war.
 
+## 2026-09-28 — Team-Bereich mit neuen Fotos (Zweig `team-fotos-2026-09`, noch nicht live)
+
+- Alle Mitarbeiterfotos gegen die neuen Aufnahmen getauscht. Bilder liegen
+  jetzt lokal in `prototype/team/` statt auf den alten WordPress-Uploads.
+  Einheitlich 4:5, 360×450 px (doppelte Anzeigegröße für scharfe Displays),
+  je ca. 20 KB, ohne Metadaten. Auch die zwei Bilder bei „Unsere
+  Professionals" (Golfschule) nutzen jetzt die neuen Fotos.
+- Gruppenfoto neu über den Einzelkarten (1600 px und 800 px fürs Handy).
+- Melanie Leitner entfernt, Hermann Rohm aufgenommen (Titel vorläufig
+  „Allround-Pro").
+- Maskottchen Spike (Flos Hund) als eigene Karte, lokal freigestellt (rembg,
+  kein Cloud-Dienst, nichts dazuerfunden).
+- Handy-Ansicht der Teamkarten: Name und Funktion stehen jetzt untereinander
+  statt in zwei schmalen Spalten nebeneinander.
+
 ## 2026-08-30 — Projektstruktur auf Hausstandard gebracht
 
 - Git-Repo von `prototype/` auf Projektordner-Ebene gezogen. Nur der

@@ -1,6 +1,6 @@
 # STATUS — Gemma Golfn Homepage
 
-**Letzte Aktualisierung:** 30.08.2026
+**Letzte Aktualisierung:** 28.09.2026
 
 ## Aktueller Stand
 
@@ -15,6 +15,11 @@ Es wurde ausschliesslich der `.git`-Ordner verschoben — keine Website-Datei
 wurde angefasst, der Ausrollweg ist unverändert.
 
 ## Offene Punkte
+
+- [ ] **Team-Fotos ausrollen** (Zweig `team-fotos-2026-09`, Stand 28.09.2026):
+      Freigabe Mario fehlt. Hochzuladen: `index.html` + Ordner `team/`
+      (10 Dateien). Vorher Titel für Hermann und Spike bestätigen lassen.
+      Danach Zweig nach `master` zusammenführen.
 
 - [ ] **Abgleich Repo gegen Live-Server.** Weil einzelne Dateien manuell per
       FTPS hochgeladen werden, kann der Server vom Repo abweichen. Vor der

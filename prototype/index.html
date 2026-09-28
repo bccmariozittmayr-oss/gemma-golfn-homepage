@@ -584,6 +584,30 @@
         .team-card:hover img { filter: grayscale(0%); transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
         .team-card h3 { font-weight: 700; font-size: 1.05rem; color: var(--green-dark); margin-bottom: 4px; }
         .team-card p { color: var(--gray-text); font-size: 0.85rem; line-height: 1.4; }
+        .team-group { max-width: 1000px; margin: 48px auto 0; }
+        .team-group img { width: 100%; height: auto; display: block; border-radius: var(--radius); }
+        .team-group figcaption { text-align: center; color: var(--gray-text); font-size: 0.85rem; margin-top: 12px; }
+        /* Maskottchen Spike: freigestellt, schaut oben aus der Karte heraus */
+        .team-mascot {
+            display: flex; align-items: flex-end; gap: 32px; max-width: 620px;
+            margin: 110px auto 0; padding: 0 40px 0 28px;
+            background: var(--off-white); border-radius: var(--radius);
+            border: 1px solid var(--gray-light);
+        }
+        .team-mascot img {
+            width: 150px; height: auto; flex-shrink: 0; margin-top: -90px;
+            transform-origin: 50% 100%; transition: transform 0.4s;
+        }
+        .team-mascot:hover img { transform: rotate(-3deg) translateY(-4px); }
+        .team-mascot-text { padding: 28px 0; }
+        .team-mascot-badge {
+            display: inline-block; background: var(--gold-event); color: var(--black);
+            font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+            padding: 4px 10px; border-radius: 999px; margin-bottom: 10px;
+        }
+        .team-mascot h3 { font-weight: 700; font-size: 1.05rem; color: var(--green-dark); margin-bottom: 2px; }
+        .team-mascot .team-mascot-role { color: var(--black); font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
+        .team-mascot p { color: var(--gray-text); font-size: 0.85rem; line-height: 1.5; }
 
         /* Pro accordion */
         .pro-section { margin-top: 48px; }
@@ -744,8 +768,15 @@
             .angebot-icon { width: 60px; height: 60px; border-radius: 14px; margin-bottom: 20px; }
             .angebot-icon svg { width: 30px; height: 30px; }
             .team-grid, .team-grid.team-grid-4 { grid-template-columns: 1fr; }
-            .team-card { display: flex; align-items: center; gap: 20px; text-align: left; }
-            .team-card img { width: 100px; height: 125px; margin-bottom: 0; flex-shrink: 0; }
+            /* Bild links, Name und Funktion untereinander rechts daneben */
+            .team-card { display: grid; grid-template-columns: 100px 1fr; column-gap: 20px; align-items: center; text-align: left; }
+            .team-card img { width: 100px; height: 125px; margin-bottom: 0; grid-row: 1 / span 2; }
+            .team-card h3 { align-self: end; }
+            .team-card p { align-self: start; }
+            .team-group { margin-top: 32px; }
+            .team-mascot { gap: 16px; padding: 0 20px 0 10px; margin-top: 72px; }
+            .team-mascot img { width: 110px; margin-top: -70px; }
+            .team-mascot-text { padding: 20px 0; }
             .toptracer-features { grid-template-columns: 1fr 1fr; gap: 10px; }
             .toptracer-feat { padding: 14px 10px; }
             .toptracer-feat strong { font-size: 1.3rem; }
@@ -1057,7 +1088,7 @@
             <h3 class="section-title fade-up" style="font-size:1.8rem;margin-bottom:24px;">Unsere Professionals</h3>
             <div class="pro-card fade-up" onclick="this.classList.toggle('open')">
                 <div class="pro-header">
-                    <img src="https://gemma-golfn.at/wp-content/uploads/2023/02/Florian-Haempel-240x300-1.png" alt="Florian Haempel">
+                    <img src="team/florian-haempel.jpg" alt="Porträt Florian Haempel" width="80" height="100" loading="lazy" decoding="async">
                     <div class="pro-header-info">
                         <h3>Florian Haempel</h3>
                         <p>Head Professional · Fully Qualified Professional der PGA of Austria seit 2007</p>
@@ -1079,7 +1110,7 @@
             </div>
             <div class="pro-card fade-up" onclick="this.classList.toggle('open')">
                 <div class="pro-header">
-                    <img src="https://gemma-golfn.at/wp-content/uploads/2023/02/Armin-Roessl-240x300-1.png" alt="Armin Rössl">
+                    <img src="team/armin-roessl.jpg" alt="Porträt Armin Rössl" width="80" height="100" loading="lazy" decoding="async">
                     <div class="pro-header-info">
                         <h3>Armin Rössl</h3>
                         <p>Fully Qualified Professional der PGA of Austria</p>
@@ -1306,43 +1337,60 @@
         <p class="section-label fade-up">Das Team</p>
         <h2 class="section-title fade-up">Die Menschen hinter<br>Gemma Golfn</h2>
         <p class="section-subtitle fade-up">Gegründet 2020 aus purer Begeisterung für Golf. PGA-zertifiziert, Toptracer-powered, mit Herz für den Sport.</p>
+        <figure class="team-group fade-up">
+            <img src="team/team-gruppenfoto-1600.jpg"
+                 srcset="team/team-gruppenfoto-800.jpg 800w, team/team-gruppenfoto-1600.jpg 1600w"
+                 sizes="(max-width: 1048px) calc(100vw - 48px), 1000px"
+                 width="1600" height="1000" loading="lazy" decoding="async"
+                 alt="Gruppenfoto des Gemma-Golfn-Teams vor der Fassade am Golfpark Metzenhof, von links: Armin Rössl, Bianca Trompeter, Florian Haempel, Markus Danninger, Gabriele Prinzensteiner, Hermann Rohm und Mario Zittmayr">
+            <figcaption>Das Gemma-Golfn-Team am Golfpark Metzenhof</figcaption>
+        </figure>
         <div class="team-grid fade-up" style="margin-bottom:48px;">
             <div class="team-card">
-                <img src="https://gemma-golfn.at/wp-content/uploads/2023/02/Florian-Haempel-240x300-1.png" alt="Florian Haempel" loading="lazy">
+                <img src="team/florian-haempel.jpg" alt="Porträt Florian Haempel" width="180" height="225" loading="lazy" decoding="async">
                 <h3>Florian Haempel</h3>
                 <p>CEO &amp; Head Professional</p>
             </div>
             <div class="team-card">
-                <img src="https://gemma-golfn.at/wp-content/uploads/2023/02/Armin-Roessl-240x300-1.png" alt="Armin Rössl" loading="lazy">
+                <img src="team/armin-roessl.jpg" alt="Porträt Armin Rössl" width="180" height="225" loading="lazy" decoding="async">
                 <h3>Armin Rössl</h3>
                 <p>COO &amp; PGA Professional</p>
             </div>
             <div class="team-card">
-                <img src="https://gemma-golfn.at/wp-content/uploads/2023/02/Mario-Zittmayr-240x300-1.png" alt="Mario Zittmayr" loading="lazy">
+                <img src="team/mario-zittmayr.jpg" alt="Porträt Mario Zittmayr" width="180" height="225" loading="lazy" decoding="async">
                 <h3>Mario Zittmayr</h3>
                 <p>Co-Founder &amp; Strategic Marketing<br>&amp; Digital Advisor</p>
             </div>
         </div>
         <div class="team-grid team-grid-4 fade-up">
             <div class="team-card">
-                <img src="https://gemma-golfn.at/wp-content/uploads/2021/03/melanie-leitner-240x300.jpg" alt="Melanie Leitner" loading="lazy">
-                <h3>Melanie Leitner</h3>
-                <p>Leiterin Sekretariat &amp;<br>Management Golfpark</p>
-            </div>
-            <div class="team-card">
-                <img src="https://gemma-golfn.at/wp-content/uploads/2023/02/Bianca-Trompeter-240x300-1.jpg" alt="Bianca Trompeter" loading="lazy">
+                <img src="team/bianca-trompeter.jpg" alt="Porträt Bianca Trompeter" width="180" height="225" loading="lazy" decoding="async">
                 <h3>Bianca Trompeter</h3>
                 <p>Sekretariat, Verkauf<br>&amp; Beratung Shop</p>
             </div>
             <div class="team-card">
-                <img src="https://gemma-golfn.at/wp-content/uploads/2023/02/Gabriele-Prinzensteiner-240x300-1.jpg" alt="Gabriele Prinzensteiner" loading="lazy">
+                <img src="team/gabriele-prinzensteiner.jpg" alt="Porträt Gabriele Prinzensteiner" width="180" height="225" loading="lazy" decoding="async">
                 <h3>Gabriele Prinzensteiner</h3>
                 <p>Sekretariat, Verkauf<br>&amp; Beratung Shop</p>
             </div>
             <div class="team-card">
-                <img src="https://gemma-golfn.at/wp-content/uploads/2025/11/Markus-Bild-225x300.avif" alt="Markus Danninger" loading="lazy">
+                <img src="team/markus-danninger.jpg" alt="Porträt Markus Danninger" width="180" height="225" loading="lazy" decoding="async">
                 <h3>Markus Danninger</h3>
                 <p>Verkauf &amp; Beratung Shop</p>
+            </div>
+            <div class="team-card">
+                <img src="team/hermann-rohm.jpg" alt="Porträt Hermann Rohm" width="180" height="225" loading="lazy" decoding="async">
+                <h3>Hermann Rohm</h3>
+                <p>Allround-Pro<br>Technik, Reparaturen &amp; gute Seele</p>
+            </div>
+        </div>
+        <div class="team-mascot fade-up">
+            <img src="team/spike-maskottchen.webp" alt="Spike, ein junger gestromter Windhund im grünen Pullover mit Geschirr – das Maskottchen von Gemma Golfn" width="311" height="600" loading="lazy" decoding="async">
+            <div class="team-mascot-text">
+                <span class="team-mascot-badge">Neu im Team</span>
+                <h3>Spike</h3>
+                <p class="team-mascot-role">Maskottchen &amp; Chief Ball Retriever</p>
+                <p>Flos Vierbeiner und jüngstes Teammitglied. Zuständig für gute Laune – und für jeden Ball, der zu lange herumliegt.</p>
             </div>
         </div>
     </div>
