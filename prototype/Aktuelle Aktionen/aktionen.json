@@ -73,7 +73,8 @@
     "start": "2026-11-01",
     "expires": "2027-02-28",
     "video": "videos/touchkey.mp4",
-    "ton": true
+    "ton": true,
+    "knopf": "Zu den Öffnungszeiten"
   },
   {
     "bild": "Final Sale September 2026 1080_1080 Gültig bis 13092026.png",
@@ -153,6 +154,7 @@
     "start": "2026-09-29",
     "expires": "2027-02-28",
     "video": "videos/air-fryzza.mp4",
-    "ton": false
+    "ton": false,
+    "knopf": "Zur BAR71"
   }
 ]

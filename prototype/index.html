@@ -419,6 +419,34 @@
         .aktionen-nav.prev { left: -22px; }
         .aktionen-nav.next { right: -22px; }
         .aktion-card.expired { display: none; }
+        /* Klick auf eine Aktion: Popup mit Video/Sujet, Text und dem passenden Knopf (Mail, Buchung, Bereich) */
+        .aktion-dialog {
+            border: 0; border-radius: var(--radius); padding: 0; margin: auto;
+            width: min(520px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); overflow: auto;
+            background: var(--white); color: var(--black);
+        }
+        .aktion-dialog::backdrop { background: rgba(0,0,0,0.65); }
+        .aktion-dialog-media { position: relative; }
+        .aktion-dialog-media img, .aktion-dialog-media video { display: block; width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+        .aktion-dialog-body { padding: 20px 24px 24px; }
+        .aktion-dialog h3 {
+            font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+            font-size: 1.5rem; text-transform: uppercase; line-height: 1.15;
+        }
+        .aktion-dialog-text { color: var(--gray-text); font-size: 0.95rem; line-height: 1.55; margin-top: 8px; }
+        .aktion-dialog-cta { width: 100%; justify-content: center; margin-top: 20px; }
+        .aktion-dialog-hinweis { font-size: 0.8rem; color: var(--gray-text); line-height: 1.5; margin-top: 12px; text-align: center; }
+        .aktion-dialog-hinweis button {
+            background: none; border: 0; padding: 0; font: inherit; color: var(--green-dark);
+            text-decoration: underline; cursor: pointer;
+        }
+        .aktion-dialog-hinweis a { color: var(--green-dark); }
+        .aktion-dialog-zu {
+            position: absolute; top: 12px; right: 12px; z-index: 3; width: 40px; height: 40px;
+            border: 0; border-radius: 50%; background: rgba(0,0,0,0.62); color: #fff;
+            font-size: 1.4rem; line-height: 1; cursor: pointer;
+        }
+        .aktion-dialog-zu:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
 
         @media (max-width: 1024px) {
             .aktion-card { flex: 0 0 calc(50% - 12px); }
@@ -1011,6 +1039,7 @@
         <div class="aktionen-slider-wrap">
             <button class="aktionen-nav prev" onclick="scrollAktionen(-1)" aria-label="Zurück">&#8249;</button>
             <div class="aktionen-slider" id="aktionenSlider"></div>
+            <dialog class="aktion-dialog" id="aktionDialog" aria-labelledby="aktionDialogTitel"></dialog>
             <button class="aktionen-nav next" onclick="scrollAktionen(1)" aria-label="Weiter">&#8250;</button>
         </div>
     </div>
@@ -1671,6 +1700,7 @@
                     </div>`;
                 }).join('');
                 aktionenVideos(slider);
+                aktionenPopup(slider, aktive);
                 slider.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
             });
     })();
@@ -1709,6 +1739,59 @@
                 setzeTon(btn, einschalten);
             });
         });
+    }
+
+    // Klick auf eine Aktion -> Popup mit passendem Knopf statt sofortigem Mail-Programm
+    function aktionenPopup(slider, aktive) {
+        const dlg = document.getElementById('aktionDialog');
+        if (!dlg || !dlg.showModal) return;   // sehr alter Browser: Link funktioniert wie bisher
+        const knopfText = a => a.knopf
+            || (a.link.startsWith('mailto:') ? 'E-Mail schreiben'
+            : a.link.startsWith('http') ? 'Jetzt buchen' : 'Mehr erfahren');
+        slider.querySelectorAll('.aktion-link').forEach((link, i) => {
+            link.addEventListener('click', ev => {
+                if (ev.button !== 0 || ev.ctrlKey || ev.metaKey || ev.shiftKey) return;
+                ev.preventDefault();
+                const a = aktive[i];
+                const karte = link.closest('.aktion-card');
+                const vKachel = karte.querySelector('video');
+                // Ton der Kacheln aus, damit nicht zwei Videos gleichzeitig sprechen
+                slider.querySelectorAll('.aktion-ton[aria-pressed="true"]').forEach(b => b.click());
+                const bild = `Aktuelle Aktionen/${encodeURIComponent(a.bild)}`;
+                const medium = vKachel
+                    ? `<video src="${vKachel.getAttribute('src')}" poster="${bild}" muted loop playsinline autoplay ${a.ton ? 'controls' : ''} aria-label="Video: ${a.titel}"></video>`
+                    : `<img src="${bild}" alt="${a.titel}">`;
+                const istMail = a.link.startsWith('mailto:');
+                const adresse = istMail ? a.link.slice(7).split('?')[0] : '';
+                const extern = a.link.startsWith('http');
+                dlg.innerHTML = `
+                    <div class="aktion-dialog-media">
+                        <button type="button" class="aktion-dialog-zu" aria-label="Schließen">&times;</button>
+                        ${medium}
+                    </div>
+                    <div class="aktion-dialog-body">
+                        <h3 id="aktionDialogTitel">${a.titel}</h3>
+                        <p class="aktion-dialog-text">${a.text}</p>
+                        <a class="btn btn-green aktion-dialog-cta" href="${a.link}" ${extern ? 'target="_blank" rel="noopener"' : ''}>${knopfText(a)}</a>
+                        ${istMail ? `<p class="aktion-dialog-hinweis">Dein Mailprogramm öffnet sich mit einer fertigen Nachricht.<br>
+                            Klappt nicht? Schreib an <strong>${adresse}</strong> <span style="white-space:nowrap">(<button type="button" class="aktion-kopieren">Adresse kopieren</button>)</span>
+                            oder ruf an: <a href="tel:+437225738950">07225 738950</a></p>` : ''}
+                    </div>`;
+                dlg.querySelector('.aktion-dialog-zu').addEventListener('click', () => dlg.close());
+                const kopieren = dlg.querySelector('.aktion-kopieren');
+                if (kopieren) kopieren.addEventListener('click', () => {
+                    (navigator.clipboard ? navigator.clipboard.writeText(adresse) : Promise.reject())
+                        .then(() => { kopieren.textContent = 'kopiert ✓'; })
+                        .catch(() => { kopieren.textContent = adresse; });
+                });
+                // Sprungziel auf der Seite (#bar71 usw.): Popup schließen, dann hinscrollen
+                if (a.link.startsWith('#')) dlg.querySelector('.aktion-dialog-cta').addEventListener('click', () => dlg.close());
+                dlg.showModal();
+            });
+        });
+        // Klick auf den dunklen Hintergrund schließt; beim Schließen Video stoppen
+        dlg.addEventListener('click', ev => { if (ev.target === dlg) dlg.close(); });
+        dlg.addEventListener('close', () => { dlg.innerHTML = ''; });
     }
 
     // Aktionen slider scroll
