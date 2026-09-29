@@ -11,7 +11,7 @@
 
 ## Öffnungszeiten
 - **Range:** täglich 08:00–21:00
-- **Shop (01.03.–13.09.2026):** Mo–Fr 10:00–16:00, Sa 09:00–16:00, So 10:00–13:00
+- **Shop (01.03.–11.11.2026):** Mo–Fr 10:00–16:00, Sa 09:00–16:00, So 10:00–13:00
 
 ## Social Media
 - Instagram: https://www.instagram.com/gemmagolfn/
