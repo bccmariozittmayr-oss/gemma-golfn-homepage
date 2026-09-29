@@ -390,7 +390,18 @@
             transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; color: inherit; display: block;
         }
         .aktion-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(0,0,0,0.12); }
-        .aktion-card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+        .aktion-card { position: relative; }
+        .aktion-link { display: block; color: inherit; text-decoration: none; }
+        .aktion-card img, .aktion-card video { display: block; width: 100%; aspect-ratio: 1/1; object-fit: cover; background: var(--off-white); }
+        /* Ton-Knopf je Video-Kachel (wie handycheck.at): Video laeuft stumm, Gast schaltet selbst ein */
+        .aktion-ton {
+            position: absolute; top: 12px; right: 12px; z-index: 2;
+            display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 8px 14px;
+            border: 0; border-radius: 999px; background: rgba(0,0,0,0.62); color: #fff;
+            font: 600 13px/1 'Barlow', sans-serif; cursor: pointer; backdrop-filter: blur(4px);
+        }
+        .aktion-ton:hover, .aktion-ton:focus-visible { background: rgba(0,0,0,0.8); outline: 2px solid #fff; outline-offset: 2px; }
+        .aktion-ton svg { width: 16px; height: 16px; fill: currentColor; }
         .aktion-card-body { padding: 20px 24px; }
         .aktion-card h3 {
             font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
@@ -1635,18 +1646,70 @@
                     document.getElementById('aktionen').style.display = 'none';
                     return;
                 }
-                slider.innerHTML = aktive.map(a => `
-                    <a href="${a.link}" ${a.link.startsWith('http') ? 'target="_blank"' : ''} class="aktion-card fade-up">
-                        <img src="Aktuelle Aktionen/${encodeURIComponent(a.bild)}?v=${Date.now()}" alt="${a.titel}" loading="lazy" decoding="async">
-                        <div class="aktion-card-body">
-                            <h3>${a.titel}</h3>
-                            <p>${a.text}</p>
-                        </div>
-                    </a>
-                `).join('');
+                // Videos nur, wenn der Gast nicht "weniger Bewegung" oder "Datensparen" eingestellt hat
+                const mitVideo = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+                    && !(navigator.connection && navigator.connection.saveData);
+                const tonIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>';
+                slider.innerHTML = aktive.map(a => {
+                    const bild = `Aktuelle Aktionen/${encodeURIComponent(a.bild)}?v=${Date.now()}`;
+                    const video = mitVideo && a.video;
+                    const medium = video
+                        ? `<video src="Aktuelle Aktionen/${a.video}" poster="${bild}" muted loop playsinline preload="none" aria-label="Video: ${a.titel}"></video>`
+                        : `<img src="${bild}" alt="${a.titel}" loading="lazy" decoding="async">`;
+                    const ton = video && a.ton
+                        ? `<button type="button" class="aktion-ton" aria-pressed="false" aria-label="Ton einschalten">${tonIcon}<span>Ton an</span></button>`
+                        : '';
+                    return `
+                    <div class="aktion-card fade-up">
+                        <a href="${a.link}" ${a.link.startsWith('http') ? 'target="_blank" rel="noopener"' : ''} class="aktion-link">
+                            ${medium}
+                            <div class="aktion-card-body">
+                                <h3>${a.titel}</h3>
+                                <p>${a.text}</p>
+                            </div>
+                        </a>${ton}
+                    </div>`;
+                }).join('');
+                aktionenVideos(slider);
                 slider.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
             });
     })();
+
+    // Aktions-Videos: laufen nur, solange die Kachel sichtbar ist; Ton immer nur bei einer Kachel
+    function aktionenVideos(slider) {
+        const videos = [...slider.querySelectorAll('video')];
+        if (!videos.length) return;
+        const setzeTon = (btn, an) => {
+            btn.setAttribute('aria-pressed', an ? 'true' : 'false');
+            btn.setAttribute('aria-label', an ? 'Ton ausschalten' : 'Ton einschalten');
+            btn.querySelector('span').textContent = an ? 'Ton aus' : 'Ton an';
+        };
+        const sichtbar = new IntersectionObserver(entries => entries.forEach(e => {
+            const v = e.target;
+            if (e.isIntersecting) v.play().catch(() => {});
+            else v.pause();
+        }), { threshold: 0.5 });
+        videos.forEach(v => { v.muted = true; sichtbar.observe(v); });
+        slider.querySelectorAll('.aktion-ton').forEach(btn => {
+            const v = btn.parentElement.querySelector('video');
+            btn.addEventListener('click', () => {
+                const einschalten = v.muted;
+                if (einschalten) {
+                    // alle anderen Kacheln wieder stumm
+                    slider.querySelectorAll('.aktion-ton').forEach(b => {
+                        const o = b.parentElement.querySelector('video');
+                        if (o !== v) { o.muted = true; setzeTon(b, false); }
+                    });
+                    v.muted = false;
+                    try { v.currentTime = 0; } catch (e) {}
+                    v.play().catch(() => {});
+                } else {
+                    v.muted = true;
+                }
+                setzeTon(btn, einschalten);
+            });
+        });
+    }
 
     // Aktionen slider scroll
     function scrollAktionen(dir) {
