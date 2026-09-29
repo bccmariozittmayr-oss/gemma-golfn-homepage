@@ -396,12 +396,13 @@
         /* Ton-Knopf je Video-Kachel (wie handycheck.at): Video laeuft stumm, Gast schaltet selbst ein */
         .aktion-ton {
             position: absolute; top: 12px; right: 12px; z-index: 2;
-            display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 8px 14px;
+            display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 40px; min-height: 40px; padding: 8px 11px;
             border: 0; border-radius: 999px; background: rgba(0,0,0,0.62); color: #fff;
             font: 600 13px/1 'Barlow', sans-serif; cursor: pointer; backdrop-filter: blur(4px);
         }
         .aktion-ton:hover, .aktion-ton:focus-visible { background: rgba(0,0,0,0.8); outline: 2px solid #fff; outline-offset: 2px; }
-        .aktion-ton svg { width: 16px; height: 16px; fill: currentColor; }
+        .aktion-ton svg { width: 18px; height: 18px; fill: currentColor; }
+        .aktion-ton span:empty { display: none; }
         .aktion-card-body { padding: 20px 24px; }
         .aktion-card h3 {
             font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
@@ -1678,7 +1679,7 @@
                 // Videos nur, wenn der Gast nicht "weniger Bewegung" oder "Datensparen" eingestellt hat
                 const mitVideo = !window.matchMedia('(prefers-reduced-motion: reduce)').matches
                     && !(navigator.connection && navigator.connection.saveData);
-                const tonIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z"/></svg>';
+                const tonIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3z"/><path d="M21.5 9.9l-1.4-1.4-2.3 2.3-2.3-2.3-1.4 1.4 2.3 2.3-2.3 2.3 1.4 1.4 2.3-2.3 2.3 2.3 1.4-1.4-2.3-2.3z"/></svg>';
                 slider.innerHTML = aktive.map(a => {
                     const bild = `Aktuelle Aktionen/${encodeURIComponent(a.bild)}?v=${Date.now()}`;
                     const video = mitVideo && a.video;
@@ -1686,7 +1687,7 @@
                         ? `<video src="Aktuelle Aktionen/${a.video}" poster="${bild}" muted loop playsinline preload="none" aria-label="Video: ${a.titel}"></video>`
                         : `<img src="${bild}" alt="${a.titel}" loading="lazy" decoding="async">`;
                     const ton = video && a.ton
-                        ? `<button type="button" class="aktion-ton" aria-pressed="false" aria-label="Ton einschalten">${tonIcon}<span>Ton an</span></button>`
+                        ? `<button type="button" class="aktion-ton" aria-pressed="false" aria-label="Ton einschalten" title="Ton einschalten">${tonIcon}<span></span></button>`
                         : '';
                     return `
                     <div class="aktion-card fade-up">
@@ -1712,7 +1713,9 @@
         const setzeTon = (btn, an) => {
             btn.setAttribute('aria-pressed', an ? 'true' : 'false');
             btn.setAttribute('aria-label', an ? 'Ton ausschalten' : 'Ton einschalten');
-            btn.querySelector('span').textContent = an ? 'Ton aus' : 'Ton an';
+            btn.setAttribute('title', an ? 'Ton ausschalten' : 'Ton einschalten');
+            btn.querySelector('svg').outerHTML = an ? '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>' : '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3z"/><path d="M21.5 9.9l-1.4-1.4-2.3 2.3-2.3-2.3-1.4 1.4 2.3 2.3-2.3 2.3 1.4 1.4 2.3-2.3 2.3 2.3 1.4-1.4-2.3-2.3z"/></svg>';
+            btn.querySelector('span').textContent = an ? 'KI-Stimme' : '';
         };
         const sichtbar = new IntersectionObserver(entries => entries.forEach(e => {
             const v = e.target;
@@ -1772,6 +1775,7 @@
                     <div class="aktion-dialog-body">
                         <h3 id="aktionDialogTitel">${a.titel}</h3>
                         <p class="aktion-dialog-text">${a.text}</p>
+                        ${vKachel && a.ton ? '<p class="aktion-dialog-hinweis" style="text-align:left;margin-top:6px">Sprecherstimme im Video KI-generiert.</p>' : ''}
                         <a class="btn btn-green aktion-dialog-cta" href="${a.link}" ${extern ? 'target="_blank" rel="noopener"' : ''}>${knopfText(a)}</a>
                         ${istMail ? `<p class="aktion-dialog-hinweis">Dein Mailprogramm öffnet sich mit einer fertigen Nachricht.<br>
                             Klappt nicht? Schreib an <strong>${adresse}</strong> <span style="white-space:nowrap">(<button type="button" class="aktion-kopieren">Adresse kopieren</button>)</span>
