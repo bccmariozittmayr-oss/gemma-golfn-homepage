@@ -574,7 +574,9 @@
         /* ========== TEAM ========== */
         .team { background: var(--white); }
         .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 48px; }
-        .team-grid.team-grid-4 { grid-template-columns: repeat(4, 1fr); }
+        /* zweite Reihe als Flex: angebrochene letzte Zeile steht mittig statt links */
+        .team-grid.team-grid-4 { display: flex; flex-wrap: wrap; justify-content: center; }
+        .team-grid.team-grid-4 .team-card { flex: 0 0 calc((100% - 120px) / 4); }
         .team-card { text-align: center; }
         .team-card img {
             width: 180px; height: 225px; object-fit: cover;
@@ -745,7 +747,7 @@
             .bar71-image { aspect-ratio: 16/9; }
             .angebot-grid { grid-template-columns: 1fr 1fr; }
             .team-grid { grid-template-columns: repeat(3, 1fr); gap: 24px; }
-            .team-grid.team-grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .team-grid.team-grid-4 .team-card { flex-basis: calc((100% - 24px) / 2); }
             .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
         }
 
@@ -768,6 +770,7 @@
             .angebot-icon { width: 60px; height: 60px; border-radius: 14px; margin-bottom: 20px; }
             .angebot-icon svg { width: 30px; height: 30px; }
             .team-grid, .team-grid.team-grid-4 { grid-template-columns: 1fr; }
+            .team-grid.team-grid-4 .team-card { flex-basis: 100%; }
             /* Bild links, Name und Funktion untereinander rechts daneben */
             .team-card { display: grid; grid-template-columns: 100px 1fr; column-gap: 20px; align-items: center; text-align: left; }
             .team-card img { width: 100px; height: 125px; margin-bottom: 0; grid-row: 1 / span 2; }
@@ -1382,6 +1385,11 @@
                 <img src="team/hermann-rohm.jpg" alt="Porträt Hermann Rohm" width="180" height="225" loading="lazy" decoding="async">
                 <h3>Hermann Rohm</h3>
                 <p>Allround-Pro<br>Technik, Reparaturen &amp; gute Seele</p>
+            </div>
+            <div class="team-card">
+                <img src="team/jennifer-zeitlhofer.jpg" alt="Porträt Jennifer Zeitlhofer" width="180" height="225" loading="lazy" decoding="async">
+                <h3>Jennifer Zeitlhofer</h3>
+                <p>Indoor-Greenkeeperin<br>Clubhaus, Boxen &amp; Shop in Bestform</p>
             </div>
         </div>
         <div class="team-mascot fade-up">
