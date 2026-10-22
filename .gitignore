@@ -28,3 +28,6 @@ hero-building.png
 __pycache__/
 *.pyc
 prototype/Werkzeuge/output/
+
+# Protokoll des Stilllegungs-Werkzeugs (enthaelt nur Pfade, bleibt lokal)
+werkzeuge/wp_reste_stilllegen_protokoll.json
