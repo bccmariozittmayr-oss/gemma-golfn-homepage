@@ -11,7 +11,8 @@
 
 ## Öffnungszeiten
 - **Range:** täglich 08:00–21:00
-- **Shop (01.03.–11.11.2026):** Mo–Fr 10:00–16:00, Sa 09:00–16:00, So 10:00–13:00
+- **Shop & Sekretariat (01.03.–09.11.2026):** Mo–Fr 10:00–16:00, Sa 09:00–16:00, So 10:00–13:00
+- **Shop & Sekretariat ab 10.11.2026 (Winter):** Do 14:00–19:00, Fr 11:00–18:00 (Auftrag Mario 27.10.2026)
 
 ## Social Media
 - Instagram: https://www.instagram.com/gemmagolfn/

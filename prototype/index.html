@@ -113,6 +113,54 @@
                 "closes": "21:00"
             }
         ],
+        "department": [
+            {
+                "@type": "Store",
+                "name": "Gemma Golfn Shop & Sekretariat",
+                "telephone": "+437225738950",
+                "email": "office@gemma-golfn.at",
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                        "opens": "10:00",
+                        "closes": "16:00",
+                        "validFrom": "2026-03-01",
+                        "validThrough": "2026-11-09"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Saturday",
+                        "opens": "09:00",
+                        "closes": "16:00",
+                        "validFrom": "2026-03-01",
+                        "validThrough": "2026-11-09"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Sunday",
+                        "opens": "10:00",
+                        "closes": "13:00",
+                        "validFrom": "2026-03-01",
+                        "validThrough": "2026-11-09"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Thursday",
+                        "opens": "14:00",
+                        "closes": "19:00",
+                        "validFrom": "2026-11-10"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Friday",
+                        "opens": "11:00",
+                        "closes": "18:00",
+                        "validFrom": "2026-11-10"
+                    }
+                ]
+            }
+        ],
         "priceRange": "€€",
         "image": "https://gemma-golfn.at/wp-content/uploads/2021/03/slider1.jpg",
         "hasMap": "https://maps.google.com/?q=Dörfling+2+4484+Kronstorf",
@@ -1080,10 +1128,10 @@
                     <span style="background:var(--off-white);padding:6px 14px;border-radius:50px;font-size:0.8rem;font-weight:600;">Angry Birds</span>
                 </div>
                 <div class="toptracer-buttons" style="margin-top:24px;">
-                    <a href="https://book.sweetspot.io/clubs/gemma-golfn/memberships/bda7da50-f2ac-4d6c-8b89-ff40ae06cbe5" target="_blank" class="btn btn-light" style="width:100%;text-align:center;justify-content:center;">Sommerflat &euro; 299,- &nbsp;|&nbsp; Spare bis zu &euro; 3.600,-</a>
+                    <a href="https://book.sweetspot.io/clubs/gemma-golfn/memberships" target="_blank" class="btn btn-light" style="width:100%;text-align:center;justify-content:center;">Winterflat &euro; 349,- &nbsp;|&nbsp; 01.11. – 28.02.</a>
                     <div style="display:flex;gap:10px;width:100%;">
                         <a href="https://book.sweetspot.io/clubs/gemma-golfn/2090/tee-sheet" target="_blank" class="btn btn-green" style="flex:1;text-align:center;justify-content:center;">Einzelbuchung</a>
-                        <a href="https://book.sweetspot.io/clubs/gemma-golfn/passes/e13717d3-e146-4837-aa4a-099b96bc7e9d" target="_blank" class="btn btn-dark" style="flex:1;text-align:center;justify-content:center;">Monatsflat &euro; 99,-</a>
+                        <a href="https://book.sweetspot.io/clubs/gemma-golfn/passes" target="_blank" class="btn btn-dark" style="flex:1;text-align:center;justify-content:center;">Monatsflat &euro; 149,-</a>
                     </div>
                 </div>
                 <div class="fade-up" style="margin-top:20px;text-align:center;">
@@ -1553,12 +1601,20 @@
                 </p>
             </div>
             <div class="oeffnungszeiten-card fade-up">
-                <h4>Gemma Golfn Shop</h4>
-                <span class="oeffnungszeiten-saison">Saison 01.03. – 11.11.2026</span>
+                <h4>Gemma Golfn Shop &amp; Sekretariat</h4>
+                <!-- Bisherige Zeiten: werden ab 10.11.2026 automatisch ausgeblendet (data-bis) -->
+                <div data-bis="2026-11-09" style="margin-bottom:20px;">
+                    <span class="oeffnungszeiten-saison">bis 09.11.2026</span>
+                    <p>
+                        <span class="zeit-highlight">Mo – Fr:</span> 10:00 – 16:00 Uhr<br>
+                        <span class="zeit-highlight">Samstag:</span> 09:00 – 16:00 Uhr<br>
+                        <span class="zeit-highlight">Sonntag:</span> 10:00 – 13:00 Uhr
+                    </p>
+                </div>
+                <span class="oeffnungszeiten-saison">ab 10.11.2026</span>
                 <p>
-                    <span class="zeit-highlight">Mo – Fr:</span> 10:00 – 16:00 Uhr<br>
-                    <span class="zeit-highlight">Samstag:</span> 09:00 – 16:00 Uhr<br>
-                    <span class="zeit-highlight">Sonntag:</span> 10:00 – 13:00 Uhr
+                    <span class="zeit-highlight">Donnerstag:</span> 14:00 – 19:00 Uhr<br>
+                    <span class="zeit-highlight">Freitag:</span> 11:00 – 18:00 Uhr
                 </p>
             </div>
         </div>
@@ -1663,6 +1719,13 @@
     document.querySelectorAll('.nav-links a').forEach(a => {
         a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
     });
+
+    // Befristete Inhalte (z.B. alte Öffnungszeiten) nach ihrem Datum ausblenden: data-bis="JJJJ-MM-TT"
+    (function() {
+        const d = new Date();
+        const heute = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+        document.querySelectorAll('[data-bis]').forEach(el => { if (el.dataset.bis < heute) el.remove(); });
+    })();
 
     // Aktionen dynamisch aus JSON laden + abgelaufene ausblenden
     (function() {
