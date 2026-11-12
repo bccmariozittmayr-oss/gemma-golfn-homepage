@@ -3,6 +3,15 @@
 Neueste Einträge oben. Details stehen in der Git-Historie (`git log`);
 hier steht nur, was fachlich wichtig war.
 
+## 2026-11-12 — Aktion Charity-Weihnachtsmarkt Metzenhof (LIVE)
+
+- Kachel „Charity-Weihnachtsmarkt am Metzenhof“ unter „Das läuft gerade“, sichtbar 12.11.–21.11.2026,
+  danach automatisch ausgeblendet. Bild 1080×1080 + Video `videos/weihnachtsmarkt.mp4` (720×720, ohne Ton)
+  aus dem unveränderten Flyer; Knopf „Tisch reservieren“ → Mail an golf@metzenhof.at.
+- Quelle/Bau: `marketing/social-media/2026-11-12_charity-weihnachtsmarkt/bau.py homepage`. Freigabe Mario 12.11.2026.
+- Ausgerollt mit `deploy_datei.py` (Video) und `deploy_aktionen.py --echt`; Live-Stand vorher = Git geprüft.
+  Rückweg: `expires` auf vergangenes Datum, neu ausrollen.
+
 ## 2026-09-28 — Team-Bereich mit neuen Fotos (Zweig `team-fotos-2026-09`, noch nicht live)
 
 - Alle Mitarbeiterfotos gegen die neuen Aufnahmen getauscht. Bilder liegen
