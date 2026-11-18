@@ -27,7 +27,10 @@ for line in ENV_FILE.read_text(encoding="utf-8-sig").splitlines():
 ftp = FTP_TLS("www193.your-server.de", timeout=60)
 ftp.login(env["HETZNER_USER"], env["HETZNER_PASSWORD"]); ftp.prot_p(); ftp.cwd("public_html_backup_wordpress")
 for teil in rel.parts[:-1]:
-    ftp.cwd(teil)
+    try:
+        ftp.cwd(teil)
+    except Exception:                      # Ordner fehlt -> anlegen (ergaenzt 18.11.2026, Signatur-Ordner); geloescht wird nie
+        ftp.mkd(teil); ftp.cwd(teil); print(f"Ordner angelegt: {teil}")
 with open(quelle, "rb") as f:
     ftp.storbinary(f"STOR {rel.name}", f)
 ftp.quit(); print(f"hochgeladen: {rel}")
