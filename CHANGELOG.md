@@ -3,6 +3,15 @@
 Neueste Einträge oben. Details stehen in der Git-Historie (`git log`);
 hier steht nur, was fachlich wichtig war.
 
+## 2026-11-18 — Aktion SiSiSi Bowls in der BAR71 (LIVE)
+
+- Kachel „SiSiSi Bowls in der BAR71“ unter „Das läuft gerade“, sichtbar 18.11.–02.12.2026, danach automatisch ausgeblendet.
+  Video `videos/sisisi-bowls.mp4` (720×720, 19 s, ohne Ton, Bowl-Karussell mit Preisen) + Standbild 1080×1080; Knopf „Zur BAR71“.
+- Quelle/Bau: `marketing/bar71-sisisi/flo-video/bau_homepage_1x1.py`. Auftrag Mario 18.11.2026 („für die nächsten 14 Tage und dann
+  wieder automatisch rausnehmen“).
+- Ausgerollt mit `deploy_datei.py` (Video) und `deploy_aktionen.py --echt`; Live-Stand vorher = Git geprüft.
+  Rückweg: `expires` auf vergangenes Datum, neu ausrollen.
+
 ## 2026-11-12 — Aktion Charity-Weihnachtsmarkt Metzenhof (LIVE)
 
 - Kachel „Charity-Weihnachtsmarkt am Metzenhof“ unter „Das läuft gerade“, sichtbar 12.11.–21.11.2026,
