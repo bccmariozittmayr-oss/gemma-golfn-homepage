@@ -3,9 +3,9 @@ VERSION:3.0
 N:Rössl;Armin
 FN:Armin Rössl
 ORG:Gemma Golfn GmbH
-EMAIL:armin.roessl@gemma-golfn.at
-TEL;TYPE=cell:+436604412345
 TITLE:COO & PGA Professional
+TEL;TYPE=cell:+436604412345
+EMAIL:armin.roessl@gemma-golfn.at
 URL:https://www.gemma-golfn.at
 ADR;TYPE=work:;;Dörfling 2;Kronstorf;;4484;Österreich
 END:VCARD
