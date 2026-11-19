@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Gemma Golfn GmbH;;;;
+FN:Gemma Golfn GmbH
+ORG:Gemma Golfn GmbH
+X-ABShowAs:COMPANY
+TEL;TYPE=work,voice:+437225738910
+EMAIL:office@gemma-golfn.at
+URL:https://www.gemma-golfn.at
+ADR;TYPE=work:;;Dörfling 2;Kronstorf;;4484;Österreich
+END:VCARD
